@@ -1,0 +1,209 @@
+/* Needed for a fluid height: */
+html, body, .container, .main { height: 100%;}
+
+/* main wrapper */
+.cbp-contentslider {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	width: 80%;
+	height: 500px;
+	margin: 1em auto;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	border-left: solid 1px #ffffff;
+	border-right: solid 1px #ffffff;
+	border-bottom: solid 1px #ffffff;
+	border-radius: 5px;
+	background-color: #F4F4F4;
+}
+
+.cbp-contentslider > ul {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.cbp-contentslider > ul li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 1em;
+}
+
+/* Whithout JS, we use :target */
+.cbp-contentslider > ul li:target {
+	z-index: 100;
+}
+
+.cbp-contentslider nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3.313em;
+	z-index: 998;
+	border-bottom: 1px solid #52CEDC;
+	overflow: hidden;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	overflow:hidden;
+	display:block;
+}
+
+.cbp-contentslider nav a {
+	float: left;
+	display: block;
+	width: 20%;
+	height: 100%;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	overflow: hidden;
+	color: #666666;
+	background: #fff;
+	outline: none;
+	text-align: center;
+	line-height: 3;
+	position: relative;
+	padding-left: 3.125em;
+	text-transform: uppercase;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	border-right:solid 1px #EBEBEB;
+}
+
+.cbp-contentslider nav a span {
+	display: block;
+}
+
+.cbp-contentslider nav a:last-child {
+	border: none;
+	box-shadow: 1px 0 #47a3da; /* fills gap caused by rounding */
+}
+
+.cbp-contentslider nav a:hover {
+	background-color: #52CEDC;
+	color: #fff;
+	font-weight:500;
+}
+
+.cbp-contentslider nav a.rc-active {
+	background-color: #52CEDC;
+	color: #fff;
+	font-weight:500;
+}
+
+
+
+.cbp-contentslider [class^="icon-"].rc-active:before, 
+.cbp-contentslider [class*=" icon-"].rc-active:before,
+.cbp-contentslider nav a:hover:before {
+	color: rgba(255,255,255,0.9);
+}
+
+.cbp-contentslider h3 {
+	font-size: 3em;
+	height: 2em;
+	line-height: 1.7;
+	font-weight: 300;
+	margin: 0 0 0.3em;
+	position: relative;
+	color: #47a3da;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 0.3em;
+	padding: 0 0.2em 0 0;
+	border-bottom: 1px solid #52CEDC;
+}
+
+.cbp-contentslider li > div {
+	position: absolute;
+	top: 6em;
+	bottom: 3.313em;
+	width: 100%;
+	left: 0;
+	padding: 0 1em;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.cbp-contentslider .cbp-content {
+	color: #666666;
+	padding: 0 0.5em 0.4em;
+	margin: 0;
+	font-size: 1em;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+.cbp-contentslider p {
+	color: #666666;
+	padding: 0 0.5em 0.4em;
+	margin: 0;
+	font-size: 1em;
+	font-weight: 300;
+	text-align: center;
+	line-height: 1.6;
+}
+.cbp-contentslider p span {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 70em) { 
+	.cbp-contentslider p {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+
+	.cbp-contentslider { font-size: 75%;
+	width: 90%;
+	}
+
+	.cbp-contentslider nav a[class^="icon-"]:before, 
+	.cbp-contentslider nav a[class*=" icon-"]:before {
+		left: 50%;
+		margin-left: -1.250em;
+	}
+
+	.cbp-contentslider nav a span {
+		
+	}
+}
+
+@media screen and (max-width: 43em) {
+
+	.cbp-contentslider h3 {
+		font-size: 2em;
+	}
+
+	.cbp-contentslider .cbp-content {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-o-column-count: 1;
+		column-count: 1;
+	}
+
+	.cbp-contentslider li > div {
+		top: 5em;
+	}
+
+}
+
+@media screen and (max-width: 25em) { 
+	.cbp-contentslider nav a { padding: 0;}
+	.cbp-contentslider h3[class^="icon-"]:before, 
+	.cbp-contentslider h3[class*=" icon-"]:before { display: none;}
+}
