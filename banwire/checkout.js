@@ -217,7 +217,7 @@ var BwGateway = function (vars) {
         }
         this.setParams(data);
         var _src = this.gateway_url + '?' + build_query(this.params);
-        var iframe = createElement('<iframe id="bw_popup" name="bw_popup" src="' + _src + '" allowtransparency="true" frameborder="0" style="width: 100%; height: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 9999; overflow-x: hidden; overflow-y: auto; display: none; margin: 0px; padding: 0px; -webkit-tap-highlight-color: transparent; position: fixed; background: transparent" onload="this.style.display=\'block\'"></iframe>');
+        var iframe = createElement('<iframe id="bw_popup" name="bw_popup" src="' + _src + '" allowtransparency="true" frameborder="0" style="width: 100%; height: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 99999; overflow-x: hidden; overflow-y: auto; display: none; margin: 0px; padding: 0px; -webkit-tap-highlight-color: transparent; position: fixed; background: transparent" onload="this.style.display=\'block\'"></iframe>');
         document.body.appendChild(iframe);
         this.popup = document.getElementById("bw_popup");
         setSocket()

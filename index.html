@@ -423,19 +423,20 @@
             </div>
             <div class="columna-donar">
                 <p class="subtitulo-donar-2017">Donacion Única</p>
-                <input type="radio" name="valor-Normal" value="150">
-                <label for="cientocincuenta">$150</label><br>
+                <input type="radio" id="banwire-150" name="banwire-Normal" value="150">
+                <label for="banwire-150">$150</label><br>
                 <div class="separador-donar"></div>
-                <input type="radio" name="valor-Normal" value="300">
-                <label for="trescientos">$300</label><br>
+                <input type="radio" id="banwire-300" name="banwire-Normal" value="300">
+                <label for="banwire-300">$300</label><br>
                 <div class="separador-donar"></div>
-                <input type="radio" name="valor-Normal" value="1000">
-                <label for="mil">$1,000</label><br>
+                <input type="radio" id="banwire-1000" name="banwire-Normal" value="1000">
+                <label for="banwire-1000">$1,000</label><br>
                 <div class="separador-donar"></div>
-                <input type="number" id="banwirelibre" min="20" placeholder="Otra Cantidad">
+                <input type="number" id="banwire-libre" name="banwire-Normal" min="20" placeholder="Otra Cantidad">
                 <!--Boton Unico-->
                 <input type="hidden" id="EBT_DEVICEPRINT">
-                <input type="image" src="https://proyectohabesha.org/img/donar1.png" border="0" onclick="pagar()"/>
+                <input type="image" src="https://proyectohabesha.org/img/donar1.png" border="0" name="submit"
+                       onclick="pagar()">
             </div>
 
             <div class="columna-donar">
