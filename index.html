@@ -24,14 +24,14 @@
 
     <meta property="og:type" content="non_profit">
 
-    <meta property="og:url" content="http://www.proyectohabesha.org">
+    <meta property="og:url" content="https://www.proyectohabesha.org">
 
-    <meta property="og:image" content="http://www.proyectohabesha.org/img/face1.jpg">
+    <meta property="og:image" content="https://www.proyectohabesha.org/img/face1.jpg">
 
     <meta property="fb:app_id" content="700559973348619">
 
 
-    <link href='http://fonts.googleapis.com/css?family=Russo+One|Droid+Serif:400,700,400italic,700italic|Oswald:700|Lato:300,400,700,900,300italic,400italic,700italic,900italic'
+    <link href='https://fonts.googleapis.com/css?family=Russo+One|Droid+Serif:400,700,400italic,700italic|Oswald:700|Lato:300,400,700,900,300italic,400italic,700italic,900italic'
           rel='stylesheet' type='text/css'>
 
 
@@ -70,7 +70,7 @@
 
     <!--[if IE]>
 
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 
     <![endif]-->
 
@@ -274,7 +274,7 @@
                             </li>
 
 
-                            <li><a href="http://costarica.proyectohabesha.org">HABESHA COSTA RICA</a></li>
+                            <li><a href="https://costarica.proyectohabesha.org">HABESHA COSTA RICA</a></li>
 
 
                             <li><a href="faq.html">PREGUNTAS FRECUENTES</a>
@@ -377,7 +377,7 @@
                     <input type="hidden" name="item_name" value="DIMA_UNICO">
                     <input type="hidden" name="currency_code" value="MXN">
                     <input type="hidden" name="amount" id="valor-Total">
-                    <input type="image" src="http://proyectohabesha.org/img/donar1.png" border="0" name="submit"
+                    <input type="image" src="https://proyectohabesha.org/img/donar1.png" border="0" name="submit"
                            id="donar-Normal" alt="Realice pagos con PayPal: es rápido, gratis y seguro.">
                 </form>
             </div>
@@ -399,7 +399,7 @@
                     <input type="hidden" name="business" id="org_1">
                     <input type="hidden" name="currency_code" value="MXN">
                     <input type="hidden" name="item_name" value="DIMA_RECURRENTE">
-                    <input type="image" src="http://proyectohabesha.org/img/suscribirse1.png" border="0" name="submit"
+                    <input type="image" src="https://proyectohabesha.org/img/suscribirse1.png" border="0" name="submit"
                            id="donar-Mensual" alt="PayPal, la forma más segura y rápida de pagar en línea.">
                     <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1"
                          height="1">
@@ -413,6 +413,62 @@
             </div>
         </div>
 
+        <div class="seccion-donar-2017"><a name="donar"></a>
+            <div class="columna-donar azul-dima">
+                <img class="fondo-donar" src="img/f-donar.jpg" width="33.33%">
+                <div class="titulo-donar-2017">DONAR</div>
+                <div class="texto-donar-2017">
+                    BANWIRE
+                </div>
+            </div>
+            <div class="columna-donar">
+                <p class="subtitulo-donar-2017">Donacion Única</p>
+                <input type="radio" name="valor-Normal" value="150">
+                <label for="cientocincuenta">$150</label><br>
+                <div class="separador-donar"></div>
+                <input type="radio" name="valor-Normal" value="300">
+                <label for="trescientos">$300</label><br>
+                <div class="separador-donar"></div>
+                <input type="radio" name="valor-Normal" value="1000">
+                <label for="mil">$1,000</label><br>
+                <div class="separador-donar"></div>
+                <input type="number" id="banwirelibre" min="20" placeholder="Otra Cantidad">
+                <!--Boton Unico-->
+                <input type="hidden" id="EBT_DEVICEPRINT">
+                <input type="image" src="https://proyectohabesha.org/img/donar1.png" border="0" onclick="pagar()"/>
+            </div>
+
+            <div class="columna-donar">
+                <p class="subtitulo-donar-2017">Donacion Recurrente</p>
+                <input type="radio" name="input" value="100">
+                <label for="cien">$100</label><br>
+                <div class="separador-donar"></div>
+                <input type="radio" name="input" value="200">
+                <label for="doscientos">$200</label><br>
+                <div class="separador-donar"></div>
+                <input type="radio" name="input" value="500">
+                <label for="quinientos">$500</label><br>
+                <div class="separador-donar"></div>
+                <input type="number" min="20" placeholder="Otra Cantidad">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                    <input type="hidden" name="business">
+                    <input type="hidden" name="currency_code" value="MXN">
+                    <input type="hidden" name="item_name" value="DIMA_RECURRENTE">
+
+                    <!--Boton Recurrente-->
+
+                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1"
+                         height="1">
+                    <input type="hidden" name="a3">
+                    <input type="hidden" name="p3" value="1">
+                    <input type="hidden" name="t3" value="M">
+                    <input type="hidden" name="src" value="1">
+                    <input type="hidden" name="sra" value="1">
+                </form>
+                <script type="text/javascript" src="js/grant.js"></script>
+            </div>
+        </div>
         <a name="intro"></a>
         <div class="titulo-intro">
 
@@ -976,7 +1032,7 @@
 
             <p>Información oficial y a detalle sobre la situación actual en Siria.<br><br><br></p>
 
-            <a href="http://www.unocha.org/syria" target="_blank" class="btn-docu">VER MÁS</a>
+            <a href="https://www.unocha.org/syria" target="_blank" class="btn-docu">VER MÁS</a>
 
             <div class="triangulito-abajo"></div>
 
@@ -993,7 +1049,7 @@
 
             <p>Compilación de noticias y estadísticas oficiales sobre la actualidad en Siria.<br><br><br></p>
 
-            <a href="http://www.syriadeeply.org/" target="_blank" class="btn-docu">VER MÁS</a>
+            <a href="https://www.syriadeeply.org/" target="_blank" class="btn-docu">VER MÁS</a>
 
             <div class="triangulito-abajo"></div>
 
@@ -1045,7 +1101,7 @@
         <div class="cont-contacto1">
 
             <a name="fb_share" type="button" href="javascript: void(0);"
-               onclick="window.open('http://www.facebook.com/sharer.php?u=http://www.proyectohabesha.org','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');"><img
+               onclick="window.open('https://www.facebook.com/sharer.php?u=https://www.proyectohabesha.org','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');"><img
                     src="img/f-compartir.png" border=0 width=72 height=22/></a>
 
             <a class="twitter-share-button" href="https://twitter.com/share"
@@ -1348,8 +1404,9 @@
     });
 
 </script>
-
-
+<script src="banwire/checkout.js"></script>
+<script src="banwire/banwire.js"></script>
+<script language="javascript" src= https://ci-mpsnare.iovation.com/snare.js ></script>
 </body>
 
 
