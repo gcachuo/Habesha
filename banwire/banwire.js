@@ -19,13 +19,13 @@ var SW = new BwGateway({
     // Test mode, remove when going to production mode
     sandbox: true,
     // Nombre de usuario de Banwire
-    user: 'pruebasbw',
+    user: 'habesha',
     // Titulo de la entana
     title: "Proyecto Habesha",
     // Referencia
-    reference: 'testref01',
+    reference: 'donacion',
     // Concepto
-    concept: 'pago de prueba',
+    concept: 'Donacion',
     infoMsg: 'Mensaje personalizado para el cliente',
     // Moneda
     currency: 'MXN',
@@ -34,7 +34,7 @@ var SW = new BwGateway({
         fname: "",
         mname: "",
         lname: "",
-        email: "prueba@gmail.com",
+        email: "",
         phone: "",
         addr: "",
         city: "",
@@ -51,7 +51,74 @@ var SW = new BwGateway({
     },
     notifyUrl: "https://test.banwire.com/sw_ex/response.php",
     // Opciones de pago
-    paymentOptions: 'all', // visa,mastercard,amex,oxxo
+    paymentOptions: 'visa,mastercard,amex,spei', // visa,mastercard,amex,oxxo
+    // Mostrar o no pagina de resumen de compra
+    reviewOrder: true,
+    // Handler en caso de exito en el pago
+    successPage: '',
+    onSuccess: function (data) {
+        console.log("Pago correcto");
+        console.log(data);
+    },
+    // Pago pendiente OXXO
+    pendingPage: '',
+    onPending: function (data) {
+        console.log(data);
+        alert("El pago esta pendiente por ser efectuado");
+    },
+    // Pago challenge
+    challengePage: '',
+    onChallenge: function () {
+        alert("Pago enviado a validaciones de seguridad");
+    },
+    // Handler en caso de error en el pago
+    errorPage: '',
+    onError: function (error) {
+        console.log(error);
+    },
+    // Cuando cierra el popup sin completar el proceso
+    onCancel: function () {
+        console.log("Se cancelo el proceso");
+    }
+});
+
+var SWoxxo = new BwGateway({
+    // Test mode, remove when going to production mode
+    sandbox: true,
+    // Nombre de usuario de Banwire
+    user: 'habesha',
+    // Titulo de la entana
+    title: "Proyecto Habesha",
+    // Referencia
+    reference: 'donacion',
+    // Concepto
+    concept: 'Donacion',
+    infoMsg: 'Mensaje personalizado para el cliente',
+    // Moneda
+    currency: 'MXN',
+    // Customer information
+    cust: {
+        fname: "",
+        mname: "",
+        lname: "",
+        email: "",
+        phone: "",
+        addr: "",
+        city: "",
+        state: "",
+        country: "",
+        zip: ""
+    },
+    ship: {
+        addr: "",
+        city: "",
+        state: "",
+        country: "",
+        zip: ""
+    },
+    notifyUrl: "https://test.banwire.com/sw_ex/response.php",
+    // Opciones de pago
+    paymentOptions: 'oxxo', // visa,mastercard,amex,oxxo
     // Mostrar o no pagina de resumen de compra
     reviewOrder: true,
     // Handler en caso de exito en el pago
@@ -84,6 +151,32 @@ var SW = new BwGateway({
 
 function pagar() {
     SW.pay({
+        // Total de la compra
+        total: $("[name=banwire-Normal]:checked").val(),
+        // Arreglo con los items de compra
+        items: [
+            {
+                name: "Donación",
+                qty: 1,
+                desc: "Donacion de " + $("[name=banwire-Normal]:checked").html(),
+                unitPrice: $("[name=banwire-Normal]:checked").val()
+            }
+        ]//,
+        /*
+            recurring: {
+                interval: "month",
+                //total: 2,
+        //start: "2015-01-04",
+                limit: "10"
+            }*/
+    });
+}
+
+function pagarOxxo() {
+    SWoxxo.pay({
+        cust:{
+          email:$("[name=email]").val()
+        },
         // Total de la compra
         total: $("[name=banwire-Normal]:checked").val(),
         // Arreglo con los items de compra
