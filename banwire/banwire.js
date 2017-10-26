@@ -201,21 +201,20 @@ function pagarOxxo() {
 function pagarRecurrente() {
     SW.pay({
         // Total de la compra
-        total: $("[name=banwire-Normal]:checked").val(),
+        total: $("[name=banwire-Recurrente]:checked").val(),
         // Arreglo con los items de compra
         items: [
             {
                 name: "Donación",
                 qty: 1,
-                desc: "Donacion de " + $("[name=banwire-Normal]:checked").html(),
-                unitPrice: $("[name=banwire-Normal]:checked").val()
+                desc: "Donacion de " + $("[name=banwire-Recurrente]:checked").html(),
+                unitPrice: $("[name=banwire-Recurrente]:checked").val()
             }
         ],
         recurring: {
             interval: "month",
             //total: 2,
             //start: "2015-01-04",
-            limit: "10"
         }
     });
 }

@@ -445,32 +445,18 @@
 
             <div class="columna-donar">
                 <p class="subtitulo-donar-2017">Donacion Recurrente</p>
-                <input type="radio" name="input" value="100">
-                <label for="cien">$100</label><br>
+                <input type="radio" id="rec-banwire-100" name="banwire-Recurrente" value="100">
+                <label for="rec-banwire-100">$100</label><br>
                 <div class="separador-donar"></div>
-                <input type="radio" name="input" value="200">
-                <label for="doscientos">$200</label><br>
+                <input type="radio" id="rec-banwire-200" name="banwire-Recurrente" value="200">
+                <label for="rec-banwire-200">$200</label><br>
                 <div class="separador-donar"></div>
-                <input type="radio" name="input" value="500">
-                <label for="quinientos">$500</label><br>
+                <input type="radio" id="rec-banwire-500" name="banwire-Recurrente" value="500">
+                <label for="rec-banwire-500">$500</label><br>
                 <div class="separador-donar"></div>
                 <input type="number" min="20" placeholder="Otra Cantidad">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                    <input type="hidden" name="cmd" value="_xclick-subscriptions">
-                    <input type="hidden" name="business">
-                    <input type="hidden" name="currency_code" value="MXN">
-                    <input type="hidden" name="item_name" value="DIMA_RECURRENTE">
-
-                    <!--Boton Recurrente-->
-
-                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1"
-                         height="1">
-                    <input type="hidden" name="a3">
-                    <input type="hidden" name="p3" value="1">
-                    <input type="hidden" name="t3" value="M">
-                    <input type="hidden" name="src" value="1">
-                    <input type="hidden" name="sra" value="1">
-                </form>
+                <input type="image" src="https://proyectohabesha.org/img/donar1.png" border="0"
+                       onclick="pagarRecurrente()">
                 <script type="text/javascript" src="js/grant.js"></script>
             </div>
         </div>
