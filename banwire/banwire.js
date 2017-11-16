@@ -1,3 +1,22 @@
+$(function () {
+    $("#banwire-libre").keyup(function () {
+        var allRadios = document.getElementsByName('banwire-Normal');
+        var booRadio;
+        var x = 0;
+        for (x = 0; x < allRadios.length; x++) {
+
+            allRadios[x].onclick = function () {
+                if (booRadio == this) {
+                    this.checked = false;
+                    booRadio = null;
+                } else {
+                    booRadio = this;
+                }
+            };
+        }
+    });
+});
+
 // basic configuration
 var io_install_flash = false;
 // do not install Flash
@@ -150,16 +169,20 @@ var SWoxxo = new BwGateway({
 });
 
 function pagar() {
+    var total = $("[name=banwire-Normal]:checked").val();
+    if (total == null) {
+        total = $("#banwire-libre").val();
+    }
     SW.pay({
         // Total de la compra
-        total: $("[name=banwire-Normal]:checked").val(),
+        total: total,
         // Arreglo con los items de compra
         items: [
             {
                 name: "Donación",
                 qty: 1,
-                desc: "Donacion de " + $("[name=banwire-Normal]:checked").html(),
-                unitPrice: $("[name=banwire-Normal]:checked").val()
+                desc: "Donacion de " + total,
+                unitPrice: total
             }
         ]//,
         /*
@@ -173,19 +196,23 @@ function pagar() {
 }
 
 function pagarOxxo() {
+    var total = $("[name=banwire-Normal]:checked").val();
+    if (total == null) {
+        total = $("#banwire-libre").val();
+    }
     SWoxxo.pay({
         cust:{
           email:$("[name=email]").val()
         },
         // Total de la compra
-        total: $("[name=banwire-Normal]:checked").val(),
+        total: total,
         // Arreglo con los items de compra
         items: [
             {
                 name: "Donación",
                 qty: 1,
-                desc: "Donacion de " + $("[name=banwire-Normal]:checked").html(),
-                unitPrice: $("[name=banwire-Normal]:checked").val()
+                desc: "Donacion de " + total,
+                unitPrice: total
             }
         ]//,
         /*
@@ -199,16 +226,20 @@ function pagarOxxo() {
 }
 
 function pagarRecurrente() {
+    var total = $("[name=banwire-Recurrente]:checked").val();
+    if (total == null) {
+        total = $("#banwire-libre-recurrente").val();
+    }
     SW.pay({
         // Total de la compra
-        total: $("[name=banwire-Recurrente]:checked").val(),
+        total: total,
         // Arreglo con los items de compra
         items: [
             {
                 name: "Donación",
                 qty: 1,
-                desc: "Donacion de " + $("[name=banwire-Recurrente]:checked").html(),
-                unitPrice: $("[name=banwire-Recurrente]:checked").val()
+                desc: "Donacion de " + total,
+                unitPrice: total
             }
         ],
         recurring: {

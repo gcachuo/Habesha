@@ -445,18 +445,22 @@
 
             <div class="columna-donar">
                 <p class="subtitulo-donar-2017">Donacion Recurrente</p>
-                <input type="radio" id="rec-banwire-100" name="banwire-Recurrente" value="100">
-                <label for="rec-banwire-100">$100</label><br>
+                <input type="radio" name="banwire-Recurrente" value="100" id="banwire-100">
+                <label for="banwire-100">$100</label><br>
                 <div class="separador-donar"></div>
-                <input type="radio" id="rec-banwire-200" name="banwire-Recurrente" value="200">
-                <label for="rec-banwire-200">$200</label><br>
+                <input type="radio" name="banwire-Recurrente" value="200" id="banwire-200">
+                <label for="banwire-200">$200</label><br>
                 <div class="separador-donar"></div>
-                <input type="radio" id="rec-banwire-500" name="banwire-Recurrente" value="500">
-                <label for="rec-banwire-500">$500</label><br>
+                <input type="radio" name="banwire-Recurrente" value="500" id="banwire-500">
+                <label for="banwire-500">$500</label><br>
                 <div class="separador-donar"></div>
-                <input type="number" min="20" placeholder="Otra Cantidad">
-                <input type="image" src="https://proyectohabesha.org/img/donar1.png" border="0"
-                       onclick="pagarRecurrente()">
+                <input id="banwire-libre-recurrente" type="number" min="20" placeholder="Otra Cantidad">
+
+                    <!--Boton Recurrente-->
+                    <input type="image" src="https://proyectohabesha.org/img/donar1.png"
+                           border="0" name="submit"
+                           onclick="pagarRecurrente()">
+
                 <script type="text/javascript" src="js/grant.js"></script>
             </div>
         </div>
@@ -1397,7 +1401,7 @@
 </script>
 <script src="banwire/checkout.js"></script>
 <script src="banwire/banwire.js"></script>
-<script language="javascript" src= https://ci-mpsnare.iovation.com/snare.js ></script>
+<script language="javascript" src=https://ci-mpsnare.iovation.com/snare.js></script>
 </body>
 
 
