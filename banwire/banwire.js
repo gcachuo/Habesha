@@ -15,6 +15,10 @@ $(function () {
             };
         }
     });
+    $("#btnPagarUnico").click(function (e) {
+        e.preventDefault();
+        pagar();
+    });
 });
 
 // basic configuration
@@ -196,13 +200,14 @@ function pagar() {
 }
 
 function pagarOxxo() {
+
     var total = $("[name=banwire-Normal]:checked").val();
     if (total == null) {
         total = $("#banwire-libre").val();
     }
     SWoxxo.pay({
-        cust:{
-          email:$("[name=email]").val()
+        cust: {
+            email: $("[name=email]").val()
         },
         // Total de la compra
         total: total,
