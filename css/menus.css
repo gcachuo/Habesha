@@ -1,0 +1,218 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('http://tympanus.net/Development/FullscreenOverlayStyles/fonts/codropsicons/codropsicons.eot');
+	src:url('http://tympanus.net/Development/FullscreenOverlayStyles/fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('http://tympanus.net/Development/FullscreenOverlayStyles/fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('http://tympanus.net/Development/FullscreenOverlayStyles/fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('http://tympanus.net/Development/FullscreenOverlayStyles/fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+
+
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: rgba(200,0,76,1);
+	z-index: 99999;
+}
+.overlay-2 {
+	position: fixed;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(200,0,76,1);
+	z-index: 9998;
+}
+/* Overlay closing cross */
+.overlay .overlay-close, .overlay-2 .overlay-close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(http://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 999999;
+	cursor: pointer;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 50%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+}
+.overlay ul .inner {
+        padding-left: 1em;
+        overflow: hidden;
+        display: none;
+}
+ .overlay ul .show {
+  /*display: block;*/
+}
+  
+.overlay li {
+     margin: 0;
+}
+.trigger-menu{
+	position: relative;
+	float: right;
+	width: 35px;
+	height: 30px;
+	margin: 10px 15px 0 0;
+	z-index: 9997;
+	cursor: pointer;
+}
+.trigger-overlay{
+	
+}
+.btn-menu-mobil, .accordion-content{
+	position: relative;
+	color: #ffffff;
+	font-size: 0.32em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin: 0;
+	width:100%;
+	padding: 5px 0;
+}
+.btn-menu-mobil{
+	position: relative;
+	float: left;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.btn-menu-mobil:hover{
+	color: #00c2ff;
+}
+.accordion-content a{
+	position: relative;
+	font-weight: 400;
+	float: left;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	font-size: 0.9em;
+	margin: 0;
+	padding: 5px 0;
+	border-bottom: solid 1px rgba(255,255,255,0.1);
+	background-color: #9E0044;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.accordion-content a:hover{
+	color: #00c2ff;
+}
+.accordion-toggle {cursor: pointer; margin: 0;
+}
+.accordion-content {display: none;
+}
+.accordion-content.default {display: block;
+}
+
+
+/* Effects */
+.overlay-slidedown {
+	visibility: hidden;
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown.open {
+	visibility: visible;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+.overlay-slidedown-2 {
+	visibility: hidden;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown-2.open {
+	visibility: visible;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+
+/* setup tooltips */
+.tooltip {
+  position: relative;
+}
+.tooltip:before,
+.tooltip:after {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.tooltip:after {
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(77,0,76,1); 
+  border-left: 6px solid transparent;
+  content: '';
+  height: 0;
+    top: -8px;
+    left: 10px;
+  width: 0;
+}
+.tooltip:before {
+  background: rgba(77,0,76,1);
+  border-radius: 2px;
+  color: #fff;
+  content: attr(data-title);
+  font-size: 14px;
+  padding: 6px 10px;
+  top: -36px;
+  left: -160px;
+  white-space: nowrap;
+}
+
+/* the animations */
+/* fade */
+.tooltip.fade:after,
+.tooltip.fade:before {
+  transform: translate3d(0,20px,0);
+  transition: all .15s ease-in-out;
+}
+.tooltip.fade:hover:after,
+.tooltip.fade:hover:before {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}

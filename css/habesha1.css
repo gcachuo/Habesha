@@ -1,0 +1,875 @@
+#bm {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    z-index: 4;
+    display: block;
+    overflow: hidden;
+}
+
+#section0 ul {
+    position: relative;
+    width: 100%;
+}
+
+.frase1 {
+    position: relative;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    z-index: 4;
+    line-height: 1.1em;
+    top: 0px;
+}
+
+.frase1 span {
+    font-size: 1.4em
+}
+
+.call-sumate {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF0054;
+    border-top: solid 2px #FF0054;
+    border-bottom: solid 2px #FF0054;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    margin: 7px auto;
+    display: block;
+    overflow: hidden;
+}
+
+.z1 {
+    position: absolute;
+    z-index: 4;
+    top: 300px;
+}
+
+.z2 {
+    z-index: 3;
+}
+
+.z3 {
+    z-index: 5;
+}
+
+.parallaxpersp {
+    z-index: 3;
+}
+
+.pintura {
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+}
+
+#bm2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+#bm3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 1;
+}
+
+#bm4 {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    z-index: 4;
+    display: block;
+    overflow: hidden;
+}
+
+#bm5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.mapita {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+}
+
+.encabezado {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+.f-encabezado {
+    position: absolute;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.logo1 {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 74px;
+    margin: 7px 0 0 10px;
+    display: block;
+    z-index: 2;
+}
+
+#menu {
+    position: relative;
+    float: right;
+    margin: 0 10px 0 0;
+}
+
+.cien {
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    width: 130px;
+    height: 130px;
+    animation: shake 2s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    8%, 24% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    16%, 32% {
+        transform: translate3d(3px, 0, 0);
+    }
+
+    40% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    48% {
+        transform: translate3d(1px, 0, 0);
+    }
+    54% {
+        transform: translate3d(0px, 0, 0);
+    }
+
+}
+
+.patron-abajo {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.pintura-menu-1 {
+    position: absolute;
+    height: 100%;
+    left: -40px;
+    top: 0;
+    display: block;
+}
+
+.pintura-menu-2 {
+    position: absolute;
+    height: 100%;
+    right: -40px;
+    top: 0;
+    display: block;
+}
+
+.siria-morado {
+    position: absolute;
+    bottom: -10px;
+    left: -5%;
+    width: 110%;
+}
+
+.sm1 {
+    z-index: 2;
+}
+
+.sm2 {
+    z-index: 3;
+}
+
+.sm3 {
+    z-index: 4;
+}
+
+.test-siria {
+    overflow: hidden;
+}
+
+.test-siria ul, .contenedor-fondo-eem ul {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.parallaxpersp1, .parallaxpersp2 {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.parallaxpersp1 {
+    display: block;
+}
+
+.parallaxpersp3 {
+    display: block;
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.parallaxpersp2 {
+    display: none;
+}
+
+.titulo-seccion-home {
+    font-size: 3em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sombra-abajo {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/sombra-abajo.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+}
+
+.sombra-fondo {
+    width: 500px;
+    height: 42px;
+    background-image: url(../img/sombra-fondo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 58px;
+    left: 50%;
+    margin-left: -250px;
+}
+
+.contenedor-sumate {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+    color: #fff;
+}
+
+.elemento-sumate {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    float: left;
+    margin: 0 2%;
+    width: 29.3%;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.elemento-promotores {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    float: left;
+    font-weight: 700;
+}
+
+.elemento-sumate p {
+    font-size: 0.66em;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.elemento-promotores p {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.icono-sumate {
+    position: relative;
+    margin: 0 auto 5px auto;
+}
+
+.titulo-seccion-rel {
+    font-size: 3em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    margin: 0 0 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.spot {
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    width: 190px;
+    height: 140px;
+    left: 50%;
+    margin-left: -94px;
+    -webkit-animation: luz 1.5s infinite; /* Safari 4+ */
+    -moz-animation: luz 1.5s infinite; /* Fx 5+ */
+    -o-animation: luz 1.5s infinite; /* Opera 12+ */
+    animation: luz 1.5s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes luz {
+    0%, 100% {
+        margin-left: -100px;
+        opacity: 1;
+    }
+    50% {
+        margin-left: -94px;
+        opacity: 0.7;
+    }
+}
+
+@-moz-keyframes luz {
+    0%, 100% {
+        margin-left: -100px;
+        opacity: 1;
+    }
+    50% {
+        margin-left: -94px;
+        opacity: 0.7;
+    }
+}
+
+@-o-keyframes luz {
+    0%, 100% {
+        margin-left: -100px;
+        opacity: 1;
+    }
+    50% {
+        margin-left: -94px;
+        opacity: 0.7;
+    }
+}
+
+@keyframes luz {
+    0%, 100% {
+        margin-left: -100px;
+        opacity: 1;
+    }
+    50% {
+        margin-left: -94px;
+        opacity: 0.7;
+    }
+}
+
+.contenedor-frase-hazem {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.hazem-frase {
+    position: absolute;
+    height: 300px;
+    width: 399px;
+    left: 0;
+}
+
+.silva-frase {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    right: 0;
+}
+
+.frase-hazem {
+    font-size: 2.2em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 35%;
+    transform: translateY(-50%);
+    height: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.frase-hazem span {
+    font-size: 0.45em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.contenedor-cien {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.logo-cien-2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 25px auto 10px auto;
+}
+
+.texto-cien {
+    position: relative;
+    width: 90%;
+    margin: 0px 5% 20px 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.texto-cien p {
+    margin: 0px 0 10px 0;
+}
+
+.btn-donar-1 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 4em;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    margin: 25px auto 0 auto;
+    display: block;
+}
+
+.i-estudiantes {
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+}
+
+.i-quienes {
+    position: relative;
+    width: 50%;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+}
+
+.img-e {
+    position: relative;
+    width: 150px;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+.img-quienes {
+    position: relative;
+    width: 100px;
+    margin: 0 auto 5px auto;
+    display: block;
+}
+
+.i-estudiantes span {
+    position: relative;
+    font-size: 2em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+
+.i-quienes span {
+    position: relative;
+    font-size: 1.5em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+
+.i-estudiantes p {
+    position: relative;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    width: 100%;
+}
+
+.logo-unis {
+    position: relative;
+    width: 120px;
+    height: 70px;
+    margin: 5px auto;
+    display: block;
+    float: none;
+    clear: both;
+    overflow: hidden;
+}
+
+.contenedor-fondo-eem {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    top: 0;
+    bottom: 0;
+}
+
+.contenedor-eem {
+    z-index: 3;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-eem p {
+    z-index: 999;
+    color: #ffffff;
+}
+
+.ver-bio {
+    position: relative;
+    clear: both;
+    float: none;
+    margin: 10px auto;
+    width: 120px;
+    height: 28px;
+    background-image: url(../img/ver-bio.png);
+}
+
+.i-estudiantes:hover > .ver-bio {
+    background-image: url(../img/ver-bio-h.png);
+}
+
+.ver-mas {
+    position: relative;
+    clear: both;
+    float: none;
+    margin: 10px auto;
+    width: 120px;
+    height: 28px;
+    background-image: url(../img/ver-mas.png);
+}
+
+.elemento-promotores:hover > .ver-mas {
+    background-image: url(../img/ver-mas-h.png);
+}
+
+.panel-social {
+    position: absolute;
+    bottom: 10px;
+    width: 168px;
+    left: 50%;
+    margin-left: -84px;
+}
+
+.panel-social-2 {
+    position: absolute;
+    bottom: 25px;
+    width: 168px;
+    left: 50%;
+    margin-left: -84px;
+}
+
+.i-social {
+    position: relative;
+    margin: 0 5px;
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+
+#unica-seleccionar, #recurrente-seleccionar, #popup-privacidad {
+    background: #ffffff;
+    padding: 0px;
+    text-align: left;
+    max-width: 900px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#unica-seleccionar {
+    background-color: #ff7900;
+}
+
+#recurrente-seleccionar {
+    background-color: #009700;
+}
+
+#popup-privacidad {
+    background-color: #ffffff;
+}
+
+#unica-seleccionar div, #recurrente-seleccionar div, #popup-privacidad div {
+    font-size: 2.5em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    position: relative;
+    margin: 40px 0 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#unica-seleccionar p, #recurrente-seleccionar p {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+#popup-privacidad p {
+    font-size: 0.9em
+}
+
+.logo-proveedor-donaciones {
+    position: relative;
+    float: left;
+    width: 50%;
+    background-color: #E1E1E1;
+    padding: 30px 14% 40px 12%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-proveedor-donaciones:hover {
+    background-color: #ffffff;
+}
+
+.contenedor-contacto {
+    position: relative;
+    width: 100%;
+    height: 115px;
+    bottom: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.elemento-contacto {
+    position: relative;
+    float: left;
+    width: 33.3%;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    height: 115px;
+    padding: 20px 10px;
+}
+
+.elemento-contacto:nth-child(1) {
+    background-color: #00004C;
+}
+
+.elemento-contacto:nth-child(2) {
+    background-color: #00004C;
+    border-left: solid 1px #000000;
+}
+
+.elemento-contacto:nth-child(3) {
+    background-color: #00004C;
+    border-left: solid 1px #000000;
+}
+
+.subtitulo-contacto {
+    font-family: 'Philosopher', sans-serif;
+}
+
+.btn-1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 0.5em;
+    font-weight: 500;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-1:hover {
+    color: #FF0054;
+}
+
+.contenedor-dima-legal {
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+
+.l-dima {
+    background-color: #7e0054;
+    width: 150px;
+    height: 60px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.legal {
+    background-color: #ff0054;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    padding: 20px 20px 0 0;
+    color: #ffffff;
+    text-align: right;
+    font-size: 0.9em;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible
+}
+
+.privacidad {
+    font-weight: 500;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.privacidad:hover {
+    color: #4D004C;
+}
+
+.contenedor-donaciones {
+    position: relative;
+    width: 360px;
+    margin: auto;
+}
+
+.separador-donar {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 20px auto;
+}
+
+.banwire, #banwire-libre, #banwire-libre-recurrente, #libre-Normal, #libre-Mensual {
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 34px;
+    font-size: 1.1em;
+    color: #ffffff;
+    padding: 0 0 0 10px;
+    background-color: #470049;
+    font-weight: 500;
+    border: none;
+    margin: 20px 0;
+}
+
+#btn-donar {
+    position: relative;
+    margin: 20px auto;
+}
+
+.logo-banwire-blanco {
+    position: absolute;
+    width: 120px;
+    display: block;
+    bottom: 0px;
+    right: 10px;
+}
+
+.logo-oxxo {
+    position: absolute;
+    width: 100px;
+    display: block;
+    bottom: 0px;
+    right: 130px;
+}
+
+.titulo-donar {
+    font-size: 3em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    margin: 0 0 0px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.subtitulo-donar {
+    font-size: 1.8em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    margin: 0 0 0px 0;
+    width: 100%;
+    line-height: 0.5em;
+    text-align: center;
+}
+
+.btn-descargar {
+    position: relative;
+    width: 240px;
+    margin: 20px auto 0 auto;
+    display: block;
+    overflow: hidden;
+}

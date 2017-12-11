@@ -1,1415 +1,672 @@
-﻿<!DOCTYPE html>
-
-<html lang="es">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8"/>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=690">
     <title>PROYECTO HABESHA</title>
+    <meta name="author" content="Oscar Zermeño González" />
+    <meta name="description" content="México por la paz y la reconstrucción en Siria" />
+    <meta name="keywords"  content="mexico, siria, estudiantes, ibero, sirios, sirias, syria, aguascalientes" />
+    <meta name="Resource-type" content="Document" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Bitter:400,700|Montserrat:400,500,700,800|Philosopher:400,700,700i" rel="stylesheet">
 
-    <link rel="shortcut icon" href="img/habesha-faq.png" type="image/png">
-
-    <meta name="description" content="Parte del futuro de Siria, se construye en México"/>
-
-    <meta name="keywords"
-          content="habesha, siria, mexico, adrian melendez, proyecto habesha, gomez pickering, refugiados">
-
-    <meta name="author" content="HABESHA">
-
-    <meta property="og:title" content="Proyecto Habesha">
-
-    <meta property="og:type" content="non_profit">
-
-    <meta property="og:url" content="https://www.proyectohabesha.org">
-
-    <meta property="og:image" content="https://www.proyectohabesha.org/img/face1.jpg">
-
-    <meta property="fb:app_id" content="700559973348619">
-
-
-    <link href='https://fonts.googleapis.com/css?family=Russo+One|Droid+Serif:400,700,400italic,700italic|Oswald:700|Lato:300,400,700,900,300italic,400italic,700italic,900italic'
-          rel='stylesheet' type='text/css'>
-
-
-    <link href="css/fixed-positioning.css" rel="stylesheet" type="text/css"/>
-
-    <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
-
-    <link href="examples/main.css" rel="stylesheet" type="text/css"/>
-
-    <link href="css/animate.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/odometer-theme-minimal.css"/>
-
-    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
-
-    <link rel="stylesheet" type="text/css" href="css/component.css"/>
-
-    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
-
-    <link rel="stylesheet" href="css/swiper.css">
-
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/donaciones.css">
-
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-
-    <script src="magnific-popup/jquery.magnific-popup.js"></script>
-
-
-    <script type="text/javascript" src="bookmarkscroll.js"></script>
-
-    <script src="js/modernizr.custom.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="css/habesha1.css" />
+   <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/menus.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/grid1.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 
     <!--[if IE]>
-
-    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
     <![endif]-->
-
+	<script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script>
+	$(document).ready(function() {
+    $('#fullpage').removeClass('invisible').addClass('visible');
+});
+	</script>
+   <script>
+	$(document).ready(function() {
+    $('.encabezado').removeClass('invisible').addClass('visible');
+});
+	</script>
+   <script>
+	$(document).ready(function() {
+    $('.cargando').removeClass('visible').addClass('invisible');
+});
+	</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-        window.odometerOptions = {
+    <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
 
-            format: '(,ddd).dd',
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6', 'anchor7', 'anchor8', 'anchor9', 'anchor10'],
+                scrollBar: false,
+                sectionsColor: ['#33B5FF', '#4D004C', '#FFA61A', '#00004C', '#28B4FA', '#A40054', '#00004C', '#340034', '#000000', '#000000'],
+				
+				
+				afterLoad: function(anchorLink, index){
+		var loadedSection = $(this);
+
+		//using index
+		if(index == 1){
+			$('.parallaxpersp1').css({
+				'opacity' : '1',
+				'display' : 'block',
+			}),
+			$('.parallaxpersp2').css({
+				'opacity' : '0',
+				'display' : 'none',
+			});
+		}
+		if(index == 2){
+			$('.parallaxpersp1').css({
+				'display' : 'none',
+			}),
+			$('.parallaxpersp2').css({
+				'opacity' : '1',
+			});
+		}
+					if(index == 3){
+			$('.parallaxpersp2').css({
+				'display' : 'none',
+			});
+		}
+		},
+
+	
+				
+				onLeave: function(index, nextIndex, direction){
+		var leavingSection = $(this);
 
 
-        };
-
+		//using anchorLink
+		if(index == 1 && direction =='down'){
+			$('.parallaxpersp1').css({
+				'opacity' : '0',
+			}),
+			$('.parallaxpersp2').css({
+				'display' : 'block',
+			});
+		}
+		if(index == 2 && direction =='up'){
+			$('.parallaxpersp1').css({
+				'display' : 'block',
+			}),
+			$('.parallaxpersp2').css({
+				'opacity' : '0',
+			});
+		}
+		if(index == 2 && direction =='down'){
+			$('.parallaxpersp2').css({
+				'opacity' : '0',
+			});
+		}
+		if(index == 3 && direction =='up'){
+			$('.parallaxpersp2').css({
+				'display' : 'block',
+			});
+		}
+		},			
+					
+            });
+        });
     </script>
 
-    <script src="js/odometer.js"></script>
-
-
-    <script>
-
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-
-        ga('create', 'UA-57459901-1', 'auto');
-
-        ga('require', 'displayfeatures');
-
-        ga('send', 'pageview');
-
-
-    </script>
-
-    <style>
-
-        .swiper-container {
-
-            width: 100%;
-
-            height: 100%;
-
-        }
-
-        .swiper-slide {
-
-            text-align: center;
-
-            font-size: 18px;
-
-            background: #fff;
-
-            width: auto;
-
-            /* Center slide text vertically */
-
-            display: -webkit-box;
-
-            display: -ms-flexbox;
-
-            display: -webkit-flex;
-
-            display: flex;
-
-            -webkit-box-pack: center;
-
-            -ms-flex-pack: center;
-
-            -webkit-justify-content: center;
-
-            justify-content: center;
-
-            -webkit-box-align: center;
-
-            -ms-flex-align: center;
-
-            -webkit-align-items: center;
-
-            align-items: center;
-
-        }
-
-        .swiper-slide:nth-child(2n) {
-
-            width: 60%;
-
-        }
-
-        .swiper-slide:nth-child(3n) {
-
-            width: 40%;
-
-        }
-
-    </style>
-
-
+    
 </head>
-
-
 <body>
-
-
-<div id="fb-root"></div>
-
-<script>(function (d, s, id) {
-
-    var js, fjs = d.getElementsByTagName(s)[0];
-
-    if (d.getElementById(id)) return;
-
-    js = d.createElement(s);
-    js.id = id;
-
-    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=1022607621086665&version=v2.0";
-
-    fjs.parentNode.insertBefore(js, fjs);
-
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-<div class="fondoh1">
-
-    <div id="ninos" data-0="background-position:0px 0px;" data-end="background-position:0px -1200px;"></div>
-
-    <div id="fondo-home" data-0="background-position:0px 0px;" data-end="background-position:0px -500px;"></div>
-
-
-    <div id="fondo-home-m"><img src="img/fondo-home-m.jpg"></div>
-
-
+<div class="cargando visible">
+	<div class="logo-cargando"><img src="img/logo-blanco.png" width="100%"></div>
 </div>
 
+ <div class="encabezado invisible">
+      	<a class="logo1" href="#anchor1"><img src="img/logo1.png" width="100%"></a>
+      	<a id="trigger-overlay" class="trigger-overlay trigger-menu" data-overlay="layer1"><img src="img/btn-menu.png" width="100%"></a>
+      	<a class="cien trigger-overlay" data-overlay="layer2"><img src="img/cien.png" width="100%"></a>
+      	<!--<ul id="menu">
+		  <li data-menuanchor="anchor1"><a href="#anchor1">Inicio</a></li>
+		  <li data-menuanchor="anchor2"><a href="#anchor2">Conócenos</a></li>
+		  <li data-menuanchor="anchor3"><a href="#anchor3">Estidiantes</a></li>
+		  <li data-menuanchor="anchor4"><a href="#anchor4">Multimedia</a></li>
+		  <li data-menuanchor="anchor4"><a href="#anchor5">Súmate</a></li>
+		  <li data-menuanchor="anchor4"><a href="#anchor5">Contacto</a></li>
+		</ul>-->
+     	
+      </div>
 
-<div id="#skrollr-body">
+<div id="fullpage" class="invisible">
+    <div class="section" id="section0">
 
+      		
+      		<ul class="parallaxpersp parallaxpersp1">
+      			<div class="layer layer-top z3" data-depth="0.2">
+					<div class="frase1">
+					México por la paz y la<br>
+					reconstrucción en Siria
+					</div>
+					<a class="call-sumate" href="#anchor4">SÚMATE</a>
+				</div>
+				<div class="layer layer-top z1" data-depth="0.25">
+					<div id="bm"></div>
+					<div class="mapita"><img src="img/mapita.png" width="100%"></div>
+				</div>
+				<div class="layer layer-top z2" data-depth="0.1">
+					<div class="pintura"><img src="img/pintura.png" width="100%"></div>
+				</div>
+				
+			</ul>
+				<div id="bm2"></div>
+				<div id="bm3"></div>
+				
 
-    <div class="flecha1" data-0="background-position:0px 100px;" data-end="background-position:-0px 1500px;">
+  
+		 
+		  
+		  <a class="patron-abajo" href="#anchor2"><img src="img/patron-abajo-3.png" width="100%"></a>
+		  
+    </div>
+    
+    <!----------------------FIN-SECCION-1------------------------>
+    
+    
+    <div class="section" id="section1">
+         <div class="myContent test-siria">
+         	
+         	
+         		
+<div class="swiper-container">
+   <div class="titulo-seccion-home">¿Quiénes somos?</div>
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide">
+		<p>Somos una iniciativa humanitaria internacional sin ánimo de lucro, apolítica, neutral y laica liderada por México, dirigida a enviar un mensaje de solidaridad al pueblo de Siria haciendo posible que un grupo de estudiantes sirios, cuyos estudios universitarios se vieron interrumpidos a causa del conflicto armado, viaje a México para concluir su educación superior y prepararlos para la reconstrucción de su país una vez llegada la paz.</p>
+         	</div>
+      <div class="swiper-slide">
+		<p>En armonía con la tradición histórica de México de dar refugio a aquellos que huyen de la violencia y la intolerancia, proponemos un modelo que concibe la recepción de estudiantes sirios como un activo y una oportunidad para promover el diálogo intercultural que fomente una cultura internacional para la paz, posicionando a nuestro país como un actor global solidario y responsable.</p>
+      </div>
+      <div class="swiper-slide">
+			<a class="i-quienes"><div class="img-quienes"><img src="img/i-equipo.png" width="100%"></div>
+			<span>Equipo<br></span><br>
+			</a>
+     
+     		<a class="i-quienes"><div class="img-quienes"><img src="img/i-faq.png" width="100%"></div>
+			<span>Preguntas<br>Frecuentes</span>
+			</a>
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+			 </div>
+         	
+         	<ul class="parallaxpersp parallaxpersp2">
+      			<div class="layer layer-bottom sm1" data-depth="0.05">
+					<div class="siria-morado"><img src="img/campo1-a.jpg" width="100%"></div>
+				</div>
+				<div class="layer sm2" data-depth="0.1">
+					<div class="siria-morado"><img src="img/campo1-b.png" width="100%"></div>
+				</div>
+				<div class="layer sm3" data-depth="0.15">
+					<div class="siria-morado"><img src="img/campo1-c.png" width="100%"></div>
+				</div>
+				
+			</ul>
+			 
+        </div>
+      
+    </div>
+    
+    <!----------------------FIN-SECCION-2------------------------>
+    
+    
+    <div class="section fp-auto-height" id="section2">
+    	<div class="contenedor-frase-hazem">
+			<div class="hazem-frase"><img src="img/frase-hazem.jpg" height="300"></div>
+			<div class="frase-hazem">"Como refugiado, tu futuro está congelado. Pero como estudiante aquí en México… todo es posible."<br>
+	<span>-Hazem, Al Jazeera-</span></div>
+		</div>
+    </div>
+    
+    <!----------------------FIN-SECCION-3------------------------>
+    
+    
+    <div class="section" id="section3">
+    	<div class="contenedor-sumate">
+    		<div class="titulo-seccion-rel">Súmate</div>
+    		<a class="elemento-sumate popup-with-zoom-anim" href="#unica-seleccionar">
+    			<div class="icono-sumate"><img src="img/i-unico.png" width="100%"></div>
+    			DONACIÓN ÚNICA<br>
+    			<p>Haz una donación única usando tarjeta de débito o crédito a través de <strong>Paypal</strong> o <strong>Banwire</strong></p>
+    		</a>
+    		<a class="elemento-sumate popup-with-zoom-anim" href="#recurrente-seleccionar">
+    			<div class="icono-sumate"><img src="img/i-recurrente.png" width="100%"></div>
+    			DONACIÓN RECURRENTE<br>
+    			<p>Haz una donación recurrente usando tarjeta de débito o crédito a través de <strong>Paypal</strong> o <strong>Banwire</strong>. Éstas se cargan mensualmente de modo automático a tu tarjeta y pueden cancelarse cuando quieras.</p>
+    		</a>
+    		<a class="elemento-sumate" href="banwire-unica-oxxo.html">
+    			<div class="icono-sumate"><img src="img/i-efectivo.png" width="100%"></div>
+    			DONACIÓN EN EFECTIVO<br>
+    			<p>Haz una donación en efectivo en tu tienda <strong>OXXO</strong> más cercana</p>
+    		</a>
+    	</div>
+        <div id="bm4"></div>
+        <div class="spot"><img src="img/spot.png" width="100%"></div>
+        <div class="sombra-fondo"></div>
+    	<div class="sombra-abajo"></div>
+    </div>
+    
+    <!----------------------FIN-SECCION-4------------------------>
+    
+    <div class="section" id="section4">
+    	
+      <div class="swiper-container-2">
+		   <div class="titulo-seccion-home">Estudiantes</div>
+			<div class="swiper-wrapper">
+     
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/silva.html"><div class="img-e"><img src="img/e-silva.png" width="100%"></div>
+      	<span>Silva</span><br>
+      	<p>Odontología</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/zain.html"><div class="img-e"><img src="img/e-zain.png" width="100%"></div>
+      	<span>Zain</span><br>
+      	<p>Arquitectura</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/hazem.html"><div class="img-e"><img src="img/e-hazem.png" width="100%"></div>
+      	<span>Hazem</span><br>
+      	<p>Administración</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/amer.html"><div class="img-e"><img src="img/e-amer.png" width="100%"></div>
+      	<span>Amer</span><br>
+      	<p>Traducción</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/jackdar.html"><div class="img-e"><img src="img/e-jack.png" width="100%"></div>
+      	<span>Jackdar</span><br>
+      	<p>Administración</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/enjin.html"><div class="img-e"><img src="img/e-enjin.png" width="100%"></div>
+      	<span>Enjin</span><br>
+      	<p>Arquitectura</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/samah.html"><div class="img-e"><img src="img/e-samah.png" width="100%"></div>
+      	<span>Samah</span><br>
+      	<p>Terapia Gestalt</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/ahmad.html"><div class="img-e"><img src="img/e-ahmad.png" width="100%"></div>
+      	<span>Ahmad</span><br>
+      	<p>Tecnologías de la Información</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/rinas.html"><div class="img-e"><img src="img/e-rinas.png" width="100%"></div>
+      	<span>Rinas</span><br>
+      	<p>Relaciones Internacionales</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+      <div class="swiper-slide">
+      	<a class="i-estudiantes" href="estudiantes/essa.html"><div class="img-e"><img src="img/e-essa.png" width="100%"></div>
+      	<span>Essa</span><br>
+      	<p>Comunicación</p>
+      	<div class="ver-bio"></div>
+      	</a>
+      </div>
+      
+    </div>
+    <!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+  </div>
 
-        <a href="#intro" class="flecha-int"></a>
+		
+			
+		<div id="bm5"></div> 
+    </div>
+    
+ 	 <!----------------------FIN-SECCION-5------------------------>
+	
+	
+	<div class="section fp-auto-height" id="section5">
+    	<div class="contenedor-frase-hazem">
+			<div class="silva-frase"><img src="img/frase-silva.png" height="300"></div>
+			<div class="frase-hazem">"Imagina que has muerto y alguien te da una cura milagrosa. Así fue venir a México. Fue como volver a nacer"<br>
+	<span>-Silva, The Gardian-</span></div>
+		</div>
+    </div>
+    
 
+	<!----------------------FIN-SECCION-6------------------------>
+    
+    <div class="section" id="section6">
+       <div class="contenedor-eem">
+       <div class="titulo-seccion-rel">Educación en Emergencias</div>
+       <p>Actualmente en el mundo hay más de 65 millones de personas que han sido desplazadas de sus hogares debido a conflictos armados. El 51% de los refugiados en el mundo son menores de 18 años de edad y solo el 1 % de ellos tendrá la oportunidad de acceder a educación superior, la misma que se requiere  para reconstruir las comunidades afectadas por conflictos armados.</p>
+
+	   <p>Conoce la propuesta de Proyecto Habesha para atender a la Educación Universitaria en Emergencias.</p>
+	   <a class="btn-descargar"><img src="img/btn-descargar-1.png" width="100%"></a>
+		</div>
+       <div class="contenedor-fondo-eem">
+
+        <ul class="parallaxpersp parallaxpersp3">
+      			<div class="layer sm1" data-depth="0.05">
+					<div class="siria-morado"><img src="img/homs3.png" width="100%"></div>
+				</div>
+				<div class="layer sm2" data-depth="0.1">
+					<div class="siria-morado"><img src="img/homs2.png" width="100%"></div>
+				</div>
+				<div class="layer sm3" data-depth="0.15">
+					<div class="siria-morado"><img src="img/homs1.png" width="100%"></div>
+				</div>
+				
+			</ul>
+		
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3211/jquery.parallax.min.js"></script>
+				<script  src="js/parallaxpersp.js"></script>
+		
+		</div>
     </div>
 
 
-    <div id="progress" data-0="width:0%;background:hsl(0, 100%, 50%);"
-         data-end="width:100%;background:hsl(0, 100%, 50%);"></div>
-
-
-    <div class="barra-menu-2">
-
-        <a class="logo1" href="../index.html"></a>
-
-        <div class="menu1">
-
-            <div class="f-menu">
-
-                <!--------------------------------MENU----------------------------->
-
-                <div class="container demo-1">
-
-                    <div id="dl-menu" class="dl-menuwrapper">
-
-                        <button class="dl-trigger">Open Menu</button>
-
-                        <ul class="dl-menu">
-
-
-                            <li><a>EL PROYECTO</a>
-
-                                <ul class="dl-submenu">
-
-                                    <li><a href="#intro">INTRODUCCIÓN</a></li>
-
-                                    <li><a href="#ejes">EJES DE ACCIÓN</a></li>
-
-                                    <li><a href="#dialogo">DIÁLOGO INTERCUTURAL Y CULTURA DE LA PAZ</a></li>
-
-                                </ul>
-                            </li>
-
-                            <li><a>LOS ESTUDIANTES</a>
-
-                                <ul class="dl-submenu">
-
-                                    <li><a href="estudiantes/index.html">PERFILES</a></li>
-
-                                    <li><a href="" class="contruccion" data-title="pronto">BLOG DE LOS ESTUDIANTES</a>
-                                    </li>
-
-                                </ul>
-                            </li>
-
-
-                            <li><a href="https://costarica.proyectohabesha.org">HABESHA COSTA RICA</a></li>
-
-
-                            <li><a href="faq.html">PREGUNTAS FRECUENTES</a>
-
-                            </li>
-
-
-                            <li><a href="equipo/esp.html">EL EQUIPO</a></li>
-
-                            <li><a href="#docu">DOCUMENTACIÓN</a></li>
-
-                            <li><a href="#donar">DONAR</a></li>
-
-                        </ul>
-
-                    </div><!-- /dl-menuwrapper -->
-
-                </div><!-- /container -->
-
-                <script src="js/jquery.dlmenu.js"></script>
-
-                <script>
-
-                    $(function () {
-
-                        $('#dl-menu').dlmenu();
-
-                    });
-
-                </script>
-
-                <!--------------------------------MENU----------------------------->
-
-            </div>
-
-        </div>
-
-        <div class="panel-idiomas">
-
-            <a data-title="Español" href="#" class="btn-espanol">ES</a>
-
-            <a data-title="English" href="english/index.html" class="btn-ingles">EN</a>
-
-            <a data-title="العربية" href="arabic/index.html" class="btn-arabe">AR</a>
-
-        </div>
-
+	<!----------------------FIN-SECCION-7------------------------>
+    
+    <div class="section" id="section7">
+        
+		<div class="contenedor-sumate">
+    		<div class="titulo-seccion-rel">Promotores</div>
+    		
+    		<a class="elemento-promotores">
+    			<div class="icono-sumate"><img src="img/i-unis.png" width="100%"></div>
+    			UNIVERSIDADES<br><br>
+    			<div class="ver-mas"></div>
+    		</a>
+    		
+    		<a class="elemento-promotores">
+    			<div class="icono-sumate"><img src="img/i-internacional.png" width="100%"></div>
+    			INSTITUCIONES INTERNACIONALES<br>
+    			<div class="ver-mas"></div>
+    		</a>
+    		
+    		<a class="elemento-promotores">
+    			<div class="icono-sumate"><img src="img/i-privadas.png" width="100%"></div>
+    			SECTOR PRIVADO<br><br>
+    			<div class="ver-mas"></div>
+    		</a>
+    		
+    		<a class="elemento-promotores">
+    			<div class="icono-sumate"><img src="img/i-personalidades.png" width="100%"></div>
+    			PERSONALIDADES<br><br>
+    			<div class="ver-mas"></div>
+    		</a>
+			
+    	</div>
+    	<div class="sombra-abajo"></div>
     </div>
-
-
-    <div class="titulo1 fadeIn delay-05s">
-
-        <span>PROYECTO</span><br>HABESHA<br>
-
-        <div class="barratitulo1"><img src="img/barra1.png" width="100%"></div>
-
-        <div class="subtitulo1">Por la reconstrucción y la paz en Siria</div>
-
-        <div class="botones_encabezado">
-
-            <a class="btn_campana" href="estudiantes/index.html">LOS ESTUDIANTES</a>
-
-            <a class="btn_donar" href="#donar">DONAR</a>
-
-        </div>
-
+    
+    <!----------------------FIN-SECCION-8------------------------>
+    
+    <div class="section" id="section8">
+       <div class="contenedor-sumate">
+        <ul class="cbp-rfgrid">
+        	<li><a class="logo-ch"><img src="img/logo-ibero-blanco.png" width="100%"/></a></li>
+        	<li><a class="logo-ch"><img src="img/logo-udem-blanco.png" width="100%"/></a></li>
+        	<li><a><img src="img/logo-anahuac-blanco.png" height="100"/></a></li>
+        	<li><a class="logo-ch"><img src="img/logo-iteso-blanco.png" width="100%"/></a></li>
+        	<li><a class="logo-ch"><img src="img/logo-unla-blanco.png" width="100%"/></a></li>
+			<li><a class="logo-ch"><img src="img/logo-upaep-blanco.png" width="100%"/></a></li>
+			<li><a class="logo-ch"><img src="img/logo-acnur-blanco.png" width="100%"/></a></li>
+			<li><a><img src="img/logo-iie-blanco.png" height="100"/></a></li>
+			<li><a><img src="img/logo-global-blanco.png" height="100"/></a></li>
+			<li><a class="logo-ch"><img src="img/logo-aeromexico-blanco.png" width="100%"/></a></li>
+			<li><a class="logo-ch"><img src="img/logo-manpower-blanco.png" width="100%"/></a></li>
+			<li><a><img src="img/logo-1910-blanco.png" height="100"/></a></li>		
+		</ul>
+	   </div>
+	   
     </div>
-
-
-    <section class="seccion2">
-
-        <div class="seccion-donar-2017"><a name="donar"></a>
-            <div class="columna-donar azul-dima">
-                <img class="fondo-donar" src="img/f-donar.jpg" width="33.33%">
-                <div class="titulo-donar-2017">DONAR</div>
-                <div class="texto-donar-2017">
-                    Aquí puede realizar una donación única o recurrente. Ésta última requiere de una cuenta Paypal, se
-                    deduce de su cuenta mes con mes y puede cancelarse en cualquier momento.<br>
-                    <strong>*La donación mensual no está disponible para tarjetas Bancomer.</strong><br>
-                    <p class="gracias">Gracias por su apoyo.</p>
-                    <div class="paypal-tarjetas"><img src="img/paypal-tarjetas.png" width="100%"></div>
-                </div>
-            </div>
-
-            <div class="columna-donar">
-                <p class="subtitulo-donar-2017">Donacion Única</p>
-                <input type="radio" name="valor-Normal" id="cientocincuenta" value="150">
-                <label for="cientocincuenta">$150</label><br>
-                <div class="separador-donar"></div>
-                <input type="radio" name="valor-Normal" id="trescientos" value="300">
-                <label for="trescientos">$300</label><br>
-                <div class="separador-donar"></div>
-                <input type="radio" name="valor-Normal" id="mil" value="1000">
-                <label for="mil">$1,000</label><br>
-                <div class="separador-donar"></div>
-                <input type="number" id="libre-Normal" min="20" placeholder="Otra Cantidad">
-                <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                    <input type="hidden" name="cmd" value="_donations">
-                    <input type="hidden" name="business" id="org">
-                    <input type="hidden" name="item_name" value="DIMA_UNICO">
-                    <input type="hidden" name="currency_code" value="MXN">
-                    <input type="hidden" name="amount" id="valor-Total">
-                    <input type="image" src="https://proyectohabesha.org/img/donar1.png" border="0" name="submit"
-                           id="donar-Normal" alt="Realice pagos con PayPal: es rápido, gratis y seguro.">
-                </form>
-            </div>
-
-            <div class="columna-donar">
-                <p class="subtitulo-donar-2017">Donacion Recurrente</p>
-                <input type="radio" name="input" id="cien" value="100">
-                <label for="cien">$100</label><br>
-                <div class="separador-donar"></div>
-                <input type="radio" name="input" id="doscientos" value="200">
-                <label for="doscientos">$200</label><br>
-                <div class="separador-donar"></div>
-                <input type="radio" name="input" id="quinientos" value="500">
-                <label for="quinientos">$500</label><br>
-                <div class="separador-donar"></div>
-                <input type="number" id="libre-Mensual" min="20" placeholder="Otra Cantidad">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                    <input type="hidden" name="cmd" value="_xclick-subscriptions">
-                    <input type="hidden" name="business" id="org_1">
-                    <input type="hidden" name="currency_code" value="MXN">
-                    <input type="hidden" name="item_name" value="DIMA_RECURRENTE">
-                    <input type="image" src="https://proyectohabesha.org/img/suscribirse1.png" border="0" name="submit"
-                           id="donar-Mensual" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1"
-                         height="1">
-                    <input type="hidden" name="a3" id="valor-Mensual">
-                    <input type="hidden" name="p3" value="1">
-                    <input type="hidden" name="t3" value="M">
-                    <input type="hidden" name="src" value="1">
-                    <input type="hidden" name="sra" value="1">
-                </form>
-                <script type="text/javascript" src="js/grant.js"></script>
-            </div>
-        </div>
-
-        <div class="seccion-donar-2017"><a name="donar"></a>
-            <div class="columna-donar azul-dima">
-                <img class="fondo-donar" src="img/f-donar.jpg" width="33.33%">
-                <div class="titulo-donar-2017">DONAR</div>
-                <div class="texto-donar-2017">
-                    BANWIRE
-                </div>
-            </div>
-            <div class="columna-donar">
-                <p class="subtitulo-donar-2017">Donacion Única</p>
-                <input type="radio" id="banwire-150" name="banwire-Normal" value="150">
-                <label for="banwire-150">$150</label><br>
-                <div class="separador-donar"></div>
-                <input type="radio" id="banwire-300" name="banwire-Normal" value="300">
-                <label for="banwire-300">$300</label><br>
-                <div class="separador-donar"></div>
-                <input type="radio" id="banwire-1000" name="banwire-Normal" value="1000">
-                <label for="banwire-1000">$1,000</label><br>
-                <div class="separador-donar"></div>
-                <input type="number" id="banwire-libre" name="banwire-Normal" min="20" placeholder="Otra Cantidad">
-                <!--Boton Unico-->
-                <input type="hidden" id="EBT_DEVICEPRINT">
-                <input type="image" src="https://proyectohabesha.org/img/donar1.png" border="0" name="submit"
-                       onclick="pagar()">
-            </div>
-
-            <div class="columna-donar">
-                <p class="subtitulo-donar-2017">Donacion Recurrente</p>
-                <input type="radio" name="input" value="100">
-                <label for="cien">$100</label><br>
-                <div class="separador-donar"></div>
-                <input type="radio" name="input" value="200">
-                <label for="doscientos">$200</label><br>
-                <div class="separador-donar"></div>
-                <input type="radio" name="input" value="500">
-                <label for="quinientos">$500</label><br>
-                <div class="separador-donar"></div>
-                <input type="number" min="20" placeholder="Otra Cantidad">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                    <input type="hidden" name="cmd" value="_xclick-subscriptions">
-                    <input type="hidden" name="business">
-                    <input type="hidden" name="currency_code" value="MXN">
-                    <input type="hidden" name="item_name" value="DIMA_RECURRENTE">
-
-                    <!--Boton Recurrente-->
-
-                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1"
-                         height="1">
-                    <input type="hidden" name="a3">
-                    <input type="hidden" name="p3" value="1">
-                    <input type="hidden" name="t3" value="M">
-                    <input type="hidden" name="src" value="1">
-                    <input type="hidden" name="sra" value="1">
-                </form>
-                <script type="text/javascript" src="js/grant.js"></script>
-            </div>
-        </div>
-        <a name="intro"></a>
-        <div class="titulo-intro">
-
-            INTRODUCCIÓN
-
-        </div>
-
-        <div class="barratitulo2"><img src="img/barra2.png" width="100%"></div>
-
-        <div class="texto-intro">
-
-            <p>El <span>Proyecto Habesha</span> es una iniciativa humanitaria internacional liderada por
-                <strong>México</strong>, sin ánimo de lucro, neutral y laica; dirigida a enviar un mensaje de
-                solidaridad al pueblo de Siria haciendo posible que un grupo de estudiantes sirios, que vieron
-                interrumpidos sus estudios universitarios a causa del conflicto armado, viaje a <strong>México</strong>
-                o a <a href="costarica/index.html">Costa Rica</a> para concluir su educación superior y prepararlos para
-                la reconstrucción de su país una vez llegada la paz y hacer frente a ésta, la peor crisis humanitaria de
-                nuestros tiempos. </p>
-
-            <p>El <span>Proyecto Habesha</span> hace eco con la tradición histórica del pueblo mexicano que durante casi
-                todas las etapas de su historia independiente, ha recibido a miles de perseguidos por la intolerancia y
-                por la violencia.</p>
-
-            <p>Así mismo, <a href="costarica/index.html">Costa Rica</a> posee una gran tradición histórica como tierra
-                de asilo y refugio, su país es un actor relevante en el plano internacional por su vocación humanitaria
-                y política pacifista. Es por estas razones que el pueblo costarricense se ha unido a <span>Proyecto Habesha</span>
-                como punto de acogida para recibir estudiantes Sirios.</p>
-
-            <p>El <span>Proyecto Habesha</span> propone un modelo que concibe la recepción de estudiantes sirios como un
-                activo y una oportunidad para promover el diálogo intercultural que fomente una cultura internacional
-                para la paz, posicionando a nuestro país como un actor global solidario y responsable.</p>
-
-        </div>
-
-    </section>
-
-
-    <div class="division">
-        <div class="division1-int" data-0="background-position:0px 0px;" data-end="background-position:-0px -900px;">
-
-            <div class="texto-division">Queremos apoyar a <span>30</span> estudiantes sirios para que continúen sus
-                estudios superiores en México
-            </div>
-
-            <div class="parche1" data-1050="opacity:0;" data-1400="opacity:0.6;"></div>
-
-            <div class="parche-mobil"></div>
-
-        </div>
-
-    </div>
-
-
-    <div id="transform" data-500="transform:scale(0) rotate(0deg);"
-         data-1000="transform:scale(1) rotate(1440deg);opacity:1;" data-1600=""
-         data-4200="transform:scale(5) rotate(3240deg);opacity:0;">
-
-
-    </div>
-
-
-    <section class="seccion3">
-
-        <a name="ejes"></a>
-
-        <div class="titulo-intro">
-
-            EJES DE ACCIÓN
-
-        </div>
-
-        <div class="barratitulo2"><img src="img/barra2.png" width="100%"></div>
-
-        <div class="panel-iconos">
-
-            <div class="icono fadeIn"><img src="img/icono1.jpg" width="100%">
-
-                <div class="texto-icono">COMPONENTE DE ANÁLISIS Y SENSIBILIZACIÓN
-
-                    <div class="divi-peque"></div>
-
-                    <p>Será desarrollado e implementado por algunas de las mejores universidades mexicanas e institutos
-                        especializados en relaciones internacionales, estudios del Medio Oriente y derecho
-                        internacional.
-
-                        Este componente busca sensibilizar a las comunidades receptoras sobre la crisis humanitaria y el
-                        principio de responsabilidad compartida.</p>
-
-                </div>
-
-            </div>
-
-
-            <div class="icono fadeIn delay-05s"><img src="img/icono2.jpg" width="100%">
-
-                <div class="texto-icono">COMPONENTE DE DISEMINACIÓN
-
-                    <div class="divi-peque"></div>
-
-                    <p>Busca ampliar la base de apoyo para la recepción de los estudiantes sirios mediante el uso de
-                        redes sociales que difundan los objetivos y actividades del Proyecto, así como los resultados
-                        del componente de análisis e historias de la región afectada por la crisis que aportarán los
-                        miembros del Proyecto en Medio Oriente.</p>
-
-                </div>
-
-            </div>
-
-
-            <div class="icono fadeIn delay-1s"><img src="img/icono3.jpg" width="100%">
-
-                <div class="texto-icono-u">COMPONENTE DE RECEPCIÓN
-
-                    <div class="divi-peque"></div>
-
-                    <p>Se refiere a todas las actividades relacionadas con la cuidadosa selección de los estudiantes
-                        sirios, la preparación de su viaje a México, el desarrollo de una estancia lingüistica intensiva
-                        para el aprendizaje del español, su colocación académica y otros aspectos sobre la estancia de
-                        los estudiantes sirios en México.</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!---------------------------------------------------------------------------
-
-          <section class="seccion4">
-
-        <a name="area"></a>
-
-         <div class="titulo-intro">
-
-        ÁREA GEOGRÁFICA<br>DE IMPLEMENTACIÓN
-
-        </div>
-
-        <div class="barratitulo2"><img src="img/barra2.png" width="100%"></div>
-
-    <div class="container">
-
-
-
-                <div id="tabs" class="tabs">
-
-                    <nav>
-
-                        <ul>
-
-                            <li><a href="#section-1"><span>AGS.</span></a></li>
-
-                            <li><a href="#section-2"><span>D.F.</span></a></li>
-
-                            <li><a href="#section-3"><span>GTO.</span></a></li>
-
-                            <li><a href="#section-4"><span>JAL.</span></a></li>
-
-                            <li><a href="#section-5"><span>PUE.</span></a></li>
-
-                            <li><a href="#section-5"><span>QRO.</span></a></li>
-
-                        </ul>
-
-                    </nav>
-
-                    <div class="content">
-
-                        <section id="section-1">
-
-                            <div class="mediabox">
-
-                                <div class="odometer cantidad1 odo1">0</div>
-
-
-
-    <script>
-
-
-
-    </script>
-
-                                <h3>Población Estatal</h3>
-
-                                <p>(Estadística 2013)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer cantidad1 odo2">0</div>
-
-                                <h3>PIB</h3>
-
-                                <p>(Millones de Pesos)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer cantidad1 odo3">0</div>
-
-                                <h3>Estudiantes de Educación Superior</h3>
-
-
-
-                            </div>
-
-                        </section>
-
-                        <section id="section-2">
-
-                            <div class="mediabox">
-
-                                <div class="odometer">8,884,713</div>
-
-                              <h3>Población Estatal</h3>
-
-                                <p>(Estadística 2013)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">2,116,151</div>
-
-                              <h3>PIB</h3>
-
-                                <p>(Millones de Pesos)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">462,581</div>
-
-                                <h3>ESTUDIANTES DE EDUCACIÓN SUPERIOR</h3>
-
-                            </div>
-
-                        </section>
-
-                        <section id="section-3">
-
-                            <div class="mediabox">
-
-                                <div class="odometer">5,690,462</div>
-
-                                <h3>Población Estatal</h3>
-
-                                <p>(Estadística 2013)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">474,746</div>
-
-                                <h3>PIB</h3>
-
-                                <p>(Millones de Pesos)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">100,323</div>
-
-                                <h3>ESTUDIANTES DE EDUCACIÓN SUPERIOR</h3>
-
-                            </div>
-
-                        </section>
-
-                        <section id="section-4">
-
-                            <div class="mediabox">
-
-                                <div class="odometer">7,718,019</div>
-
-                                <h3>Población Estatal</h3>
-
-                                <p>(Estadística 2013)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">775,337</div>
-
-                                <h3>PIB</h3>
-
-                                <p>(Millones de Pesos)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">193,416</div>
-
-                                <h3>ESTUDIANTES DE EDUCACIÓN SUPERIOR</h3>
-
-                            </div>
-
-                        </section>
-
-                        <section id="section-5">
-
-                            <div class="mediabox">
-
-                                <div class="odometer">6,051,533</div>
-
-                                <h3>Población Estatal</h3>
-
-                                <p>(Estadística 2013)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">398,691</div>
-
-                                <h3>PIB</h3>
-
-                                <p>(Millones de Pesos)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">179,033</div>
-
-                                <h3>ESTUDIANTES DE EDUCACIÓN SUPERIOR</h3>
-
-                            </div>
-
-                        </section>
-
-                        <section id="section-6">
-
-                            <div class="mediabox">
-
-                                <div class="odometer">1,938,372</div>
-
-                                <h3>Población Estatal</h3>
-
-                                <p>(Estadística 2013)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">245,963</div>
-
-                                <h3>PIB</h3>
-
-                                <p>(Millones de Pesos)</p>
-
-                            </div>
-
-                            <div class="mediabox">
-
-                                <div class="odometer">24,576</div>
-
-                                <h3>ESTUDIANTES DE EDUCACIÓN SUPERIOR</h3>
-
-                            </div>
-
-                        </section>
-
-                    </div>
-
-                </div>
-
-
-
-            </div>
-
-            <script src="js/cbpFWTabs.js"></script>
-
-            <script>
-
-                new CBPFWTabs( document.getElementById( 'tabs' ) );
-
-            </script>
-
-         </section>
-
-         ------------------------------------------->
-
-
-    <div class="division">
-        <div class="division1-int2" data-0="background-position:0px 400px;"
-             data-end="background-position:-0px -1200px;">
-
-            <div class="texto-division">Los estudiantes recibirán beca completa, seguro médico y un estipendio mensual.
-                Todo provisto por universidades y orgnizaciones privadas.
-            </div>
-
-            <div class="parche1" data-1800="opacity:0;" data-2300="opacity:0.6;"></div>
-
-            <div class="parche-mobil"></div>
-
-        </div>
-
-    </div>
-
-
-    <div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
-
-
-    <section class="seccion5">
-
-        <a name="dialogo"></a>
-
-        <div class="img-izq">
-
-            <div class="img-izq-int"></div>
-
-        </div>
-
-        <div class="texto-der">
-
-            <div class="titulo-intro">
-
-                DIÁLOGO INTERCULTURAL<br>Y CULTURA DE LA PAZ
-
-            </div>
-
-            <div class="barratitulo2"><img src="img/barra2.png" width="100%"></div>
-
-            <div class="texto-intro">
-
-                <p>El <span>Proyecto Habesha</span> promoverá al interior de las instituciones académicas receptoras un
-                    enfoque que promueva la diversidad cultural a través de las actividades que generen una nueva visión
-                    de entendimiento intercultural. De esta manera <span>el Proyecto Habesha</span> busca proponer un
-                    modelo en el que la recepción de refugiados sea vista como una oportunidad de enriquecimiento mutuo
-                    para las partes.</p>
-
-                <p>En lo que respecta al diálogo intercultural que se establecerá con la recepción de los estudiantes
-                    sirios en México, el <span>Proyecto Habesha</span> se inscribe con concepto de la UNESCO según el
-                    que, la cultura, en su rica diversidad, es un activo e inspiración para el desarrollo. Es la cuarta
-                    "dimensión" del desarrollo, junto con las dimensiones social, económica y medio ambiental.</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-</div><!--skrollr body-->
-
-<div class="contenedor-videos">
-
-    <div class="titulo-intro">
-
-        VIDEOS
-
-    </div>
-
-    <div class="barratitulo2"><img src="img/barra2.png" width="100%"></div>
-
+    
+    <!----------------------FIN-SECCION-9------------------------>
+    
+    <div class="section fp-auto-height" id="section9">
+    <div class="contenedor-contacto">
+	   		<div class="elemento-contacto">
+	   			<div class="subtitulo-contacto">Compártenos</div>
+	   		</div>
+	   		<div class="elemento-contacto">
+	   			<div class="subtitulo-contacto">Visítanos</div>
+	   			<div class="panel-social-2">
+					<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-face.png" height="100%"></a>
+					<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-twitter.png" height="100%"></a>
+					<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-youtube.png" height="100%"></a>
+					<a class="i-social tooltip fade" data-title="Whatsapp: 1 +52 449 123 4567" href="" target="_blank"><img src="img/i-whats.png" height="100%"></a>
+				</div>
+	   		</div>
+	   		<div class="elemento-contacto">
+	   			<div class="subtitulo-contacto">Contáctanos</div>
+	   			<a class="btn-1" href="mailto:contacto@proyectohabesha.org">contacto@proyectohabesha.org</a>
+	   		</div>
+	   </div>
+	   <div class="contenedor-dima-legal">
+	   		<div class="l-dima"><img src="img/l-dima.png" height="100%"></div>
+	   		<div class="legal">
+	   			&reg; Diálogo Intercultural de México Activo A.C. 2017 | <a class="privacidad popup-with-zoom-anim" href="#popup-privacidad">Política de Privacidad</a>
+	   		</div>
+	   </div>
+ </div>
+ </div>   
+
+
+
+<!-- menus-mobil -->
+		<div class="overlay overlay-slidedown" id="layer1">
+			<div class="pintura-menu-1"><img src="img/pintura-menu-1.png" height="100%"></div>
+			<button type="button" class="overlay-close">Close</button>
+			<nav>
+				<script type="text/javascript">
+		$(document).ready(function($) {
+			$('#accordion').find('.accordion-toggle').click(function(){
+	
+				//Expand or collapse this panel
+				$(this).next().slideToggle('fast');
+	
+				//Hide the other panels
+				$(".accordion-content").not($(this).next()).slideUp('fast');
+	
+			});
+		});
+	</script>
+
+
+<!-- HTML -->
+<div id="accordion">
+
+	 <a class="btn-menu-mobil" href="#anchor1">INICIO</a>
+	  <h4 class="accordion-toggle btn-menu-mobil">CONÓCENOS</h4>
+	  <div class="accordion-content">
+		<a href="#anchor2">Proyecto Habesha</a>
+		<a>El Equipo</a>
+		<a>Preguntas Frecuentes</a>
+	  </div>
+	  <a class="btn-menu-mobil" href="#anchor5">LOS ESTUDIANTES</a>
+	  <h4 class="accordion-toggle btn-menu-mobil">MULTIMEDIA</h4>
+	  <div class="accordion-content">
+		<a>Galería</a>
+		<a>Videos</a>
+		<a>Noticias</a>
+	  </div>
+	  <h4 class="accordion-toggle btn-menu-mobil">SÚMATE</h4>
+	  <div class="accordion-content">
+		<a href="#anchor4">Donación</a>
+		<a>Dona es Especie</a>
+		<a>Sé voluntario</a>
+		<a>Sé promotor</a>
+		<a>Invita a un amigo</a>
+		<a>Eventos</a>
+	  </div>
+	  <a class="btn-menu-mobil" href="estudiantes.html">TIENDA</a>
+	  <a class="btn-menu-mobil" href="#anchor7">EDUCACIÓN EN<br>EMERGENCIAS</a>
+	  <a class="btn-menu-mobil" href="#anchor8">PROMOTORES</a>
+	  <a class="btn-menu-mobil" href="#anchor10">CONTÁCTANOS</a>
+  
 </div>
-
-
-<section class="seccion-videos">
-
-
-    <!-- Swiper -->
-
-    <div class="swiper-container">
-
-        <div class="swiper-wrapper">
-
-            <a class="swiper-slide popup-with-zoom-anim" href="#v-luis-gerardo"><img src="img/videos/v1.jpg"
-                                                                                     width="100%"></a>
-
-            <a class="swiper-slide popup-with-zoom-anim" href="#v-los-3"><img src="img/videos/v2.jpg" width="100%"></a>
-
-            <a class="swiper-slide popup-with-zoom-anim" href="#v-tamer"><img src="img/videos/v3.jpg" width="100%"></a>
-
-            <a class="swiper-slide popup-with-zoom-anim" href="#v-killian"><img src="img/videos/v4.jpg"
-                                                                                width="100%"></a>
-
-            <a class="swiper-slide popup-with-zoom-anim" href="#v-e"><img src="img/videos/v5.jpg" width="100%"></a>
-
-
-        </div>
-
-        <!-- Add Pagination -->
-
-        <div class="swiper-pagination"></div>
-
-    </div>
-
-
-    <!-- Swiper JS -->
-
-    <script src="js/swiper.min.js"></script>
-
-
-    <!-- Initialize Swiper -->
-
-    <script>
-
-        var swiper = new Swiper('.swiper-container', {
-
-            pagination: '.swiper-pagination',
-
-            slidesPerView: 3,
-
-            paginationClickable: true,
-
-            spaceBetween: 10,
-
-            autoplay: 3500,
-
-            autoplayDisableOnInteraction: true,
-
-        });
-
-    </script>
-
-</section>
-
-
-<section class="seccion7">
-
-
-    <div class="titulo-docu">
-
-        DOCUMENTACIÓN
-    </div>
-
-    <div class="barratitulo2"><img src="img/barra2.png" width="100%"></div>
-
-
-    <div class="fondo-secc7">
-
-        <img src="img/fondo2.jpg" alt="">
-
-    </div>
-
-    <a name="docu"></a>
-
-
-    <div class="cont-docu">
-
-
-        <div class="docu">
-
-            <img src="img/un.png" width="100%">
-
-            <div class="triangulito-arriba"></div>
-
-            NACIONES UNIDAS
-
-            <p>Información oficial y a detalle sobre la situación actual en Siria.<br><br><br></p>
-
-            <a href="https://www.unocha.org/syria" target="_blank" class="btn-docu">VER MÁS</a>
-
-            <div class="triangulito-abajo"></div>
-
-        </div>
-
-
-        <div class="docu">
-
-            <img src="img/sd.png" width="100%">
-
-            <div class="triangulito-arriba"></div>
-
-            SYRIA DEEPLY<br><br>
-
-            <p>Compilación de noticias y estadísticas oficiales sobre la actualidad en Siria.<br><br><br></p>
-
-            <a href="https://www.syriadeeply.org/" target="_blank" class="btn-docu">VER MÁS</a>
-
-            <div class="triangulito-abajo"></div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<section class="seccion8"><a name="donar"></a>
-
-
-    <div class="e-donar fadeIn">
-
-        <div class="titulo-compartir">
-
-            DONAR
-        </div>
-
-
-        <div class="patreon">
-            <a href="#donar"><input type="image" src="img/btn-paypal.jpg" border="0"></a>
-        </div>
-
-        <a class="paypal" href="https://www.youcaring.com/habesha" target="_blank">
-
-            <img src="img/btn-youcaring.jpg">
-
-        </a>
-
-
-    </div>
-
-</section>
-
-
-<section class="seccion8">
-
-
-    <div class="e-contacto fadeIn">
-
-        <div class="titulo-compartir">
-
-            COMPÁRTENOS
-        </div>
-
-        <div class="cont-contacto1">
-
-            <a name="fb_share" type="button" href="javascript: void(0);"
-               onclick="window.open('https://www.facebook.com/sharer.php?u=https://www.proyectohabesha.org','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');"><img
-                    src="img/f-compartir.png" border=0 width=72 height=22/></a>
-
-            <a class="twitter-share-button" href="https://twitter.com/share"
-
-               data-related="twitterdev"
-
-               data-size="medium"
-
-               data-count="none">
-
-                Tweet
-
-            </a>
-
-            <script type="text/javascript">
-
-                window.twttr = (function (d, s, id) {
-                    var t, js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) {
-                        return
-                    }
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                    return window.twttr || (t = {
-                        _e: [], ready: function (f) {
-                            t._e.push(f)
-                        }
-                    })
-                }(document, "script", "twitter-wjs"));
-
-            </script>
-
-        </div>
-
-    </div>
-
-
-    <div class="e-contacto fadeIn delay-05s">
-
-        <div class="titulo-compartir">
-
-            VISÍTANOS
-        </div>
-
-        <div class="cont-contacto2">
-
-            <a href="https://www.facebook.com/pages/Proyecto-Habesha/700559973348619" target="_blank" class="social">
-
-                <img class="bottom" src="img/i-face-h.jpg"/>
-
-                <img class="top" src="img/i-face.jpg"/>
-
-            </a>
-
-            <a href="https://twitter.com/HabeshaP" target="_blank" class="social">
-
-                <img class="bottom" src="img/i-twitter-h.jpg"/>
-
-                <img class="top" src="img/i-twitter.jpg"/>
-
-            </a>
-
-            <a href="https://www.proyectohabesha.org/blog" target="_blank" class="social">
-
-                <img class="bottom" src="img/i-wordpress-h.jpg"/>
-
-                <img class="top" src="img/i-wordpress.jpg"/>
-
-            </a>
-
-            <a href="https://www.youtube.com/channel/UColnd--uwNIrHxq9CTrqBMg" target="_blank" class="word">
-
-                <img class="bottom" src="img/i-youtube-h.jpg"/>
-
-                <img class="top" src="img/i-youtube.jpg"/>
-
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="e-contacto fadeIn delay-1s">
-
-        <div class="titulo-compartir">
-
-            ESCRÍBENOS
-        </div>
-
-        <a class="cont-contacto3" href="mailto:contacto@proyectohabesha.org">contacto@proyectohabesha.org</a>
-
-        <a class="cont-contacto3" href="mailto:info@proyectohabesha.org">info@proyectohabesha.org</a>
-
-    </div>
-
-
-</section>
-
-
-<script src="js/waypoints.min.js"></script>
-
-<script src="js/scripts.js"></script>
-
-
-<!--viewportchecker-->
-
-<script src="js/viewportchecker.js"></script>
-
-<script type="text/javascript">
-
-    jQuery(document).ready(function () {
-
-        jQuery('.cantidad1').addClass("").viewportChecker({
-
-            callbackFunction: function (elem, action) {
-
-
-                setTimeout(function () {
-
-                    $('.odo1').html(1248015);
-
-                    $('.odo2').html(135781);
-
-                    $('.odo3').html(36729);
-
-                }, 1000);
-
-                offset: 10
-
-            }
-
-        });
-
+			</nav>
+			<div class="panel-social">
+				<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-face.png" height="100%"></a>
+				<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-twitter.png" height="100%"></a>
+				<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-youtube.png" height="100%"></a>
+				<a class="i-social tooltip fade" data-title="Whatsapp: 1 +52 449 123 4567" href="" target="_blank"><img src="img/i-whats.png" height="100%"></a>
+			</div>
+		</div>
+
+		<div class="overlay-2 overlay-slidedown-2" id="layer2">
+			<div class="pintura-menu-2"><img src="img/pintura-menu-2.png" height="100%"></div>
+			<button type="button" class="overlay-close">Close</button>
+				
+				<div class="contenedor-cien">
+					<div class="logo-cien-2"><img src="img/cien2.png" width="100%"></div>
+					<div class="texto-cien">
+					<p>100 x Siria es la campaña de Proyecto Habesha que ofrece la oportunidad de hacer algo por la juventud siria cuyo futuro académico se encuentra en colapso.</p>
+
+					<p>Con tu contribución mensual de 100 pesos o más, podremos ofrecerles a nuestros beneficiarios un estipendio mensual que les permitirá contar con lo esencial para vivir durante sus estudios.</p>
+					<a class="btn-donar-1" href="#anchor4"><img src="img/btn-sumate.png" width="100%"></a>
+					</div>
+				</div>	
+		</div>
+		
+	
+		
+		<script src="js/classie.js"></script>
+		<script src="js/multiverse.js"></script>
+		<!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
-
-</script>
-
-
-<script type="text/javascript" src="dist/skrollr.min.js"></script>
-
-
-<!--[if lt IE 9]>
-
-<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
-
-<![endif]-->
-
-
-<script type="text/javascript">
-
-    var s = skrollr.init(
-        {
-            forceHeight: false,
-
-            edgeStrategy: 'set',
-
-            easing: {
-
-                WTF: Math.random,
-
-                inverted: function (p) {
-
-                    return 1 - p;
-
-                }
-
-            },
-
-            mobileCheck: function () {
-
-                if ((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-
-                    setScrollTop(0, true);
-
-                }
-
-            }
-
+  </script>
+  <script>
+    var swiper = new Swiper('.swiper-container-2', {
+      slidesPerView: 5,
+      spaceBetween: 10,
+      // init: false,
+		navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
         }
-    );
+      }
+    });
+  </script>
+  
+   <!-- Scripts -->
+		  <script src="js/bodymovin.js"></script>
+		  <script src="js/index.js"></script>
+	
+		  
+	<!-----------------------POPUPS-SUMATE-UNICA------------------------>	  
+	<div id="unica-seleccionar" class="zoom-anim-dialog mfp-hide">
+        <div>Selecciona el método de tu preferencia.</div>
+        <p>Elige el proveedor de tu preferencia para hacer tu donación única en línea.</p>
+        <a class="logo-proveedor-donaciones" href="banwire-unica.html"><img src="img/logo-banwire.png" width="100%"></a>
+        <a class="logo-proveedor-donaciones" href="paypal-unica.html"><img src="img/logo-paypal.png" width="100%"></a>
+      </div>
+      
+    <!-----------------------POPUPS-SUMATE-RECURRENTE------------------------>	  
+	<div id="recurrente-seleccionar" class="zoom-anim-dialog mfp-hide">
+        <div>Selecciona el método de tu preferencia.</div>
+        <p>Elige el proveedor de tu preferencia para hacer tu donación recurrente en línea.</p>
+        <a class="logo-proveedor-donaciones" href="banwire-recurrente.html"><img src="img/logo-banwire.png" width="100%"></a>
+        <a class="logo-proveedor-donaciones" href="paypal-recurrente.html"><img src="img/logo-paypal.png" width="100%"></a>
+      </div>
+      
+      <!-----------------------POPUPS-POLITICA DE PRIVACIDAD------------------------>	  
+	<div id="popup-privacidad" class="zoom-anim-dialog mfp-hide">
+        <div>Política de Privacidad</div>
+        <p>.</p>
+    </div>
+    
 
-</script>
-
-
-<!-- POPUP VIDEOS -->
-
-<div id="v-luis-gerardo" class="white-popup zoom-anim-dialog mfp-hide">
-
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CugD4Baj8NU?autoplay=0" frameborder="0"
-            allowfullscreen></iframe>
-
-</div>
-
-
-<div id="v-los-3" class="white-popup zoom-anim-dialog mfp-hide">
-
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5ASz1BOC8KI?autoplay=0" frameborder="0"
-            allowfullscreen></iframe>
-
-</div>
-
-
-<div id="v-tamer" class="white-popup zoom-anim-dialog mfp-hide">
-
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XSGCuYWEVf8?autoplay=0" frameborder="0"
-            allowfullscreen></iframe>
-
-</div>
-
-
-<div id="v-killian" class="white-popup zoom-anim-dialog mfp-hide">
-
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9a8MlCia0_s?autoplay=0" frameborder="0"
-            allowfullscreen></iframe>
-
-</div>
-
-
-<div id="v-e" class="white-popup zoom-anim-dialog mfp-hide">
-
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WHi3FtZVjXQ?autoplay=0" frameborder="0"
-            allowfullscreen></iframe>
-
-</div>
-
-
-<!-------------------------POPUP---------------------------->
-
-<script type="text/javascript">
-
-    $(document).ready(function () {
-
+    <script type="text/javascript">
+      $(document).ready(function() {
         $('.popup-with-zoom-anim').magnificPopup({
+          type: 'inline',
 
-            type: 'inline',
+          fixedContentPos: false,
+          fixedBgPos: true,
 
+          overflowY: 'auto',
 
-            fixedContentPos: false,
-
-            fixedBgPos: true,
-
-
-            overflowY: 'auto',
-
-
-            closeBtnInside: true,
-
-            preloader: false,
-
-
-            midClick: true,
-
-            removalDelay: 300,
-
-            mainClass: 'my-mfp-zoom-in'
-
+          closeBtnInside: true,
+          preloader: false,
+          
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'my-mfp-zoom-in'
         });
-
-    });
-
-</script>
-
-
-<div id="costa-rica">
-
-    <div class="img-cr"></div>
-
-    <a class="btn-popup-cr" href="costarica/index.html">CONÓCELO</a>
-
-</div>
-
-
-<script>
-
-    $(document).ready(function () {
-
-        setTimeout(function () {
-
-            if ($('#costa-rica').length) {
-
-                $.magnificPopup.open({
-
-                    items: {
-
-                        src: '#costa-rica'
-
-                    },
-
-                    type: 'inline'
-
-                });
-
-            }
-
-        }, 1000);
-
-    });
-
-</script>
-<script src="banwire/checkout.js"></script>
-<script src="banwire/banwire.js"></script>
-<script language="javascript" src= https://ci-mpsnare.iovation.com/snare.js ></script>
+	});
+	</script>
 </body>
-
-
 </html>
-
