@@ -1,0 +1,1 @@
+$('.parallaxpersp').parallax();
