@@ -19,6 +19,10 @@ $(function () {
         e.preventDefault();
         pagar();
     });
+    $("#btnPagarRecurrente").click(function (e) {
+        e.preventDefault();
+        pagarRecurrente();
+    });
 });
 
 // basic configuration
