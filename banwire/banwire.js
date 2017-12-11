@@ -19,6 +19,10 @@ $(function () {
         e.preventDefault();
         pagar();
     });
+    $("#btnPagarOxxo").click(function (e) {
+        e.preventDefault();
+        pagarOxxo();
+    });
     $("#btnPagarRecurrente").click(function (e) {
         e.preventDefault();
         pagarRecurrente();

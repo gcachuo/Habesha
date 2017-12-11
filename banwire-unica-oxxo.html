@@ -78,7 +78,7 @@
 				<div class="contenedor-donaciones">
 					<div class="titulo-donar">Donación Única</div>
 					<div class="subtitulo-donar">en efectivo</div>
-					<input id="banwire-libre" type="email" placeholder="email" name="email">
+					<input class="banwire" type="email" placeholder="email" name="email">
 					<form class="ac-custom ac-radio ac-fill" autocomplete="off">
 					
 					<ul>
@@ -86,15 +86,15 @@
 						<li><input id="r2" name="banwire-Normal" type="radio" value="1200"><label for="r2">$1,200</label></li>
 					</ul>
 					<ul>
-						<li><input id="r3" name="banwire-Normal" type="radio"><label for="r3" value="600">$600</label></li>
-						<li><input id="r4" name="banwire-Normal" type="radio"><label for="r4" value="2000">$2,000</label></li>
+						<li><input id="r3" name="banwire-Normal" type="radio" value="600"><label for="r3">$600</label></li>
+						<li><input id="r4" name="banwire-Normal" type="radio" value="2000"><label for="r4">$2,000</label></li>
 					</ul>
 					
 					<input type="number" id="banwire-libre" name="banwire-Normal" min="20" placeholder="Otra Cantidad">
 					<!--Boton Unico-->
 					<input type="hidden" id="EBT_DEVICEPRINT">
-					<input id="btn-donar" type="image" src="img/btn-donar.png" border="0" name="submit"
-                       onclick="pagar()">
+					<input type="image" src="img/btn-donar.png" border="0" name="submit"
+                       id="btnPagarOxxo">
 				</form>
 				</div>
 				<div class="logo-banwire-blanco"><img src="img/banwire-blanco.png" width="100%"></div>
