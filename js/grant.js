@@ -5,28 +5,31 @@ window.onload = function () {
     $("#quinientos").click(function () {
         pago_Mensual();
     });
-    $("#libre-Mensual").click(function () {
+    $("#libre-Mensual").keyup(function () {
         pago_Mensual_Libre();
     });
     $("#donar-Mensual").prop("disabled", true).click(function () {
+        esconde();
+    });
+    $("#seiscientos").click(function () {
+        pago_Normal();
+    });
+    $("#mildoscientos").click(function () {
+        pago_Normal();
+    });
+    $("#dosmil").click(function () {
+        pago_Normal();
+    });
+    $("#libre-Normal").keyup(function () {
+        pago_Normal_Libre();
+    });
+    $("#donar-Normal").prop("disabled", true).click(function () {
         esconde();
     });
 
     document.getElementById("doscientos").addEventListener('click', pago_Mensual, false);
 
     document.getElementById("doscientos").addEventListener('click', pago_Normal, false);
-
-    document.getElementById("seiscientos").addEventListener('click', pago_Normal, false);
-
-    document.getElementById("mildoscientos").addEventListener('click', pago_Normal, false);
-
-    document.getElementById("dosmil").addEventListener('click', pago_Normal, false);
-
-    document.getElementById("libre-Normal").addEventListener('keyup', pago_Normal_Libre, false);
-
-    document.getElementById("donar-Normal").addEventListener('click', esconde, false);
-
-    document.getElementById("donar-Normal").disabled = true;
 
 
     /*pago_Mensual() cambia el valor monetario del elemento [input type="hidden" name="amount"] dependiendo de la cantidad que el usuario elije
