@@ -83,23 +83,26 @@
 					<div class="separador-donar"></div>
 					<form class="ac-custom ac-radio ac-fill" autocomplete="off">
 					
+
+					</form>
+                <form class="ac-custom ac-radio ac-fill" name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 					<ul>
 						<li><input type="radio" name="valor-Normal" id="doscientos" value="200">
-                		<label for="doscientos">$200</label></li>
+							<label for="doscientos">$200</label></li>
 						<li><input type="radio" name="valor-Normal" id="mildoscientos" value="1200">
-                		<label for="mildoscientos">$1200</label></li>
+							<label for="mildoscientos">$1200</label></li>
 					</ul>
 					<ul>
 						<li><input type="radio" name="valor-Normal" id="seiscientos" value="600">
-                		<label for="seiscientos">$600</label></li>
+							<label for="seiscientos">$600</label></li>
 						<li><input type="radio" name="valor-Normal" id="dosmil" value="2000">
-                		<label for="dosmil">$2000</label></li>
+							<label for="dosmil">$2000</label></li>
 					</ul>
-					
 					<input type="number" id="libre-Normal" min="20" placeholder="Otra Cantidad">
-                <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+
+
                     <input type="hidden" name="cmd" value="_donations">
-                    <input type="hidden" name="business" id="org">
+                    <input type="hidden" name="business" id="org" value="donaciones@proyectohabesha.org">
                     <input type="hidden" name="item_name" value="DIMA_UNICO">
                     <input type="hidden" name="currency_code" value="MXN">
                     <input type="hidden" name="amount" id="valor-Total">
@@ -107,8 +110,7 @@
                     id="donar-Normal" alt="Realice pagos con PayPal: es rápido, gratis y seguro.">
                 </form>
                 <script type="text/javascript" src="js/grant.js"></script>
-					
-				</form>
+
 				</div>
 				<div class="logo-banwire-blanco"><img src="img/paypal-blanco.png" width="100%"></div>
 		</div>
