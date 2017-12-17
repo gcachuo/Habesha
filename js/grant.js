@@ -1,4 +1,16 @@
 window.onload = function () {
+    $("input[type=radio]").click(function () {
+        //$("input[type=radio]").removeClass("chk");
+        if ($(this).hasClass("chk")) {
+            $("form")[0].reset();
+            ($(this).siblings("svg").children("path").attr("d",""));
+            $("input[name=a3]").val(0);
+            $("input[name=amount]").val(0);
+        }
+        $(this).toggleClass("chk");
+    });
+
+
     $("#cien").click(function () {
         pago_Mensual();
     });
@@ -38,13 +50,13 @@ window.onload = function () {
 
     function pago_Mensual() {
 
-        if (document.getElementById("cien").checked) {
+        if ($("#cien").hasClass("chk")) {
 
             document.getElementById("valor-Mensual").value = document.getElementById("cien").value;
 
         } else if (document.getElementById("doscientos").checked) {
 
-            document.getElementById("valor-Mensual").value = document.getElementById("doscientos").value;
+            $("#valor-Mensual").val(document.getElementById("doscientos").value);
 
         } else if (document.getElementById("quinientos").checked) {
 
@@ -52,9 +64,8 @@ window.onload = function () {
 
         }
 
-        document.getElementById("libre-Mensual").value = "";
-
-        document.getElementById("donar-Mensual").disabled = false;
+        $("#libre-Mensual").val("");
+        $("#donar-Mensual").attr("disabled",false);
 
     }
 
