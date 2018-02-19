@@ -47,8 +47,6 @@ var io_bb_callback = function (bb, isComplete) {
 };
 
 var SW = new BwGateway({
-    // Test mode, remove when going to production mode
-    sandbox: true,
     // Nombre de usuario de Banwire
     user: 'habesha',
     // Titulo de la entana
@@ -114,8 +112,6 @@ var SW = new BwGateway({
 });
 
 var SWoxxo = new BwGateway({
-    // Test mode, remove when going to production mode
-    sandbox: true,
     // Nombre de usuario de Banwire
     user: 'habesha',
     // Titulo de la entana
@@ -196,14 +192,7 @@ function pagar() {
                 desc: "Donacion de " + total,
                 unitPrice: total
             }
-        ]//,
-        /*
-            recurring: {
-                interval: "month",
-                //total: 2,
-        //start: "2015-01-04",
-                limit: "10"
-            }*/
+        ]
     });
 }
 
@@ -227,14 +216,7 @@ function pagarOxxo() {
                 desc: "Donacion de " + total,
                 unitPrice: total
             }
-        ]//,
-        /*
-            recurring: {
-                interval: "month",
-                //total: 2,
-        //start: "2015-01-04",
-                limit: "10"
-            }*/
+        ]
     });
 }
 
@@ -256,9 +238,7 @@ function pagarRecurrente() {
             }
         ],
         recurring: {
-            interval: "month",
-            //total: 2,
-            //start: "2015-01-04",
+            interval: "month"
         }
     });
 }
