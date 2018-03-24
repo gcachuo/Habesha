@@ -6,12 +6,15 @@
  * Time: 10:59 PM
  */
 
+if(empty($_POST['cancel_url']))
+    return;
+
 $fromName = 'Proyecto Habesha';
 $mailFrom = "contacto@proyectohabesha.org";
 $mailTo = "contacto@proyectohabesha.org";
 $subject = "Respuesta Automatica";
 $body = <<<html
-Este es un correo de prueba enviado desde el sistema web
+Se ha realizado un pago de tipo recurrente a nombre de $_POST[card_owner] con id: $_POST[id]
 html;
 
 use PHPMailer\PHPMailer\Exception;
