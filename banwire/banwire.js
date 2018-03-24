@@ -47,8 +47,6 @@ var io_bb_callback = function (bb, isComplete) {
 };
 
 var SW = new BwGateway({
-    // Test mode, remove when going to production mode
-    sandbox: true,
     // Nombre de usuario de Banwire
     user: 'habesha',
     // Titulo de la entana
@@ -80,7 +78,7 @@ var SW = new BwGateway({
         country: "",
         zip: ""
     },
-    notifyUrl: "https://test.banwire.com/sw_ex/response.php",
+    notifyUrl: "banwire/notify.php",
     // Opciones de pago
     paymentOptions: 'visa,mastercard,amex,spei', // visa,mastercard,amex,oxxo
     // Mostrar o no pagina de resumen de compra
@@ -114,8 +112,6 @@ var SW = new BwGateway({
 });
 
 var SWoxxo = new BwGateway({
-    // Test mode, remove when going to production mode
-    sandbox: true,
     // Nombre de usuario de Banwire
     user: 'habesha',
     // Titulo de la entana
@@ -147,7 +143,7 @@ var SWoxxo = new BwGateway({
         country: "",
         zip: ""
     },
-    notifyUrl: "https://test.banwire.com/sw_ex/response.php",
+    notifyUrl: "banwire/notify.php",
     // Opciones de pago
     paymentOptions: 'oxxo', // visa,mastercard,amex,oxxo
     // Mostrar o no pagina de resumen de compra
@@ -196,14 +192,7 @@ function pagar() {
                 desc: "Donacion de " + total,
                 unitPrice: total
             }
-        ]//,
-        /*
-            recurring: {
-                interval: "month",
-                //total: 2,
-        //start: "2015-01-04",
-                limit: "10"
-            }*/
+        ]
     });
 }
 
@@ -227,14 +216,7 @@ function pagarOxxo() {
                 desc: "Donacion de " + total,
                 unitPrice: total
             }
-        ]//,
-        /*
-            recurring: {
-                interval: "month",
-                //total: 2,
-        //start: "2015-01-04",
-                limit: "10"
-            }*/
+        ]
     });
 }
 
@@ -256,9 +238,7 @@ function pagarRecurrente() {
             }
         ],
         recurring: {
-            interval: "month",
-            //total: 2,
-            //start: "2015-01-04",
+            interval: "month"
         }
     });
 }
