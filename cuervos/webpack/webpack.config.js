@@ -21,7 +21,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("../css/index.css"),
-        new CopyWebpackPlugin([{from: 'src/js/pages', to: 'js'}])
+        new CopyWebpackPlugin([{from: 'src/js/pages', to: ''}])
     ],
     node: {
         fs: "empty"
