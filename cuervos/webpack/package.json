@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "watch": "webpack --mode development --watch",
-    "build": "webpack --mode production"
+    "buildp": "webpack --mode production",
+    "build": "webpack --mode development"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
