@@ -3,7 +3,13 @@ if (localStorage.getItem('donante')) {
 }
 $(function () {
     $("form button").on('click', function () {
-        localStorage.setItem('donante', 1);
-        location.href = 'donar.html';
+        $.post('api/guardarRegistro.php', {
+            form: $("form").serialize()
+        }, function (data) {
+            console.log(data);
+            // return;
+            // localStorage.setItem('donante', 1);
+            // location.href = 'donar.html';
+        }, 'json');
     });
 });
