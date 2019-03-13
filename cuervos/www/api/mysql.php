@@ -8,7 +8,7 @@ class mysql
     {
         ini_set("display_errors", 1);
         mysqli_report(MYSQLI_REPORT_ALL ^ (MYSQLI_REPORT_INDEX));//MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-        $file = getcwd() . '/api/mysql.prod.json';
+        $file = __DIR__ . '/mysql.prod.json';
         if (file_exists($file)) {
             $data = json_decode(file_get_contents($file));
             $this->link = mysqli_connect($data->host, $data->user, $data->password, $data->database);

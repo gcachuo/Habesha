@@ -11,7 +11,6 @@ $id_donacion = $_GET['id'];
 include "api/procesarDonacion.php";
 
 if (completaDonacion($id_donacion)): ?>
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
@@ -31,6 +30,7 @@ if (completaDonacion($id_donacion)): ?>
         </div>
     </div>
     <script>
+        window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF'];?>');
         if (!localStorage.getItem('donante') || !localStorage.getItem('donacion')) {
             location.href = 'index.html';
         }
@@ -41,6 +41,7 @@ if (completaDonacion($id_donacion)): ?>
     <script>
         localStorage.removeItem('donacion');
         localStorage.removeItem('donante');
-        location.href = 'index.html';
     </script>
-<?php endif; ?>
+    <?php
+    header('Location:index.html');
+endif; ?>

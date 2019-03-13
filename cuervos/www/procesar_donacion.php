@@ -6,21 +6,26 @@
  * Time: 11:34 PM
  */
 
-$id_donacion = $_GET['id'];
+if (isset($_GET['id'])):
+    $id_donacion = $_GET['id'];
 
-include "api/procesarDonacion.php";
+    include "api/procesarDonacion.php";
 
-$datos = obtenerDatos($id_donacion);
+    $datos = obtenerDatos($id_donacion);
 
-?>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Cuervos Por Habesha</title>
-</head>
-<body>
+    if(empty($datos)){
+        header('Location: index.html');
+        die();
+    }
+    ?>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Cuervos Por Habesha</title>
+    </head>
+    <body>
 <div class="container pt-3">
     <div class="card">
         <div class="card-header">
@@ -38,7 +43,8 @@ $datos = obtenerDatos($id_donacion);
                 <hr>
             </div>
 
-            <form class="ac-custom ac-radio ac-fill" name="_xclick" action="https://www.sandbox.paypal.com/cgi-bin/webscr"
+            <form class="ac-custom ac-radio ac-fill" name="_xclick"
+                  action="https://www.sandbox.paypal.com/cgi-bin/webscr"
                   method="post" target="_blank">
                 <input type="hidden" name="cmd" value="_donations">
                 <input type="hidden" name="business" id="org" value="donaciones@proyectohabesha.org">
@@ -53,3 +59,10 @@ $datos = obtenerDatos($id_donacion);
         </div>
     </div>
 </div>
+<script>
+    window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF'];?>');
+</script>
+<?php
+else:
+    header('Location: index.html');
+endif;
