@@ -14,7 +14,8 @@ $(function () {
         }, function (data) {
             if (!data.error) {
                 if (data.id) {
-
+                    localStorage.setItem('donacion', data.id);
+                    location.href = 'procesar_donacion.php?id=' + data.id;
                 } else {
                     console.log(data);
                 }
