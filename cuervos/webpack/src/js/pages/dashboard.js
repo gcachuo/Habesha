@@ -6,7 +6,9 @@ $(function () {
         $.post('api/guardarRegistro.php', {
             form: $("form").serialize()
         }, function (data) {
-            console.log(data);
+            if (!data.error) {
+                console.log(data);
+            }
             // return;
             // localStorage.setItem('donante', 1);
             // location.href = 'donar.html';

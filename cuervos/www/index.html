@@ -10,10 +10,10 @@
             <h5>Sorteo #CuervosPorHabesha</h5>
         </div>
         <div class="card-body">
-            <form class="form-horizontal">
+            <form class="form-horizontal" onsubmit="return false;">
                 <div class="form-group">
                     <label for="">Nombre</label>
-                    <input name="nombre" type="text" class="form-control">
+                    <input required name="nombre" type="text" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="">Apellido(s)</label>
@@ -21,26 +21,26 @@
                 </div>
                 <div class="form-group">
                     <label for="">Teléfono celular</label>
-                    <input name="telefono" type="text" class="form-control">
+                    <input name="telefono" type="tel" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="">Correo electrónico</label>
-                    <input name="correo" type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="">Ciudad</label>
-                    <input name="ciudad" type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="">Estado</label>
-                    <input name="estado" type="text" class="form-control">
+                    <input required name="correo" type="email" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="">País</label>
                     <input name="pais" type="text" class="form-control">
                 </div>
                 <div class="form-group">
-                    <button type="button" class="btn btn-block btn-success">Guardar</button>
+                    <label for="">Estado</label>
+                    <input name="estado" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Ciudad</label>
+                    <input name="ciudad" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block btn-success">Guardar</button>
                 </div>
             </form>
         </div>
