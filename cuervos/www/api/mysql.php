@@ -6,12 +6,20 @@ class mysql
 
     public function __construct()
     {
-        $data = json_decode(file_get_contents('mysql.prod.json'));
-        $this->link = mysqli_connect($data->host, $data->user, $data->password, $data->database);
+        ini_set("display_errors", 1);
+        mysqli_report(MYSQLI_REPORT_ALL ^ (MYSQLI_REPORT_INDEX));//MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+        $file = 'mysql.prod.json';
+        if (file_exists($file)) {
+            $data = json_decode(file_get_contents($file));
+            $this->link = mysqli_connect($data->host, $data->user, $data->password, $data->database);
 
-        if (!$this->link) {
-            $msg = mysqli_error($this->link);
-            throw new Exception($msg);
+            if (!$this->link) {
+                $msg = mysqli_error($this->link);
+                throw new Exception($msg);
+            }
+        }
+        else{
+            throw new Exception('No existe el archivo de configuración');
         }
     }
 

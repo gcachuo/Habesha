@@ -8,6 +8,9 @@ $(function () {
         }, function (data) {
             if (!data.error) {
                 console.log(data);
+            } else {
+                toastr.error(data.error, 'Error');
+                console.error(data.details);
             }
             // return;
             // localStorage.setItem('donante', 1);

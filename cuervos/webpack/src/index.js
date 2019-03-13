@@ -1,2 +1,3 @@
-import 'jquery';
-import './index.scss';
+require('jquery');
+require('./index.scss');
+toastr = require('toastr');
