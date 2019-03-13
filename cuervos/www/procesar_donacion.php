@@ -6,6 +6,8 @@
  * Time: 11:34 PM
  */
 
+$return_url = 'http://localhost/Habesha/cuervos/www';
+
 if (!isset($_GET['id'])) {
     header('Location: index.html');
 }
@@ -57,7 +59,7 @@ if (empty($datos)) {
                     <input type="hidden" name="currency_code" value="MXN">
                     <input type="hidden" name="amount" value="<?= $datos['cantidad'] ?>">
                     <input type="hidden" name="return"
-                           value="http://localhost/Habesha/cuervos/www/completar_donacion.php?id=<?= $id_donacion ?>">
+                           value="<?= $return_url ?>/completar_donacion.php?id=<?= $id_donacion ?>">
                     <input type="image" src="../../img/btn-donar-2.png" border="0" name="submit"
                            id="donar-Normal" alt="Realice pagos con PayPal: es rápido, gratis y seguro.">
                     <input type="hidden" name="a3" value="<?= $datos['cantidad'] ?>">
@@ -66,7 +68,7 @@ if (empty($datos)) {
                     <input type="hidden" name="src" value="1">
                     <input type="hidden" name="sra" value="1">
                 </form>
-            <?php else:?>
+            <?php else: ?>
             <input type="image" src="../../img/btn-donar-2.png" border="0" name="submit"
                    id="donar-Normal" onclick="pagar()">
 
@@ -113,8 +115,7 @@ if (empty($datos)) {
                         // Handler en caso de exito en el pago
                         successPage: '',
                         onSuccess: function (data) {
-                            console.log("Pago correcto");
-                            console.log(data);
+                            location.href = '<?= $return_url ?>/completar_donacion.php?id=<?= $id_donacion ?>';
                         },
                         // Pago pendiente OXXO
                         pendingPage: '',
@@ -137,6 +138,7 @@ if (empty($datos)) {
                             console.log("Se cancelo el proceso");
                         }
                     });
+
                     function pagar() {
                         var total = '<?= $datos['cantidad'] ?>';
                         SW.pay({
