@@ -15,11 +15,10 @@ class mysql
 
             if (!$this->link) {
                 $msg = mysqli_error($this->link);
-                throw new Exception($msg);
+                throw new DatabaseException($msg);
             }
-        }
-        else{
-            throw new Exception('No existe el archivo de configuración');
+        } else {
+            throw new DatabaseException('No existe el archivo de configuración');
         }
     }
 
@@ -41,4 +40,9 @@ class mysql
         }
         return $row;
     }
+}
+
+class DatabaseException extends Exception
+{
+
 }

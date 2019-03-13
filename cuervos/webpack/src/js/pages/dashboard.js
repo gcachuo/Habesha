@@ -7,14 +7,18 @@ $(function () {
             form: $("form").serialize()
         }, function (data) {
             if (!data.error) {
-                console.log(data);
+                if (data.id) {
+                    localStorage.setItem('donante', data.id);
+                    location.href = 'donar.html';
+                } else {
+                    console.log(data);
+                }
             } else {
                 toastr.error(data.error, 'Error');
-                console.error(data.details);
+                if (data.details) {
+                    console.error(data.details);
+                }
             }
-            // return;
-            // localStorage.setItem('donante', 1);
-            // location.href = 'donar.html';
         }, 'json');
     });
 });

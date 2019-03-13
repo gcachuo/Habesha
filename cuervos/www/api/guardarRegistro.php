@@ -24,6 +24,8 @@ insert ignore into folios(nombre,apellidos,telefono,correo,ciudad,estado,pais) v
     }
 
     echo json_encode(['id' => (int)$id]);
-} catch (Exception $exception) {
+} catch (DatabaseException $exception) {
     echo json_encode(['error' => 'Ocurrió un error', 'details' => $exception->getMessage()]);
+} catch (Exception $exception) {
+    echo json_encode(['error' => $exception->getMessage()]);
 }
