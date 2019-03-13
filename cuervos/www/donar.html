@@ -1,45 +1,132 @@
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" href="css/index.css">
     <title>Cuervos Por Habesha</title>
 </head>
 <body>
-<div class="container">
+<div class="container pt-3">
     <div class="card">
         <div class="card-header">
             <h5>Sorteo #CuervosPorHabesha</h5>
         </div>
         <div class="card-body">
-            <form class="form-horizontal">
+            <form class="form-horizontal" onsubmit="return false;">
                 <input type="hidden" name="donante" value="">
                 <p>
                     El costo de cada boleto electrónico es de una donación única a Proyecto Habesha de $200 MXN. En
                     caso de que realices una donación recurrente de 200 o más, la cantidad de boletos adquiridos será la
-                    cantidad donada dividida entre 10. Es decir, por cada 200, 300 o 400 MXN recurrentes, obtendrás 20, 30
+                    cantidad donada dividida entre 10. Es decir, por cada 200, 300 o 400 MXN recurrentes, obtendrás 20,
+                    30
                     o 40 boletos electrónicos, respectivamente.
                 </p>
                 <p>
                     ¡Entre más boletos electrónicos adquieras, mayor oportunidad tendrás de ganar!
                 </p>
+                <hr>
                 <p>
                     Selecciona el tipo de donación que deseas realizar
 
-                    Donación única
-
-                    Donación recurrente
                 </p>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[tipo]" value="unica">
+                    <div class="state">
+                        <label>Donación única</label>
+                    </div>
+                </div>
+
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[tipo]" value="recurrente">
+                    <div class="state">
+                        <label>Donación recurrente</label>
+                    </div>
+                </div>
+                <hr>
                 <p>
                     Selecciona la cantidad que deseas donar
-
-                    200 300 400 500 600 700 800 900 10000
                 </p>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[cantidad]" value="200">
+                    <div class="state">
+                        <label>$200</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[cantidad]" value="300">
+                    <div class="state">
+                        <label>$300</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[cantidad]" value="400">
+                    <div class="state">
+                        <label>$400</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[cantidad]" value="500">
+                    <div class="state">
+                        <label>$500</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[cantidad]" value="600">
+                    <div class="state">
+                        <label>$600</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[cantidad]" value="700">
+                    <div class="state">
+                        <label>$700</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[cantidad]" value="800">
+                    <div class="state">
+                        <label>$800</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[cantidad]" value="900">
+                    <div class="state">
+                        <label>$900</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[cantidad]" value="1000">
+                    <div class="state">
+                        <label>$1,000</label>
+                    </div>
+                </div>
+                <hr>
                 <p>
                     Selecciona el método de pago para realizar tu donación
-
-                    PayPal
-
-                    Banwire
                 </p>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[metodo]" value="paypal">
+                    <div class="state">
+                        <label>PayPal</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-round">
+                    <input type="radio" name="donacion[metodo]" value="banwire">
+                    <div class="state">
+                        <label>Banwire</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-danger btn-block">Regresar</button>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-success btn-block">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
