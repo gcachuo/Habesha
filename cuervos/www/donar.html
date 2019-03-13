@@ -13,7 +13,6 @@
         </div>
         <div class="card-body">
             <form class="form-horizontal" onsubmit="return false;">
-                <input type="hidden" name="donante" value="">
                 <p>
                     El costo de cada boleto electrónico es de una donación única a Proyecto Habesha de $200 MXN. En
                     caso de que realices una donación recurrente de 200 o más, la cantidad de boletos adquiridos será la
@@ -30,7 +29,7 @@
 
                 </p>
                 <div class="pretty p-default p-round">
-                    <input type="radio" name="donacion[tipo]" value="unica">
+                    <input checked type="radio" name="donacion[tipo]" value="unica">
                     <div class="state">
                         <label>Donación única</label>
                     </div>
@@ -47,7 +46,7 @@
                     Selecciona la cantidad que deseas donar
                 </p>
                 <div class="pretty p-default p-round">
-                    <input type="radio" name="donacion[cantidad]" value="200">
+                    <input checked type="radio" name="donacion[cantidad]" value="200">
                     <div class="state">
                         <label>$200</label>
                     </div>
@@ -105,7 +104,7 @@
                     Selecciona el método de pago para realizar tu donación
                 </p>
                 <div class="pretty p-default p-round">
-                    <input type="radio" name="donacion[metodo]" value="paypal">
+                    <input checked type="radio" name="donacion[metodo]" value="paypal">
                     <div class="state">
                         <label>PayPal</label>
                     </div>
@@ -118,12 +117,13 @@
                 </div>
                 <hr>
                 <div class="form-group">
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn btn-danger btn-block">Regresar</button>
+                    <input type="hidden" name="donacion[id_donante]" id="id_donante">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-3">
+                            <button id="btnRegresar" type="button" class="btn btn-danger btn-block">Regresar</button>
                         </div>
-                        <div class="col">
-                            <button type="submit" class="btn btn-success btn-block">Confirmar</button>
+                        <div class="col-3">
+                            <button id="btnConfirmar" type="submit" class="btn btn-success btn-block">Confirmar</button>
                         </div>
                     </div>
                 </div>
