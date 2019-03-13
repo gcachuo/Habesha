@@ -6,6 +6,10 @@
  * Time: 12:12 AM
  */
 
+if (!isset($_GET['id'])) {
+    header('Location: index.html');
+}
+
 $id_donacion = $_GET['id'];
 
 include "api/procesarDonacion.php";
