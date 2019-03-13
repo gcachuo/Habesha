@@ -78,7 +78,7 @@ var SW = new BwGateway({
         country: "",
         zip: ""
     },
-    notifyUrl: "https://gcachuo.tk/Habesha/banwire/notify.php",
+    notifyUrl: "http://proyectohabesha.org/banwire/notify.php",
     // Opciones de pago
     paymentOptions: 'visa,mastercard,amex,spei', // visa,mastercard,amex,oxxo
     // Mostrar o no pagina de resumen de compra
@@ -143,7 +143,7 @@ var SWoxxo = new BwGateway({
         country: "",
         zip: ""
     },
-    notifyUrl: "https://gcachuo.tk/Habesha/banwire/notify.php",
+    notifyUrl: "http://proyectohabesha.org/banwire/notify.php",
     // Opciones de pago
     paymentOptions: 'oxxo', // visa,mastercard,amex,oxxo
     // Mostrar o no pagina de resumen de compra
