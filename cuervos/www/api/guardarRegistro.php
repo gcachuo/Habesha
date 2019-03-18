@@ -14,13 +14,13 @@ try {
 
     $mysql = new mysql();
     $query = $mysql->query("
-insert ignore into folios(nombre,apellidos,telefono,correo,ciudad,estado,pais) values ('$registro[nombre]','$registro[apellidos]','$registro[telefono]','$registro[correo]','$registro[ciudad]','$registro[estado]','$registro[pais]');
+insert ignore into donantes(nombre,apellidos,telefono,correo,ciudad,estado,pais) values ('$registro[nombre]','$registro[apellidos]','$registro[telefono]','$registro[correo]','$registro[ciudad]','$registro[estado]','$registro[pais]');
 ");
 
     $id = $mysql->last_insert_id();
 
     if (!$id) {
-        $id = $mysql->single_row($mysql->query("select id from folios where correo='$registro[correo]'"), 'id');
+        $id = $mysql->single_row($mysql->query("select id from donantes where correo='$registro[correo]'"), 'id');
     }
 
     echo json_encode(['id' => (int)$id]);

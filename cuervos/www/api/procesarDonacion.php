@@ -17,7 +17,7 @@ function obtenerDatos($id_donacion)
     try {
         $sql = <<<sql
 select *  from donaciones
-inner join folios on id_donante=folios.id
+inner join donantes on id_donante=donantes.id
 where donaciones.id=$id_donacion and donaciones.estatus='CREADA'
 sql;
 
