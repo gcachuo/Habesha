@@ -1,4 +1,4 @@
-drop trigger after_donaciones_update;
+drop trigger if exists after_donaciones_update;
 create trigger after_donaciones_update
   after UPDATE
   on donaciones
@@ -15,7 +15,7 @@ begin
     folio:
       LOOP
         if (@i < @total) then
-          set @max = (select max(id) + 1 from folios);
+          set @max = coalesce((select max(id) + 1 from folios), 1);
           insert into folios(id, id_donacion) VALUES (@max, NEW.id);
           set @i = @i + 1;
           iterate folio;
@@ -24,3 +24,4 @@ begin
       end loop;
   end if;
 end;
+

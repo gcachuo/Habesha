@@ -11,4 +11,6 @@ create table if not exists donantes
   estatus   varchar(100) default 'CREADO'          not null,
   fecha     timestamp    default CURRENT_TIMESTAMP not null,
   constraint folios_correo_uindex unique (correo)
-);
+) ENGINE = InnoDB
+  character set utf8mb4;
+
