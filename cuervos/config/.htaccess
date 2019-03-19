@@ -1,0 +1,7 @@
+AuthUserFile "/home/proyect1/.htpasswds/.htpasswd"
+AuthType Basic
+AuthName "WebEnabled"
+Require valid-user
+Satisfy any
+Order Deny,Allow
+Deny from all
