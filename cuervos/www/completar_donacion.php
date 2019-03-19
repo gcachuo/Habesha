@@ -14,7 +14,7 @@ $id_donacion = $_GET['id'];
 
 include "api/procesarDonacion.php";
 
-if (completaDonacion($id_donacion)): ?>
+if (completaDonacion($id_donacion, $folios)): ?>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
@@ -30,11 +30,21 @@ if (completaDonacion($id_donacion)): ?>
             </div>
             <div class="card-body">
                 <h3>Gracias por tu donación</h3>
+                <h5>Estos son tus boletos:</h5>
+                <table id="tablaFolios">
+                    <tbody class="table table-striped table-bordered">
+                    <?php foreach ($folios as $folio): ?>
+                        <tr>
+                            <td>#CuervoHabesha<?= $folio['id'] ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
     <script>
-        window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF'];?>');
+        window.history.pushState({}, "Hide", '<?= $_SERVER['PHP_SELF'];?>');
         if (!localStorage.getItem('donante') || !localStorage.getItem('donacion')) {
             location.href = 'index.html';
         }

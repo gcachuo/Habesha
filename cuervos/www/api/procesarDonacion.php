@@ -28,7 +28,7 @@ sql;
     }
 }
 
-function completaDonacion($id_donacion)
+function completaDonacion($id_donacion, &$folios)
 {
     try {
         $mysql = new mysql();
@@ -48,6 +48,12 @@ update donaciones set estatus='COMPLETA' where id=$id_donacion and estatus='CREA
 sql;
 
         $mysql->query($sql);
+
+        $folios = $mysql->all_rows($mysql->query(<<<sql
+select id from folios where id_donacion='$id_donacion'
+sql
+        ));
+
         return true;
     } catch (DatabaseException $exception) {
         return false;

@@ -40,6 +40,11 @@ class mysql
         }
         return $row;
     }
+
+    function all_rows($mysqli_result)
+    {
+        return mysqli_fetch_all($mysqli_result, MYSQLI_ASSOC);
+    }
 }
 
 class DatabaseException extends Exception
