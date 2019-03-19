@@ -59,7 +59,7 @@ if (empty($datos)) {
                     <input type="hidden" name="currency_code" value="MXN">
                     <input type="hidden" name="amount" value="<?= $datos['cantidad'] ?>">
                     <input type="hidden" name="return"
-                           value="<?= $return_url ?>/completar_donacion.php?id=<?= $id_donacion ?>">
+                           value="http://<?= $return_url ?>/completar_donacion.php?id=<?= $id_donacion ?>">
                     <input type="image" src="../../img/btn-donar-2.png" border="0" name="submit"
                            id="donar-Normal" alt="Realice pagos con PayPal: es rápido, gratis y seguro.">
                     <input type="hidden" name="a3" value="<?= $datos['cantidad'] ?>">
