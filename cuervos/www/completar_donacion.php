@@ -29,7 +29,11 @@ if (completaDonacion($id_donacion, $folios)): ?>
                 <h5>Sorteo #CuervosPorHabesha</h5>
             </div>
             <div class="card-body">
-                <h3>Gracias por tu donación</h3>
+                <h3>¡Tu donación ha sido realizada exitosamente!</h3>
+                <p>
+                    El resultado del sorteo será anunciado el 31 de marzo a las 21 hrs por medio de la cuenta de Instagram
+                    de Luis Gerardo Méndez.
+                </p>
                 <h5>Estos son tus boletos:</h5>
                 <table id="tablaFolios">
                     <tbody class="table table-striped table-bordered">
