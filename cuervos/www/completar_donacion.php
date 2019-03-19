@@ -34,7 +34,7 @@ if (completaDonacion($id_donacion, $folios)): ?>
                     El resultado del sorteo será anunciado el 31 de marzo a las 21 hrs por medio de la cuenta de Instagram
                     de Luis Gerardo Méndez.
                 </p>
-                <h5>Estos son tus boletos:</h5>
+                <h5>Aquí están tus boleto(s):</h5>
                 <table id="tablaFolios">
                     <tbody class="table table-striped table-bordered">
                     <?php foreach ($folios as $folio): ?>
