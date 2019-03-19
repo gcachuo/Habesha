@@ -6,7 +6,7 @@
  * Time: 11:34 PM
  */
 
-$return_url = 'http://localhost/Habesha/cuervos/www';
+$return_url = $_SERVER['HTTP_HOST'] . preg_replace('/(.*)\/.+\.php/', '$1', $_SERVER['SCRIPT_NAME']);
 
 if (!isset($_GET['id'])) {
     header('Location: index.html');
@@ -49,7 +49,7 @@ if (empty($datos)) {
 
             <?php if ($datos['metodo'] == 'paypal'): ?>
                 <form class="ac-custom ac-radio ac-fill" name="_xclick"
-                      action="https://www.paypal.com/cgi-bin/webscr"
+                      action="https://sandbox.paypal.com/cgi-bin/webscr"
                       method="post" target="_blank">
                     <input type="hidden" name="cmd"
                            value="<?= $datos['tipo'] == 'unica' ? '_donations' : '_xclick-subscriptions' ?>">

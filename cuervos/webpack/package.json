@@ -2,9 +2,10 @@
   "name": "cuervos",
   "version": "1.0.0",
   "scripts": {
-    "watch": "webpack --mode development --watch",
-    "buildp": "webpack --mode production",
-    "build": "webpack --mode development"
+    "clean": "rm -rf ./../www/js/ && rm -rf ./../www/css/",
+    "watch": "yarn clean && webpack --mode=development --watch",
+    "buildp": "yarn clean && webpack --mode=production",
+    "build": "yarn clean && webpack --mode=development"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
