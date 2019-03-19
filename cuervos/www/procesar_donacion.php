@@ -49,7 +49,7 @@ if (empty($datos)) {
 
             <?php if ($datos['metodo'] == 'paypal'): ?>
                 <form class="ac-custom ac-radio ac-fill" name="_xclick"
-                      action="https://sandbox.paypal.com/cgi-bin/webscr"
+                      action="https://paypal.com/cgi-bin/webscr"
                       method="post" target="_blank">
                     <input type="hidden" name="cmd"
                            value="<?= $datos['tipo'] == 'unica' ? '_donations' : '_xclick-subscriptions' ?>">
