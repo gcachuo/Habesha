@@ -1,0 +1,77 @@
+[13-Mar-2019 03:11:46 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and donaciones.estatus='CREADA'' at line 3' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos(NULL)
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[13-Mar-2019 03:12:00 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and donaciones.estatus='CREADA'' at line 3' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos(NULL)
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[13-Mar-2019 03:12:06 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and donaciones.estatus='CREADA'' at line 3' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos(NULL)
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[13-Mar-2019 18:03:22 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'Table 'proyect1_cuervos.folios' doesn't exist' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos('21')
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[13-Mar-2019 18:03:28 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'Table 'proyect1_cuervos.folios' doesn't exist' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos('22')
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[13-Mar-2019 18:03:33 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'Table 'proyect1_cuervos.folios' doesn't exist' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos('22')
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[13-Mar-2019 18:20:20 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'Table 'proyect1_cuervos.folios' doesn't exist' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos('23')
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[13-Mar-2019 18:20:24 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'Table 'proyect1_cuervos.folios' doesn't exist' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos('24')
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[19-Mar-2019 19:32:57 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and donaciones.estatus='CREADA'' at line 3' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos(NULL)
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[19-Mar-2019 19:38:03 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and donaciones.estatus='CREADA'' at line 3' in /home/proyect1/public_html/cuervos/test/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/test/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/test/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/test/procesar_donacion.php(18): obtenerDatos(NULL)
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/test/api/mysql.php on line 27
+[23-Mar-2019 11:04:01 America/New_York] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and donaciones.estatus='CREADA'' at line 3' in /home/proyect1/public_html/cuervos/cuervos-donar/api/mysql.php:27
+Stack trace:
+#0 /home/proyect1/public_html/cuervos/cuervos-donar/api/mysql.php(27): mysqli_query(Object(mysqli), 'select *  from ...')
+#1 /home/proyect1/public_html/cuervos/cuervos-donar/api/procesarDonacion.php(25): mysql->query('select *  from ...')
+#2 /home/proyect1/public_html/cuervos/cuervos-donar/procesar_donacion.php(18): obtenerDatos(NULL)
+#3 {main}
+  thrown in /home/proyect1/public_html/cuervos/cuervos-donar/api/mysql.php on line 27

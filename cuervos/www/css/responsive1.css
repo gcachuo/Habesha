@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 50000px) {
+	.premio1, .premio2, .premio3,.premio4{
+		width: 21%;
+		margin: 0 2%;
+	}
+	.boton-participa-1{
+		width: 55%;
+		height: 228px;
+	}
+	.boton-participa-2{
+		width: 55%;
+		height: 300px;
+		top: 50px;
+	}
+}
+@media screen and (max-width: 1600px) {
+	
+}
+@media screen and (max-width: 1440px) {
+	
+}
+@media screen and (max-width: 1280px) {
+	
+}
+@media screen and (max-width: 1099px) {
+	
+}
+@media screen and (max-width: 900px) {
+	
+}
+@media screen and (max-width: 800px) {
+	.premio1, .premio2, .premio3,.premio4{
+		width: 42%;
+		margin: 0 4%;
+	}
+	.boton-participa-1{
+		width: 65%;
+		height: 243px;
+		top: -20px;
+	}
+	.boton-participa-2{
+		width: 70%;
+		height: 320px;
+		top: 80px;
+	}
+}
+@media screen and (max-width: 480px) {
+	
+}
+@media screen and (max-width: 361px) {
+	
+}
