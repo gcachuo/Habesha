@@ -6,7 +6,7 @@
  * Time: 11:34 PM
  */
 
-$return_url = $_SERVER['HTTP_HOST'] . preg_replace('/(.*)\/.+\.php/', '$1', $_SERVER['SCRIPT_NAME']);
+$return_url = 'http://' . $_SERVER['HTTP_HOST'] . preg_replace('/(.*)\/.+\.php/', '$1', $_SERVER['SCRIPT_NAME']);
 
 if (!isset($_GET['id'])) {
     header('Location: index.html');
@@ -59,7 +59,7 @@ if (empty($datos)) {
                     <input type="hidden" name="currency_code" value="MXN">
                     <input type="hidden" name="amount" value="<?= $datos['cantidad'] ?>">
                     <input type="hidden" name="return"
-                           value="http://<?= $return_url ?>/completar_donacion.php?id=<?= $id_donacion ?>">
+                           value="<?= $return_url ?>/completar_donacion.php?id=<?= $id_donacion ?>">
                     <input type="image" src="../../img/btn-donar-2.png" border="0" name="submit"
                            id="donar-Normal" alt="Realice pagos con PayPal: es rápido, gratis y seguro.">
                     <input type="hidden" name="a3" value="<?= $datos['cantidad'] ?>">
