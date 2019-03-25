@@ -2,13 +2,14 @@
   "name": "cuervos",
   "version": "1.0.0",
   "scripts": {
-    "clean": "rm -rf ./../www/js/ && rm -rf ./../www/css/",
+    "clean": "rm -rf ./../www/cuervos-donar/js/ && rm -rf ./../www/cuervos-donar/css/ && rm -rf ./../www/img/",
     "watch": "yarn clean && webpack --mode=development --watch",
     "buildp": "yarn clean && webpack --mode=production",
     "build": "yarn clean && webpack --mode=development"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "file-loader": "^3.0.1",
     "jquery": "^3.3.1",
     "pretty-checkbox": "^3.0.3",
     "toastr": "^2.1.4"

@@ -4,14 +4,14 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: "./src/",
     output: {
-        path: __dirname + "/../www/js/",
+        path: __dirname + "/../www/cuervos-donar/js/",
         filename: 'index.js'
     },
     module: {
         rules: [
             {test: /jquery\.js$/, loader: 'expose-loader?jQuery!expose-loader?$'},
-            {test: /\.(gif|png|jpg|svg|cur)$/, loader: 'file-loader?name=img/[name].[ext]'},
-            {test: /\.css$/, use: ['style-loader', 'css-loader']},
+            {test: /\.(gif|png|jpg|svg|cur)$/, loader: 'file-loader?name=../../img/[name].[ext]'},
+            {test: /\.css$/, loader: 'file-loader?name=../css/[name].[ext]'},
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader!sass-loader'})
