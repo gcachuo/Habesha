@@ -34,8 +34,45 @@
 	background: rgba(200,0,76,1);
 	z-index: 9998;
 }
+.overlay-3 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding: 30px;
+	background: rgba(255,255,255,1);
+	z-index: 9998;
+	border-radius: 6px;
+}
+.overlay-equipo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	padding: 30px;
+	background: rgba(0,16,67,1);
+	z-index: 9998;
+}
+.overlay-4 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding: 30px;
+	background: rgba(255,255,255,1);
+	z-index: 9998;
+	border-radius: 6px;
+}
+.overlay-5 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding: 30px;
+	background: rgba(255,255,255,1);
+	z-index: 9998;
+	border-radius: 6px;
+}
 /* Overlay closing cross */
-.overlay .overlay-close, .overlay-2 .overlay-close {
+.overlay .overlay-close, .overlay-2 .overlay-close, .overlay-equipo .overlay-close {
 	width: 30px;
 	height: 30px;
 	position: absolute;
@@ -43,7 +80,23 @@
 	top: 20px;
 	overflow: hidden;
 	border: none;
-	background: url(http://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	background: url(https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 999999;
+	cursor: pointer;
+}
+
+.overlay-3 .overlay-close, .overlay-4 .overlay-close, .overlay-5 .overlay-close{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/promotores/cross-negra.png) no-repeat center center;
 	text-indent: 200%;
 	color: transparent;
 	outline: none;
@@ -171,12 +224,31 @@
 	transition: transform 0.4s ease-in-out;
 }
 
+.overlay-slidedown-3 {
+	visibility: hidden;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown-3.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+
 /* setup tooltips */
-.tooltip {
+.tooltip, .tooltip2 {
   position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 .tooltip:before,
-.tooltip:after {
+.tooltip:after,
+.tooltip2:before,
+.tooltip2:after{
   display: block;
   opacity: 0;
   pointer-events: none;
@@ -190,7 +262,7 @@
   height: 0;
     top: -8px;
     left: 10px;
-  width: 0;
+  width: 0;	
 }
 .tooltip:before {
   background: rgba(77,0,76,1);
@@ -203,16 +275,41 @@
   left: -160px;
   white-space: nowrap;
 }
+.tooltip2:after {
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(77,0,76,1); 
+  border-left: 6px solid transparent;
+  content: '';
+  height: 0;
+    top: -8px;
+    left: 55px;
+  width: 0;	
+}
+.tooltip2:before {
+  background: rgba(77,0,76,1);
+  border-radius: 2px;
+  color: #fff;
+  content: attr(data-title);
+  font-size: 14px;
+  padding: 6px 10px;
+  top: -36px;
+  left: 20px;
+  white-space: nowrap;
+}
 
 /* the animations */
 /* fade */
 .tooltip.fade:after,
-.tooltip.fade:before {
+.tooltip.fade:before,
+.tooltip2.fade:after,
+.tooltip2.fade:before{
   transform: translate3d(0,20px,0);
   transition: all .15s ease-in-out;
 }
 .tooltip.fade:hover:after,
-.tooltip.fade:hover:before {
+.tooltip.fade:hover:before,
+.tooltip2.fade:hover:after,
+.tooltip2.fade:hover:before{
   opacity: 1;
   transform: translate3d(0,0,0);
 }
