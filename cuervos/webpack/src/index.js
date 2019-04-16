@@ -28,3 +28,5 @@ require('./../img/btn-participa-h.png');
 require('./../img/btn-participa.png');
 require('./../img/btn-recurrente.png');
 require('./../img/btn-unica.png');
+
+require('./../img/fin.png');
