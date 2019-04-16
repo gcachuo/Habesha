@@ -1,0 +1,4 @@
+ErrorDocument 404 /404.shtml
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^proyectohabesha.org$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
