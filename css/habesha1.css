@@ -122,7 +122,7 @@
     opacity: 0.4;
 }
 
-.logo1 {
+.logo1, .logo-confirmar {
     position: relative;
     float: left;
     width: 200px;
@@ -202,8 +202,6 @@
 .siria-morado {
     position: absolute;
     bottom: -10px;
-    left: -5%;
-    width: 110%;
 }
 
 .sm1 {
@@ -343,6 +341,15 @@
     width: 100%;
     text-align: center;
 }
+.titulo-seccion-prom {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    color: #222222;
+    position: relative;
+    margin: 0px 0 20px 0;
+    width: 100%;
+    text-align: center;
+}
 
 .spot {
     position: absolute;
@@ -423,20 +430,22 @@
 }
 
 .frase-hazem {
-    font-size: 2.2em;
     font-family: 'Philosopher', sans-serif;
     font-weight: 700;
     position: absolute;
-    width: 50%;
-    left: 25%;
-    top: 35%;
     transform: translateY(-50%);
-    height: 50px;
     text-align: center;
     color: #ffffff;
 }
-
-.frase-hazem span {
+.frase-hazem-2 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+}
+.frase-hazem span, .frase-hazem-2 span {
     font-size: 0.45em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -445,16 +454,39 @@
 
 .contenedor-cien {
     position: relative;
-    top: 45%;
     transform: translateY(-50%);
     width: 100%;
 }
-
+.contenedor-promotores {
+    position: relative;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+.logo-promotores{
+	position: relative;
+	float: left;
+}
+.logo-promotores-2{
+	position: relative;
+	float: left;
+}
+.logo-promotores-3{
+	position: relative;
+	float: left;
+}
+.parche-promotores{
+	
+}
+.logo-promotores-persona{
+	position: relative;
+	float: left;
+}
 .logo-cien-2 {
     position: relative;
     width: 200px;
     height: 200px;
-    margin: 25px auto 10px auto;
+    margin: 250px auto 10px auto;
+	display: block;
 }
 
 .texto-cien {
@@ -595,6 +627,7 @@
     width: 120px;
     height: 28px;
     background-image: url(../img/ver-mas.png);
+	cursor: pointer;
 }
 
 .elemento-promotores:hover > .ver-mas {
@@ -625,9 +658,8 @@
     height: 32px;
 }
 
-#unica-seleccionar, #recurrente-seleccionar, #popup-privacidad {
+#unica-seleccionar, #recurrente-seleccionar{
     background: #ffffff;
-    padding: 0px;
     text-align: left;
     max-width: 900px;
     margin: 40px auto;
@@ -637,7 +669,47 @@
     border-radius: 10px;
     color: #ffffff;
 }
+#popup-privacidad {
+	background: white;
+    padding: 30px 30px;
+    text-align: left;
+    width: 90%;
+	height: 90%;
+	max-height: 450px;
+    margin: 40px auto;
+    position: relative;
+	color: #222222;
+	display: block;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#popup-privacidad::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
 
+#popup-privacidad::-webkit-scrollbar{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#popup-privacidad::-webkit-scrollbar-thumb{
+	background-color: #FF0054;
+}
+
+#popup-privacidad div{
+	font-size: 2.5em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#popup-privacidad p{
+	font-size: 1em;
+	overflow: visible;
+	margin: 10px 0;
+}
 #unica-seleccionar {
     background-color: #ff7900;
 }
@@ -646,11 +718,7 @@
     background-color: #009700;
 }
 
-#popup-privacidad {
-    background-color: #ffffff;
-}
-
-#unica-seleccionar div, #recurrente-seleccionar div, #popup-privacidad div {
+#unica-seleccionar div, #recurrente-seleccionar div{
     font-size: 2.5em;
     font-family: 'Philosopher', sans-serif;
     font-weight: 700;
@@ -666,9 +734,6 @@
     margin: 0 0 20px 0;
 }
 
-#popup-privacidad p {
-    font-size: 0.9em
-}
 
 .logo-proveedor-donaciones {
     position: relative;
@@ -770,6 +835,7 @@
     color: #ffffff;
     text-align: right;
     font-size: 0.9em;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .invisible {
@@ -872,4 +938,26 @@
     margin: 20px auto 0 auto;
     display: block;
     overflow: hidden;
+}
+.idiomas{
+	position: fixed;
+	top: 8px;
+	right: 60px;
+	height: 32px;
+}
+.icono-idiomas{
+	position: relative;
+	float: left;
+	height: 32px;
+	width: 32px;
+	margin-right: 12px;
+}
+.btn-idiomas{
+	position: relative;
+	float: left;
+	font-size: 1em;
+	font-weight: 700;
+	margin-right: 12px;
+	margin-top: 9px;
+	color: #fff;
 }

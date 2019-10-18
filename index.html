@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -43,7 +43,7 @@
     $('.cargando').removeClass('visible').addClass('invisible');
 });
 	</script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
     <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
 
@@ -55,7 +55,7 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 verticalCentered: true,
-                anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6', 'anchor7', 'anchor8', 'anchor9', 'anchor10'],
+                anchors: ['inicio', 'quienes_somos', 'anchor3', 'sumate', 'estudiantes', 'anchor6', 'anchor7', 'promotores', 'anchor9', 'contacto'],
                 scrollBar: false,
                 sectionsColor: ['#33B5FF', '#4D004C', '#FFA61A', '#00004C', '#28B4FA', '#A40054', '#00004C', '#340034', '#000000', '#000000'],
 				
@@ -127,7 +127,11 @@
             });
         });
     </script>
-
+<style>
+	h3{
+		font-size: 1.5em;
+	}	
+</style>
     
 </head>
 <body>
@@ -136,16 +140,21 @@
 </div>
 
  <div class="encabezado invisible">
-      	<a class="logo1" href="#anchor1"><img src="img/logo1.png" width="100%"></a>
+      	<a class="logo1" href="#inicio"><img src="img/logo1.png" width="100%"></a>
+      	<div class="idiomas">
+      		<div class="icono-idiomas"><img src="img/icono-idiomas.png" width="100%"></div>
+      		<a class="btn-idiomas" href="#">ES</a>
+      		<a class="btn-idiomas" href="english/index.html">EN</a>
+      	</div>
       	<a id="trigger-overlay" class="trigger-overlay trigger-menu" data-overlay="layer1"><img src="img/btn-menu.png" width="100%"></a>
       	<a class="cien trigger-overlay" data-overlay="layer2"><img src="img/cien.png" width="100%"></a>
       	<!--<ul id="menu">
-		  <li data-menuanchor="anchor1"><a href="#anchor1">Inicio</a></li>
-		  <li data-menuanchor="anchor2"><a href="#anchor2">Conócenos</a></li>
+		  <li data-menuanchor="inicio"><a href="#inicio">Inicio</a></li>
+		  <li data-menuanchor="quienes_somos"><a href="#quienes_somos">Conócenos</a></li>
 		  <li data-menuanchor="anchor3"><a href="#anchor3">Estidiantes</a></li>
-		  <li data-menuanchor="anchor4"><a href="#anchor4">Multimedia</a></li>
-		  <li data-menuanchor="anchor4"><a href="#anchor5">Súmate</a></li>
-		  <li data-menuanchor="anchor4"><a href="#anchor5">Contacto</a></li>
+		  <li data-menuanchor="sumate"><a href="#sumate">Multimedia</a></li>
+		  <li data-menuanchor="sumate"><a href="#estudiantes">Súmate</a></li>
+		  <li data-menuanchor="sumate"><a href="#estudiantes">Contacto</a></li>
 		</ul>-->
      	
       </div>
@@ -160,7 +169,7 @@
 					México por la paz y la<br>
 					reconstrucción en Siria
 					</div>
-					<a class="call-sumate" href="#anchor4">SÚMATE</a>
+					<a class="call-sumate" href="#sumate">SÚMATE</a>
 				</div>
 				<div class="layer layer-top z1" data-depth="0.25">
 					<div id="bm"></div>
@@ -178,7 +187,7 @@
   
 		 
 		  
-		  <a class="patron-abajo" href="#anchor2"><img src="img/patron-abajo-3.png" width="100%"></a>
+		  <a class="patron-abajo" href="#quienes_somos"><img src="img/patron-abajo-3.png" width="100%"></a>
 		  
     </div>
     
@@ -201,11 +210,11 @@
 		<p>En armonía con la tradición histórica de México de dar refugio a aquellos que huyen de la violencia y la intolerancia, proponemos un modelo que concibe la recepción de estudiantes sirios como un activo y una oportunidad para promover el diálogo intercultural que fomente una cultura internacional para la paz, posicionando a nuestro país como un actor global solidario y responsable.</p>
       </div>
       <div class="swiper-slide">
-			<a class="i-quienes"><div class="img-quienes"><img src="img/i-equipo.png" width="100%"></div>
+			<a class="i-quienes" href="equipo.html"><div class="img-quienes"><img src="img/i-equipo.png" width="100%"></div>
 			<span>Equipo<br></span><br>
 			</a>
      
-     		<a class="i-quienes"><div class="img-quienes"><img src="img/i-faq.png" width="100%"></div>
+     		<a class="i-quienes" href="preguntas-frecuentes.html"><div class="img-quienes"><img src="img/i-faq.png" width="100%"></div>
 			<span>Preguntas<br>Frecuentes</span>
 			</a>
       </div>
@@ -237,9 +246,9 @@
     
     <div class="section fp-auto-height" id="section2">
     	<div class="contenedor-frase-hazem">
-			<div class="hazem-frase"><img src="img/frase-hazem.jpg" height="300"></div>
-			<div class="frase-hazem">"Como refugiado, tu futuro está congelado. Pero como estudiante aquí en México… todo es posible."<br>
-	<span>-Hazem, Al Jazeera-</span></div>
+			<div class="hazem-frase"><img src="img/frase-zain.jpg" height="300"></div>
+			<div class="frase-hazem-2">"Como refugiado, tu futuro está congelado. Pero como estudiante aquí en México… todo es posible."<br>
+	<span>-Zain, Al Jazeera-</span></div>
 		</div>
     </div>
     
@@ -352,7 +361,7 @@
       </div>
       
       <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/tramer.html"><div class="img-e"><img src="img/e-tamer.png" width="100%"></div>
+      	<a class="i-estudiantes" href="estudiantes/tamer.html"><div class="img-e"><img src="img/e-tamer.png" width="100%"></div>
       	<span>Tamer</span><br>
       	<p>Comunicación</p>
       	<div class="ver-bio"></div>
@@ -393,7 +402,7 @@
     	<div class="contenedor-frase-hazem">
 			<div class="silva-frase"><img src="img/frase-silva.png" height="300"></div>
 			<div class="frase-hazem">"Imagina que has muerto y alguien te da una cura milagrosa. Así fue venir a México. Fue como volver a nacer"<br>
-	<span>-Silva, The Gardian-</span></div>
+	<span>-Silva, The Guardian-</span></div>
 		</div>
     </div>
     
@@ -437,25 +446,25 @@
 		<div class="contenedor-sumate">
     		<div class="titulo-seccion-rel">Promotores</div>
     		
-    		<a class="elemento-promotores">
+    		<a id="trigger-overlay" class="trigger-overlay elemento-promotores" data-overlay="layer3">
     			<div class="icono-sumate"><img src="img/i-unis.png" width="100%"></div>
     			UNIVERSIDADES<br><br>
     			<div class="ver-mas"></div>
     		</a>
     		
-    		<a class="elemento-promotores">
+    		<a id="trigger-overlay" class="trigger-overlay elemento-promotores" data-overlay="layer4">
     			<div class="icono-sumate"><img src="img/i-internacional.png" width="100%"></div>
     			INSTITUCIONES INTERNACIONALES<br>
     			<div class="ver-mas"></div>
     		</a>
     		
-    		<a class="elemento-promotores">
+    		<a id="trigger-overlay" class="trigger-overlay elemento-promotores" data-overlay="layer5">
     			<div class="icono-sumate"><img src="img/i-privadas.png" width="100%"></div>
     			SECTOR PRIVADO<br><br>
     			<div class="ver-mas"></div>
     		</a>
     		
-    		<a class="elemento-promotores">
+    		<a id="trigger-overlay" class="trigger-overlay elemento-promotores" data-overlay="layer6">
     			<div class="icono-sumate"><img src="img/i-personalidades.png" width="100%"></div>
     			PERSONALIDADES<br><br>
     			<div class="ver-mas"></div>
@@ -498,9 +507,9 @@
 	   			<div class="subtitulo-contacto">Visítanos</div>
 	   			<div class="panel-social-2">
 					<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-face.png" height="100%"></a>
-					<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-twitter.png" height="100%"></a>
-					<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-youtube.png" height="100%"></a>
-					<a class="i-social tooltip fade" data-title="Whatsapp: 1 +52 449 123 4567" href="" target="_blank"><img src="img/i-whats.png" height="100%"></a>
+					<a class="i-social" href="https://twitter.com/habeshap" target="_blank"><img src="img/i-twitter.png" height="100%"></a>
+					<a class="i-social" href="https://www.youtube.com/channel/UColnd--uwNIrHxq9CTrqBMg" target="_blank"><img src="img/i-youtube.png" height="100%"></a>
+					<a class="i-social tooltip fade" data-title="Whatsapp: +52 1 55 4403 2382" href="" target="_blank"><img src="img/i-whats.png" height="100%"></a>
 				</div>
 	   		</div>
 	   		<div class="elemento-contacto">
@@ -542,41 +551,41 @@
 <!-- HTML -->
 <div id="accordion">
 
-	 <a class="btn-menu-mobil" href="#anchor1">INICIO</a>
+	 <a class="btn-menu-mobil" href="#inicio">INICIO</a>
 	  <h4 class="accordion-toggle btn-menu-mobil">CONÓCENOS</h4>
 	  <div class="accordion-content">
-		<a href="#anchor2">Proyecto Habesha</a>
-		<a>El Equipo</a>
-		<a>Preguntas Frecuentes</a>
+		<a href="#quienes_somos">Proyecto Habesha</a>
+		<a href="equipo.html">El Equipo</a>
+		<a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
 	  </div>
-	  <a class="btn-menu-mobil" href="#anchor5">LOS ESTUDIANTES</a>
-	  <h4 class="accordion-toggle btn-menu-mobil">MULTIMEDIA</h4>
+	  <a class="btn-menu-mobil" href="#estudiantes">LOS ESTUDIANTES</a>
+	  <!--<h4 class="accordion-toggle btn-menu-mobil">MULTIMEDIA</h4>
 	  <div class="accordion-content">
 		<a>Galería</a>
 		<a>Videos</a>
 		<a>Noticias</a>
-	  </div>
+	  </div>-->
 	  <h4 class="accordion-toggle btn-menu-mobil">SÚMATE</h4>
 	  <div class="accordion-content">
-		<a href="#anchor4">Donación</a>
-		<a>Dona es Especie</a>
+		<a href="#sumate">Donación</a>
+		<!--<a>Dona es Especie</a>
 		<a>Sé voluntario</a>
 		<a>Sé promotor</a>
 		<a>Invita a un amigo</a>
-		<a>Eventos</a>
+		<a>Eventos</a>-->
 	  </div>
-	  <a class="btn-menu-mobil" href="estudiantes.html">TIENDA</a>
+	  <!--<a class="btn-menu-mobil" href="estudiantes.html">TIENDA</a>-->
 	  <a class="btn-menu-mobil" href="#anchor7">EDUCACIÓN EN<br>EMERGENCIAS</a>
-	  <a class="btn-menu-mobil" href="#anchor8">PROMOTORES</a>
-	  <a class="btn-menu-mobil" href="#anchor10">CONTÁCTANOS</a>
+	  <a class="btn-menu-mobil" href="#promotores">PROMOTORES</a>
+	  <a class="btn-menu-mobil" href="#contacto">CONTÁCTANOS</a>
   
 </div>
 			</nav>
 			<div class="panel-social">
 				<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-face.png" height="100%"></a>
-				<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-twitter.png" height="100%"></a>
-				<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-youtube.png" height="100%"></a>
-				<a class="i-social tooltip fade" data-title="Whatsapp: 1 +52 449 123 4567" href="" target="_blank"><img src="img/i-whats.png" height="100%"></a>
+				<a class="i-social" href="https://twitter.com/habeshap" target="_blank"><img src="img/i-twitter.png" height="100%"></a>
+				<a class="i-social" href="https://www.youtube.com/channel/UColnd--uwNIrHxq9CTrqBMg" target="_blank"><img src="img/i-youtube.png" height="100%"></a>
+				<a class="i-social tooltip fade" data-title="Whatsapp: +52 1 55 4403 2382" href="" target="_blank"><img src="img/i-whats.png" height="100%"></a>
 			</div>
 		</div>
 
@@ -587,11 +596,68 @@
 				<div class="contenedor-cien">
 					<div class="logo-cien-2"><img src="img/cien2.png" width="100%"></div>
 					<div class="texto-cien">
-					<p>100 x Siria es la campaña de Proyecto Habesha que ofrece la oportunidad de hacer algo por la juventud siria cuyo futuro académico se encuentra en colapso.</p>
+					<p>100 por Siria es la campaña de Proyecto Habesha que ofrece la oportunidad de hacer algo por la juventud siria cuyo futuro académico se encuentra en colapso.</p>
 
 					<p>Con tu contribución mensual de 100 pesos o más, podremos ofrecerles a nuestros beneficiarios un estipendio mensual que les permitirá contar con lo esencial para vivir durante sus estudios.</p>
-					<a class="btn-donar-1" href="#anchor4"><img src="img/btn-sumate.png" width="100%"></a>
+					<a class="btn-donar-1" href="#sumate"><img src="img/btn-sumate.png" width="100%"></a>
 					</div>
+				</div>	
+		</div>
+		
+		
+		<div class="overlay-3 overlay-slidedown-3" id="layer3">
+			<button type="button" class="overlay-close">Close</button>
+				
+				<div class="titulo-seccion-prom">Universidades</div>
+				
+				<div class="contenedor-promotores">
+					<a href="http://ibero.mx/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-ibero.png" width="100%"></a>
+					<a href="http://www.unla.mx/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-unla.png" width="100%"></a>
+					<a href="https://upaep.mx/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-upaep.png" width="100%"></a>
+					<a href="http://www.udem.edu.mx" target="_blank" class="logo-promotores"><img src="img/promotores/logo-udem.png" width="100%"></a>
+					<a href="https://www.iteso.mx/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-iteso.png" width="100%"></a>
+					<a href="https://www.anahuac.mx/queretaro/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-anahuac.png" width="100%"></a>
+					<a class="logo-promotores parche-promotores"><img src="img/promotores/parche-promotores.png" width="100%"></a>
+					<a href="http://www.integrobajio.com" target="_blank" class="logo-promotores"><img src="img/promotores/logo-integro.png" width="100%"></a>
+				</div>	
+		</div>
+		
+		<div class="overlay-4 overlay-slidedown-3" id="layer4">
+			<button type="button" class="overlay-close">Close</button>
+				
+				<div class="titulo-seccion-prom">Instituciones Internacionales</div>
+				
+				<div class="contenedor-promotores">
+					<a href="https://www.iie.org/" target="_blank" class="logo-promotores-2"><img src="img/promotores/logo-iie.png" width="100%"></a>
+					<a href="http://www.globalplatformforsyrianstudents.org/" target="_blank" class="logo-promotores-2"><img src="img/promotores/logo-global.png" width="100%"></a>
+					<a href="http://www.acnur.org/" target="_blank" class="logo-promotores-2"><img src="img/promotores/logo-acnur.png" width="100%"></a>
+				</div>	
+		</div>
+		
+		<div class="overlay-4 overlay-slidedown-3" id="layer5">
+			<button type="button" class="overlay-close">Close</button>
+				
+				<div class="titulo-seccion-prom">Sector Privado</div>
+				
+				<div class="contenedor-promotores">
+					<a href="https://aeromexico.com/es-mx" target="_blank" class="logo-promotores-3"><img src="img/promotores/logo-aero.png" width="100%"></a>
+					<a href="http://www.manpowergroup.com.mx/" target="_blank" class="logo-promotores-3"><img src="img/promotores/logo-manpower.png" width="100%"></a>
+				</div>	
+		</div>
+		
+		<div class="overlay-5 overlay-slidedown-3" id="layer6">
+			<button type="button" class="overlay-close">Close</button>
+				
+				<div class="titulo-seccion-prom">Personalidades</div>
+				
+				<div class="contenedor-promotores">
+					<a class="logo-promotores-persona tooltip2 fade" data-title="Emb. Diego Gómez Pickering" href="http://diegogomezpickering.com/" target="_blank"><img src="img/promotores/promotor-pickering.png" width="100%"></a>
+					<a class="logo-promotores-persona tooltip2 fade" data-title="Emb. Luis Ortíz Monasterio"><img src="img/promotores/promotor-ortiz.png" width="100%"></a>
+					<a class="logo-promotores-persona tooltip2 fade" data-title="Killian Kleinschmidt" href="https://en.wikipedia.org/wiki/Kilian_Kleinschmidt" target="_blank"><img src="img/promotores/promotor-killian.png" width="100%"></a>
+					<a class="logo-promotores-persona tooltip2 fade" data-title="Fernando Savater" href="https://es.wikipedia.org/wiki/Fernando_Savater" target="_blank"><img src="img/promotores/promotor-savater.png" width="100%"></a>
+					<a class="logo-promotores-persona tooltip2 fade" data-title="Luis Gerardo Méndez" href="https://www.imdb.com/name/nm1645334/" target="_blank"><img src="img/promotores/promotor-lgm.png" width="100%"></a>
+					<a class="logo-promotores-persona tooltip2 fade" data-title="Alejandro Ramírez" href="https://en.wikipedia.org/wiki/Cin%C3%A9polis" target="_blank"><img src="img/promotores/promotor-alejandro.png" width="100%"></a>
+					<a class="logo-promotores-persona tooltip2 fade" data-title="Genaro Lozano" href="https://twitter.com/genarolozano?lang=en" target="_blank"><img src="img/promotores/promotor-genaro.png" width="100%"></a>
 				</div>	
 		</div>
 		
@@ -660,9 +726,41 @@
       
       <!-----------------------POPUPS-POLITICA DE PRIVACIDAD------------------------>	  
 	<div id="popup-privacidad" class="zoom-anim-dialog mfp-hide">
-        <div>Política de Privacidad</div>
-        <p>.</p>
-    </div>
+      
+        <div>AVISO DE PRIVACIDAD PARA DONANTES  DE DIÁLOGO INTECULTURAL DE MÉXICO ACTIVO A.C.</div>
+        <p>Según lo establecido en la Ley de Protección de Datos Personales en Posesión de Particulares (en lo sucesivo “La Ley”) así como lo establecido en el Reglamento de dicha Ley, la Asociación “Diálogo Intercultural del México Activo” (en lo sucesivo denominada “Proyecto Habesha” con domicilio en la calle Gral. Ignacio Allende, Número  304, , Aguascalientes, Aguascalientes. Reconoce la especial necesidad de proteger los datos referentes a la información personal y bancaria de los donantes al momento en que están interesados en realizar una donación, tomando esto en cuenta se emite el presente Aviso de Privacidad con los siguientes:</p>
+<h3>Términos y Condiciones:</h3>
+<p>1. Se entiende por “Datos Personales”, “Datos Personales Sensibles”, “Base de Datos” y “Aviso de Privacidad” lo establecido en el artículo 2 de La Ley.</p>
+<p>2. Se entiende por “Datos Bancarios” cualquier información referente a una cuenta bancaria.
+<p>3. Se entiende por Donación lo establecido en el Art. 2332 del Código Civil para el Distrito Federal (Ahora Ciudad de México).</p>
+<p>4. Se entiende por Donante a todo aquel que transfiera a título gratuito parte de sus bienes presentes a Proyecto Habesha condicionando dicho acto a que lo donado sea usado para el cumplimiento del objeto de Proyecto Habesha, el cual está contenido en su acta constitutiva, así como en la modificación de sus estatutos.</p>
+<p>5. El presente Aviso de Privacidad tiene por objeto la protección de los datos personales y bancarios de los donantes, en lo sucesivo “Titulares”, los cuales son comunicados a Proyecto Habesha con el fin de realizar una donación a éste y así apoyar en el cumplimiento su objeto.</p>
+<p>6. Los datos personales y bancarios serán recopilados a través de un proceso completamente libre y voluntario. En el cual los Titulares comunicarán su información al Proyecto Habesha por su interés en apoyar al mismo y al momento de comunicar dicha información se presupone su consentimiento.</p>
+<p>7. Los datos recopilados no podrán bajo ningún motivo, fin o circunstancia ser utilizados para otro objetivo que el de cumplir con el objeto del Proyecto Habesha, establecidos en su acta constitutiva y en sus posteriores modificaciones, Según lo establecido en el artículo 12 de la ley. Salvo las excepciones previstas en La Ley.</p>
+<p>8. Los datos personales de los Titulares, se mantendrán en estricta confidencialidad, de acuerdo con las medidas de seguridad, administrativas, técnicas y físicas que al efecto Proyecto Habesha implemente en sus políticas y procedimientos de seguridad, razón por la cual, queda prohibida su divulgación ilícita y se limita su uso a terceros, de conformidad a lo previsto en este Aviso de Privacidad. Los Titulares en cualquier momento podrán optar por limitar el uso o divulgación de sus datos personales y bancarios o revocar su consentimiento para dar tratamiento a sus datos personales y bancarios.</p>
+<p>9. La base de datos que Proyecto Habesha mantenga de los Titulares consiste de manera enunciativa más no limitativa en: Todos sus documentos de identificación personal y bancarios (Nombre completo, Dirección, Teléfono, Mail, Número de Cuenta Bancaria, Número de Tarjeta, Nombre del banco emisor de la cuenta, etc.)
+<p>10. Al proporcionar Los Titulares sus datos personales y bancarios por escrito, a través de una solicitud, formato en papel, formato digital, correo electrónico, o cualquier otro documento, acepta y autoriza al Proyecto Habesha a utilizar, transferir, publicar y tratar de forma automatizada sus datos personales y bancarios e información suministrados, los cuales formarán parte de la base de datos con la finalidad de usarlos, en forma enunciativa, más no limitativa, para: identificar, ubicar, comunicar, contactar, enviar y recibir información y/o bienes, así como para enviarlos y/o transferirlos a terceros, dentro y fuera del territorio nacional, por cualquier medio que permita la ley para cumplir con los fines del Proyecto Habesha.</p>
+<p>11. Para el debido cumplimiento de las finalidades previstas en este Aviso de Privacidad, así como con los fines distintos que resulten compatibles o análogos, le informamos que los datos personales y bancarios de los Titulares pueden ser transferidos y tratados dentro y fuera del país a terceros nacionales o extranjeros En ese sentido, su información puede ser compartida con la finalidad de registrar los productos que los Titulares hubiesen contratado, para identificación, comercialización y otros fines análogos, pudiéndose transferir y/o recibir información. Si no manifiestan su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento tácito para ello.</p>
+<p>12. Se necesita manifestación expresa y por escrito de los Titulares en lo concerniente al tratamiento de los datos sensibles que se proporcionen, entiéndase aquellos como: Aquellos datos personales que afecten a la esfera más íntima de su titular, o cuya utilización indebida pueda dar origen a discriminación o conlleve un riesgo grave para éste. En particular se consideran sensibles aquellos aspectos que puedan revelar aspectos como origen racial o étnico, estado de salud presente y futuro, información genética, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones políticas o preferencia sexual.</p>
+<p>13. Cualquier cambio en el presente aviso de privacidad será comunicado a los Titulares de manera expresa por cualquier medio fehaciente de comunicación, ya sea de manera oral o escrita a más tardar a los cinco días naturales de la modificación del mismo.</p>
+<p>14. Los datos de los Titulares no serán revelados a terceros salvo para cumplir con el objetivo del Proyecto Habesha, por indicación de las leyes del gobierno Mexicano o en virtud de una sentencia judicial.
+<p>15. Los Titulares pueden acceder a su base de datos personales en cualquier momento, ya sea que estos estén almacenados en formato electrónico o físico en el domicilio del proyecto o en alguna sucursal del mismo. Estos se podrán rectificar, en caso de que sean inexactos o incompletos. Cancelar, siguiendo siempre lo dispuesto por la ley y a oponerse al tratamiento de sus datos, siempre que la oposición sea fundada en una causa legítima. La Intención de realizar estos actos se tendrán que notificar por escrito a algún miembro del “Consejo Técnico” del Proyecto Habesha, una vez hecha la notificación se realizarán todos los actos pertinentes para asegurar el acceso del Titular a sus derechos de acceso, rectificación, cancelación y oposición.</p>
+Política de Devoluciones y Cancelaciones</p>
+
+<h3>Cancelación</h3>
+<p>1.	En cualquier momento, Los Titulares podrán optar por cancelar su donación mediante los mecanismos establecidos por las plataformas que Proyecto Habesha utiliza. Asimismo, los usuarios pueden optar por cancelar su donación enviando un correo a contacto@proyectohabesha.org.</p>
+<p>2.	Todos los usuarios tienen derecho a resolver dudas respecto a su donación y al proceso de cancelación enviando un correo a la dirección electrónica mencionada en el punto anterior.
+<p>3.	En caso de que los usuarios soliciten la cancelación de su donación deberán proporcionar a Proyecto Habesha su información de contacto, información sobre el pago y cualquier información adicional necesaria para la efectuación de su cancelación. Ninguno de los datos anteriores serán utilizados por el Proyecto Habesha para otro fin que no sea la constatación de los datos y la cancelación de la donación.</p>
+
+<h3>Reembolso</h3>
+<p>1.	En caso de que Los Titulares hayan tenido problemas para la cancelación de la donación, o se haya incumplido algún punto por parte de Proyecto Habesha establecido en esta política de privacidad, los interesados deberán enviar a contacto@proyectohabesha.org la siguiente información:</p>
+<p>a.	Datos personales del Titular</p>
+<p>b.	Datos de la cuenta bancaria que se utilizará para verificar la información en la base de datos de Proyecto Habesha.</p>
+<p>c.	Comprobante (prueba digital, imagen) que muestre el problema de cancelación</p>
+<p>2.	Todos los pagos reembolsados tardarán hasta 20 días hábiles después de la cancelación de la donación y solicitud de reembolso.</p>
+
+
+			</div>
     
 
     <script type="text/javascript">

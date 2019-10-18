@@ -3,7 +3,28 @@ html, body,
 .container,
 .cbp-fbscroller,
 .cbp-fbscroller section { 
-	height: 100%; 
+	height: 100%;
+}
+.cont-fac1{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -20px;
+	left: 0;
+	z-index: 1;
+}
+.fac1{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.cbp-fbscroller,
+.cbp-fbscroller section {
+	z-index: 2;
 }
 
 /* The nav is fixed on the right side  and we center it by translating it 50% 
@@ -19,7 +40,11 @@ html, body,
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-
+.panel-info-contacto{
+	position: relative;
+	width: 100%;
+	float: left;
+}
 .cbp-fbscroller > nav a {
 	display: block;
 	position: relative;
@@ -54,11 +79,9 @@ html, body,
 }
 
 #fbsection1 {
-	
-}
-
-#fbsection2 {
-	background-image: url(../ScrollingLayout/images/2.jpg);
+	height: auto !important;
+	display: block;
+	overflow: hidden;
 }
 
 #es3{
@@ -75,4 +98,17 @@ html, body,
 	position: fixed;
 	width: 100%;
 	height: 100%;
+}
+.cita{
+	font-weight: 300;
+	font-style: italic;
+	font-size: 140%;
+	text-align: center;
+}
+.cita-autor{
+	font-weight: 700;
+	font-style: normal;
+	font-size: 100%;
+	text-align: center;
+	line-height: 2.5em;
 }

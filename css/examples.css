@@ -99,11 +99,8 @@ h1{
 #menu li.active a{
 	display:block;
 }
-#menu li.active a{
-	
+#menu li.active a{	
 }
-
-
 .cargando{
 	position: fixed;
 	width: 100%;

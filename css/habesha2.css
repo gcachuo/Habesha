@@ -1,0 +1,66 @@
+.titulo-seccion-pagina{
+	color: #ffffff;
+	font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+	position: relative;
+	float: left;
+}
+.contenedor-seccion-pagina{
+	position: relative;
+	clear: both;
+	float: left;
+}
+.elemento-equipo{
+	position: relative;
+	float: left;
+	padding: 0 4px;
+	cursor: pointer;
+}
+.elemento-equipo img{
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.elemento-equipo:hover img{
+	border-radius: 30px 30px 0 0;
+}
+.elemento-equipo-tx{
+	width: 100%;
+	position: relative;
+	background: #151577;
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	padding: 10px 5px;
+	margin-top: -3px;
+	border-radius: 0 0 6px 6px;
+	min-height: 68px;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.elemento-equipo:hover .elemento-equipo-tx{
+	background: #a40054;
+}
+.contenedor-equipo-bio{
+	position: relative;
+	width: 100%;
+	margin: 0px 0px;
+}
+.titulo-bio{
+	color: #ffffff;
+	font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+	position: relative;
+	float: left;
+}
+.tx-bio{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #ffffff;
+	clear: both;
+	float: left;
+}
