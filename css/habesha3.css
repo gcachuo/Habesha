@@ -1,0 +1,1163 @@
+
+.fondo-encabezado{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 68px;
+	background-color: #ffffff;
+	opacity: 0.9;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	z-index: 90;
+}
+.fp-viewing-anchor1 .fondo-encabezado{
+	opacity: 0;
+}
+.fondo-encabezado-2{
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 68px;
+	background-color: #ffffff;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	z-index: 999;
+	opacity: 0.5;
+}
+.show {
+  opacity: 0.9;
+}
+.logo1{
+	position: fixed;
+	z-index: 1001;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.menu1 {
+	display: block;
+	position: fixed;
+	width: calc(100% - 100px);
+	z-index: 1000;
+	top: 13px;
+	left: 100px;
+	text-align: left;
+	padding: 0 2em;
+	margin: 0;
+	font-family: 'Abhaya Libre', serif;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.fp-viewing-anchor1 .menu1 {
+	top: 22px
+}
+.elemento-menu-1{
+	position: relative;
+	float: left;
+	margin: 10px;
+	color: #09090C;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.elemento-menu-1:hover, .elemento-menu-2:hover, .elemento-menu-3:hover, .elemento-menu-4:hover{
+	color: #8eb5dd;
+}
+.elemento-menu-1{
+	left: 70px;
+}
+.elemento-menu-2{
+	left: 135px;
+}
+.elemento-menu-3{
+	left: 198px;
+}
+.elemento-submenu-1{
+	position: relative;
+	float: left;
+	clear: both;
+	margin: 10px;
+	color: #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.elemento-submenu-1:hover{
+	color: #09090C;
+}
+.panel-copy{
+	position: absolute;
+	left: 25px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+	text-align: left;
+	z-index: 2;
+}
+.panel-copy-rosa{
+	font-family: 'Abhaya Libre', serif;
+	background-color: #d99cbf;
+	color: #fff;
+	padding: 29px 35px 10px 35px;
+}
+.panel-copy-rosa span{
+	font-size: 1.16em;
+}
+.panel-copy-gris{
+	background-color: #09090C;
+	color: #fff;
+	padding: 10px 35px;
+	font-weight: 600;
+	z-index: 2;
+	display: block;
+}
+.parallaxpersp1, .parallaxpersp2 {
+	height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.layer{
+	height: 100%;
+	bottom: 0;
+}
+.estudiante-volador-1, .estudiante-volador-2, .estudiante-volador-3, .colibri-equipo-1, .colibri-equipo-2, .colibri-equipo-3, .fondo-equipo-1, .colibri-docs-1, .colibri-docs-2, .colibri-docs-3, .colibri-multi-1, .colibri-multi-2, .colibri-multi-3, .colibri-multi-4{
+	position: absolute;
+}
+.cielo-1{
+	position: absolute;
+	z-index: 4;
+}
+.cielo-2{
+	position: absolute;
+	z-index: 4;
+}
+.sm1{
+	z-index: 5;
+}
+.sm2{
+	z-index: 4;
+}
+.sm3{
+	z-index: 2;
+}
+.sm4{
+	z-index: 3;
+}.sm5{
+	z-index: 1;
+}
+.iconos{
+	position: relative;
+	float: right;
+	margin: 0px 0px 0 0;
+}
+.i-idiomas{
+	background-image: url(../img/i-idiomas.png);
+}
+.i-whats{
+	background-image: url(../img/i-whats.png);
+}
+.i-face{
+	background-image: url(../img/i-face.png);
+}
+.i-twitter{
+	background-image: url(../img/i-twitter.png);
+}
+.i-youtube{
+	background-image: url(../img/i-youtube.png);
+}
+
+input {
+  display: none;
+}
+
+.social label {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  width: 37px;
+  height: 37px;
+  margin: 0px 9px 0 0;
+  background-image: url(../img/i-idiomas.png);
+}
+
+.test {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  overflow: hidden;
+  top: 60px;
+  height: 100px;
+}
+
+.test a {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+	border-bottom: solid 1px #09090C;
+	color: #09090C;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.test a:hover {
+	color: #d99cbf;
+}
+.idiomas-active{
+	background-image: url(../img/i-idiomas-a.png);
+}
+.social{
+	position: fixed;
+	top: 15px;
+	width: 214px;
+	padding-right: 20px;
+	z-index: 1001;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.fp-viewing-anchor1 .social{
+	top: 22px;
+}
+.titulo-seccion-1{
+	font-family: 'Abhaya Libre', serif;
+	color: #09090C;
+	position: relative;
+	margin: 200px 0px 100px 20px;
+	float: left;
+	text-align: left;
+	z-index: 5;
+}
+.titulo-seccion-2{
+	font-family: 'Abhaya Libre', serif;
+	color: #09090C;
+	position: relative;
+	margin: 200px 0px 100px 20px;
+	float: left;
+	text-align: left;
+	z-index: 5;
+}
+.titulo-seccion-2a{
+	font-family: 'Abhaya Libre', serif;
+	color: #09090C;
+	position: relative;
+	margin: 200px 0px 0px 20px;
+	float: left;
+	text-align: left;
+	z-index: 5;
+}
+.titulo-seccion-3{
+	font-family: 'Abhaya Libre', serif;
+	color: #09090C;
+	position: relative;
+	text-align: left;
+	margin-left: 20px;
+	z-index: 5;
+}
+.tx-titulo-seccion{
+	position: relative;
+	float: left;
+	margin-left: 20px;
+	width: 54%;
+	text-align: left;
+}
+.tx-titulo-seccion-2{
+	position: relative;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 100px;
+	width: 54%;
+	text-align: left;
+}
+.contenedor-reticula-1{
+	position: relative;
+	display: inline-block;
+	clear: both;
+	width: calc(100% - 40px);
+	margin: 0 0 100px 20px;
+	z-index: 89;
+}
+
+.elemento-reticula-1{
+	position: relative;
+	float: left;
+	display: inline-block;
+	padding: 20px;
+}
+.elemento-reticula-2{
+	position: relative;
+	float: left;
+	display: block;
+	overflow: hidden;
+	padding: 20px;
+}
+.elemento-reticula-2-int{
+	padding: 15px;
+	border: solid 2px #d99cbf;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	display: block;
+	overflow: hidden;
+}
+.elemento-reticula-2-int:hover{
+	background-color: #d99cbf;
+	border-radius: 5px;
+}
+.imagen-elemento-reticula-1{
+	position: relative;
+	width: 100%;
+}
+.imagen-elemento-reticula-2{
+	position: relative;
+	width: 100px;
+	margin: 15px auto 2px auto;
+	border-radius: 50%;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.tx-elemento-reticula-1{
+	font-family: 'Abhaya Libre', serif;
+	color: #09090C;
+	font-weight: 700;
+	text-align: center;
+	height: 70px;
+	margin: 10px 0 0 0;
+	font-size: 0.9em;
+}
+.tx-elemento-reticula-2{
+	font-family: 'Abhaya Libre', serif;
+	color: #09090C;
+	font-weight: 700;
+	text-align: center;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.tx-elemento-reticula-1 span{
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.9em;
+	font-weight: 400;
+}
+.tx-elemento-reticula-2 span{
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.7em;
+	font-weight: 400;
+}
+.reticula-estudiantes-home{
+	position: relative;
+	float: right;
+	width: 100%;
+}
+.elemento-reticula-estudiantes-home{
+	position: relative;
+	float: right;
+	display: block;
+	overflow: hidden;
+	height: 180px;
+}
+.elemento-reticula-estudiantes-home:hover > .imagen-elemento-reticula-2{
+	width: 110px;
+}
+.elemento-reticula-estudiantes-home:hover > .tx-elemento-reticula-2{
+	margin-left: 10px;
+}
+.kaleido01{
+	position: absolute;
+	top: -170px;
+	right: -220px;
+	height: 680px;
+	z-index: 1;
+}
+.kaleido02{
+	position: absolute;
+	top: -150px;
+	left: -400px;
+	height: 800px;
+	z-index: 1;
+}
+.titulo-seccion-home{
+	font-family: 'Abhaya Libre', serif;
+	margin-bottom: 10px;
+	line-height: 0.85em;
+}
+.contenedor-sub-quienes{
+	position: relative;
+	display: inline-block;
+	clear: both;
+	float: left;
+	z-index: 89;
+	text-align: left;
+	opacity: 0;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.contenedor-sub-estudiantes{
+	position: relative;
+	display: inline-block;
+	clear: both;
+	float: right;
+	z-index: 89;
+	opacity: 0;
+	text-align: right;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.contenedor-sub-estudiantes p{
+	letter-spacing: 0.04em;
+	color: #09090c;
+	font-weight: 500;
+}
+.contenedor-sub-quienes p{
+	letter-spacing: 0.04em;
+	color: #09090c;
+	font-weight: 500;
+	padding-left: 1%;
+}
+.contenedor-sub-emergencias{
+	position: relative;
+	display: inline-block;
+	clear: both;
+	float: right;
+	margin: 0px -400px 0px 0;
+	z-index: 89;
+	opacity: 0;
+	text-align: right;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.contenedor-sub-emergencias p{
+	letter-spacing: 0.04em;
+	color: #09090c;
+	font-weight: 500;
+	padding-right: 1%;
+}
+.contenedor-sub-promotores{
+	position: relative;
+	display: inline-block;
+	clear: both;
+	float: left;
+	z-index: 89;
+	text-align: left;
+}
+
+.subtitulo-1{
+	position: relative;
+	width: calc(100% - 20px);
+	height: 30px;
+	margin: 55px 0px 20px 0px;
+	float: left;
+	clear: both;
+	display: block;
+	overflow: hidden;
+	z-index: 9;
+	border-bottom: solid 2px #8db4dc;
+}
+.subtitulo-1 img{
+	float: left;
+}
+.fondo-sub-emergencias{
+	position: absolute;
+	height: 60%;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+.btn-quienes-1{
+	position: relative;
+	float: left;
+	width: 204px;
+	margin-top: 16px;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.btn-quienes-1:hover{
+	margin-left: 10px;
+}
+.btn-emergencia-1, .btn-historias-1{
+	position: relative;
+	float: right;
+	width: 235px;
+	margin-top: 16px;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.btn-emergencia-1:hover, .btn-historias-1:hover{
+	margin-right: 10px;
+}
+.contenedor-donar{
+	position: relative;
+	height: 57%;
+	border: solid 3px #ffffff;
+}
+.elemento-reticula-3{
+	position: relative;
+	float: left;
+	margin: 0 0px;
+	width: 100%;
+	text-align: left;
+}
+.reticula-galeria{
+	position: relative;
+	float: left;
+	margin: 0 0 0 -5px;
+	width: calc(100% - 10px);
+	text-align: left;
+}
+.elemento-reticula-4{
+	position: relative;
+	float: left;
+	margin: 0 0px;
+	text-align: left;
+	display: inline-block;
+	padding: 0 5px;
+}
+.titulo-elemento-reticula-1{
+	font-family: 'Abhaya Libre', serif;
+}
+.btn-enlace-reticula{
+	position: relative;
+	float: left;
+	height: 28px;
+	margin: 16px 0 16px -5px;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.btn-enlace-reticula:hover{
+	margin-left: 10px;
+}
+.contenedor-estudiantes{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.col-40{
+	position: relative;
+	float: left;
+	z-index: 2;
+}
+.col-60{
+	position: relative;
+	float: left;
+	background-color: #e7c280;
+	z-index: 1;
+}
+.ilustraciones img{
+	position: absolute;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+.ilustraciones-historias{
+	position: absolute;
+}
+.ilustraciones-historias img{
+	position: absolute;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+.pasaporte img{
+	position: absolute;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5.6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 5.6s;
+}
+@-webkit-keyframes fade {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes fade {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes fade {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes fade {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#f1 {
+}
+#f2 {
+    -webkit-animation-delay: -3s;
+}
+#f3 {
+    -webkit-animation-delay: -6s;
+}
+#f4 {
+    -webkit-animation-delay: -9s;
+}
+
+#pa1 {
+}
+#pa2 {
+    -webkit-animation-delay: -1.4s;
+}
+#pa3 {
+    -webkit-animation-delay: -2.8s;
+}
+#pa4 {
+    -webkit-animation-delay: -4.2s;
+}
+
+.cita{
+	float: right;
+	width: 100%;
+	margin: 0 0 20px 0;
+	font-family: 'Raleway', sans-serif;
+	font-style: italic;
+	font-weight: 600;
+}
+.col-50{
+	position: relative;
+	padding: 0 5%;
+	float: left;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.col-50:hover{
+	background-color: rgba(129,101,149,0.6);
+}
+.col-50-btn{
+	position: relative;
+	width: 100%;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.tx-donacion-1{
+	position: absolute;
+	bottom: 15px;
+	width: 90%;
+	left: 5%
+}
+.titulo-metodo-donacion{
+	font-family: 'Abhaya Libre', serif;
+	margin-bottom: 10px;
+	line-height: 0.85em;
+	text-align: center;
+	color: #444444;
+}
+.tx-metodo-donacion{
+	color: #ffffff;
+	font-weight: 500;
+}
+.logos-metodo-donacion{
+	position: relative;
+	height: 32px;
+	width: 100%;
+	margin: 20px 0 0 0;
+}
+.linea-promotores-1{
+	position: relative;
+	float: left;
+	width: 100%;
+	border-top: solid 2px #8db4dc;
+}
+.col-50-2{
+	position: relative;
+	border-top: solid 2px #8db4dc;
+	float: left;
+	margin-top: 22px;
+	margin-right: 3%;
+}
+.col-50-3{
+	position: relative;
+	border-top: solid 2px #8db4dc;
+	float: left;
+	margin-top: 22px;
+}
+.logo-promotores{
+	position: relative;
+	max-width: 200px;
+	margin: 15px 1.2% 15px 0;
+	float: left;
+}
+.logo-promotores-2{
+	position: relative;
+	max-width: 200px;
+	margin: 15px 1.2% 15px 0;
+	float: left;
+}
+.logo-hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.logo-promotores:hover > .logo-hover{
+	opacity: 1;
+}
+.logo-promotores-2:hover > .logo-hover{
+	opacity: 1;
+}
+.subtitulo-img{
+	position: relative;
+	float: left;
+	height: 22px;
+	margin: 0px 0 0 -1px;
+}
+.subtitulo-img-2{
+	position: absolute;
+	height: 22px;
+	top: -22px;
+	left: -1px;
+}
+.myContent{
+    height: 500px;
+	width: 70%;
+	margin: 0 15%;
+	color: #fff;
+}
+.tx-legal{
+	position: relative;
+	float: left;
+	font-size: 0.9em;
+	text-align: left;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.tx-legal p{
+	margin: 8px 0;
+}
+.tx-legal a{
+	color: #ffffff;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.tx-legal a:hover{
+	color: #D89BBE;
+}
+.logo-dima{
+	position: relative;
+	float: left;
+	width: 305px;
+	margin: 0 0 20px -10px;
+}
+.separador-legal{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 1px;
+	margin: 20px 0;
+	border-top: solid 1px #ffffff;
+}
+.contenedor-faq{
+	position: relative;
+	float: left;
+	display: inline-block;
+	clear: both;
+	z-index: 89;
+}
+.faq-pregunta{
+	font-family: 'Abhaya Libre', serif;
+	font-size: 2em;
+	text-align: left;
+	font-weight: 500;
+	width: 100%;
+	cursor: pointer;
+	margin-top: 10px;
+}
+.faq-respuesta{
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+	padding: 15px 40px 15px 40px;
+	line-height: 1.2em;
+}
+.faq-respuesta a{
+	color: #09090C;
+	font-size: 0.9em;
+}
+.faq-respuesta a:hover{
+	font-weight: 500;
+}
+.faq-respuesta p{
+	margin: 7px 0;
+}
+.contenedor-seccion-gde{
+	position: relative;
+	float: left;
+	display: block;
+	z-index: 998;
+}
+.col-historia{
+	position: relative;
+}
+.col-modelo{
+	position: relative;
+	width: 100%;
+	text-align: left;
+}
+.col-mision{
+	position: relative;
+}
+.col-vision{
+	position: relative;
+}
+.logo-noticias{
+	position: relative;
+	float: left;
+	width: 100%;
+	clear: both;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+.logo-noticias img{
+	width: 33%;
+	max-width: 200px;
+}
+.tx-noticias{
+	font-family: 'Abhaya Libre', serif;
+	color: #09090C;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+.tx-euee{
+	position: relative;
+	height: 100%;
+	float: left;
+}
+.tx-programa-1{
+	position: relative;
+	height: 100%;
+	float: left;
+}
+.tx-programa-2{
+	position: relative;
+	height: 100%;
+	float: left;
+}
+.tx-modelo{
+	position: relative;
+	color: #09090C;
+}
+.img-vision{
+	position: relative;
+	overflow: hidden;
+}
+.img-vision img{
+	position: absolute;
+	overflow: hidden;
+}
+.img-euee{
+	position: relative;
+	overflow: hidden;
+}
+.img-euee img{
+	position: absolute;
+	overflow: hidden;
+}
+.img-programa-1, .img-programa-2, .img-programa-3{
+	position: relative;
+}
+.subtitulo-euee, .subtitulo-modelo{
+	font-family: 'Abhaya Libre', serif;
+}
+.flecha-abajo{
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	left: 50%;
+	margin-left: -21px;
+	bottom: 25px;
+	z-index: 99;
+}
+.img-modelo{
+	position: relative;
+	width: 300px;
+	margin: 0 auto 0px auto;
+}
+.pasaporte{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+#unica-seleccionar, #recurrente-seleccionar{
+    background: #ffffff;
+    text-align: left;
+    max-width: 900px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+    color: #ffffff;
+}
+#unica-seleccionar {
+    background-color: #8eb5dd;
+}
+
+#recurrente-seleccionar {
+    background-color: #d89bbe;
+}
+
+#unica-seleccionar div, #recurrente-seleccionar div{
+    font-size: 2.5em;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    position: relative;
+    margin: 40px 0 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#unica-seleccionar p, #recurrente-seleccionar p {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.logo-proveedor-donaciones {
+    position: relative;
+    float: left;
+    width: 50%;
+    background-color: #E1E1E1;
+    padding: 30px 14% 40px 12%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-proveedor-donaciones:hover {
+    background-color: #ffffff;
+}
+
+.logo-banwire-blanco {
+    position: absolute;
+    width: 120px;
+    display: block;
+    bottom: 0px;
+    right: 10px;
+}
+
+
+
+
+.contenedor-donaciones {
+    position: relative;
+    width: 360px;
+    margin: auto;
+}
+
+.separador-donar {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 20px auto;
+}
+.separador-donar-2 {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #8eb5dd;
+    margin: 20px 0;
+	clear: both;
+	display: block;
+	overflow: hidden;
+}
+
+.banwire, #banwire-libre, #banwire-libre-recurrente, #libre-Normal, #libre-Mensual {
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 34px;
+    font-size: 1.1em;
+    color: #ffffff;
+    padding: 0 0 0 10px;
+    background-color: #8eb5dd;
+    font-weight: 500;
+    border: none;
+    margin: 20px 0;
+}
+
+#btn-donar {
+    position: relative;
+    margin: 20px auto;
+}
+
+.logo-banwire-blanco {
+    position: absolute;
+    width: 120px;
+    display: block;
+    bottom: 0px;
+    right: 10px;
+}
+#btnPagarRecurrente, #btnPagarUnico, #donar-Normal, #donar-Mensual{
+	position: relative;
+	margin: 0 auto;
+}
+.logo-oxxo {
+    position: absolute;
+    width: 100px;
+    display: block;
+    bottom: 0px;
+    right: 130px;
+}
+
+.titulo-donar {
+    font-size: 3em;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    color: #444;
+    position: relative;
+    margin: 0 0 0px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.subtitulo-donar {
+    font-size: 1.8em;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    color: #444;
+    position: relative;
+    margin: 0 0 0px 0;
+    width: 100%;
+    line-height: 0.5em;
+    text-align: center;
+}
+.col-donacion-conekta{
+	position: relative;
+	width: 100%;
+	border-bottom: solid 1px #8eb5dd;
+	padding: 60px 30px;
+}
+.boton-conekta{
+	position: relative;
+	margin: 0px auto 150px auto;
+	padding: 10px 24px;
+	border-radius: 3px;
+	background-color: #8eb5dd;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 800;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.boton-conekta:hover{
+	background-color: #d99cbf;
+}

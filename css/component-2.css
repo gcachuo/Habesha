@@ -1,0 +1,172 @@
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cbp-mc-form:before, 
+.cbp-mc-form:after { 
+	content: " "; display: table; 
+}
+.cbp-mc-form{
+z-index: 999;
+}
+.cbp-mc-form:after { 
+	clear: both; 
+}
+
+.cbp-mc-column {
+	width: 50%;
+	padding: 10px 30px;
+	margin-bottom: 60px;
+	float: left;
+	display: block;
+	overflow: hidden;
+}
+
+.cbp-mc-form label {
+	display: block;
+	padding: 40px 5px 5px 2px;
+	font-size: 1.1em;
+	font-weight: 700;
+	color: #303034;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-align: left;
+}
+#text{
+	font-weight: 700;
+}
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+	font-size: 1.2em;
+	padding: 5px 10px;
+	color: #303034;
+	display: block;
+	font-weight: 400;
+	width: 100%;
+	background: transparent;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select{
+	border: 3px solid #d89bbe;
+}
+
+.cbp-mc-form textarea {
+	min-height: 200px;
+}
+
+.cbp-mc-form input:focus,
+.cbp-mc-form textarea:focus,
+.cbp-mc-form label:active + input,
+.cbp-mc-form label:active + textarea {
+	outline: none;
+	border: 3px solid #8db4dc;
+}
+
+.cbp-mc-form select:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #8db4dc;
+    font-style: italic;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #8db4dc;
+    font-style: italic;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #8db4dc;
+    font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #8db4dc;
+    font-style: italic;
+}
+
+.cbp-mc-submit-wrap {
+	text-align: center;
+	padding-top: 40px;
+	clear: both;
+	margin-bottom: 150px;
+}
+
+.cbp-mc-form input.cbp-mc-submit {
+	background: #3685B3;
+	border: none;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+.cbp-mc-form input.cbp-mc-submit:hover {
+	background: #3685B3;
+}
+
+.regular-checkbox {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	left: 0;
+	float: left;
+}
+.regular-checkbox:active, .regular-checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #3685B3;
+}
+.regular-checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #3685B3;
+}
+.big-checkbox {
+	padding: 18px;
+}
+
+.big-checkbox:checked:after {
+	font-size: 28px;
+	left: 6px;
+}
+
+
+
+
+
+@media screen and (max-width: 60em) {
+	.cbp-mc-column {
+		width: 90%;
+		padding: 10px;
+		margin: 0 5%;
+	}
+	.cbp-mc-column:nth-child(3) {
+		width: 90%;
+		margin: 0 5%;
+	}
+}

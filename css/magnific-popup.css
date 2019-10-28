@@ -131,9 +131,9 @@ button::-moz-focus-inner {
   top: 0;
   text-decoration: none;
   text-align: center;
-  opacity: 1;
+  opacity: 0.65;
   padding: 0 0 18px 10px;
-  color: #222222;
+  color: #FFF;
   font-style: normal;
   font-size: 28px;
   font-family: Arial, Baskerville, monospace; }
@@ -144,11 +144,11 @@ button::-moz-focus-inner {
     top: 1px; }
 
 .mfp-close-btn-in .mfp-close {
-  color: #222222; }
+  color: #333; }
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
-  color: #222222;
+  color: #FFF;
   right: -6px;
   text-align: right;
   padding-right: 6px;
@@ -352,13 +352,36 @@ img.mfp-img {
 
 
 
-
-
-
-      /* Styles for dialog window */
-     
-
-
+ /* Styles for dialog window */
+      #small-dialog-01, #small-dialog-02, #small-dialog-03, #small-dialog-04, #small-dialog-05, #small-dialog-06, #small-dialog-07, #small-dialog-08, #small-dialog-09, #small-dialog-10, #small-dialog-11, #small-dialog-12, #small-dialog-13, #small-dialog-14, #small-dialog-15, #small-dialog-16, #small-dialog-17, #small-dialog-18, #small-dialog-19, #small-dialog-20, #popup-privacidad {
+        background: white;
+        padding: 60px 7%;
+        text-align: left;
+        width: 70%;
+		max-height: 460px;
+        margin: auto;
+        position: relative;
+		color: #09090C;
+		overflow: auto;
+      }
+	  #small-dialog-01 h1, #small-dialog-02 h1, #small-dialog-03 h1, #small-dialog-04 h1, #small-dialog-05 h1, #small-dialog-06 h1, #small-dialog-07 h1, #small-dialog-08 h1, #small-dialog-09 h1, #small-dialog-10 h1, #small-dialog-11 h1, #small-dialog-12 h1, #small-dialog-13 h1, #small-dialog-14 h1, #small-dialog-15 h1, #small-dialog-16 h1, #small-dialog-17 h1, #small-dialog-18 h1, #small-dialog-19 h1, #small-dialog-20 h1, #popup-privacidad h1{
+		font-family: 'Abhaya Libre', serif;
+		font-size: 2.5em;
+		line-height: 1em;
+	  }
+	  #small-dialog-01 p, #small-dialog-02 p, #small-dialog-03 p, #small-dialog-04 p, #small-dialog-05 p, #small-dialog-06 p, #small-dialog-07 p, #small-dialog-08 p, #small-dialog-09 p, #small-dialog-10 p, #small-dialog-11 p, #small-dialog-12 p, #small-dialog-13 p, #small-dialog-14 p, #small-dialog-15 p, #small-dialog-16 p, #small-dialog-17 p, #small-dialog-18 p, #small-dialog-19 p, #small-dialog-20 p, #popup-privacidad p{
+		font-size: 1em;
+		margin: 8px 0;
+	  }
+	  #popup-privacidad h3{
+		font-size: 1.2em;
+		font-weight: 800;
+	  }
+	#popup-privacidad div{
+		font-family: 'Abhaya Libre', serif;
+		font-size: 1.8em;
+		font-weight: 800;
+	  }
       /**
        * Fade-zoom animation for first dialog
        */
@@ -419,3 +442,24 @@ img.mfp-img {
       .my-mfp-zoom-in.mfp-removing.mfp-bg {
         opacity: 0;
       }
+
+
+/* width */
+#small-dialog-01::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+#small-dialog-01::-webkit-scrollbar-track {
+  background: #B0B0B0; 
+}
+
+/* Handle */
+#small-dialog-01::-webkit-scrollbar-thumb {
+  background: #000000; 
+}
+
+/* Handle on hover */
+#small-dialog-01::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

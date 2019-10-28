@@ -1,0 +1,841 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 50000px) {
+	body{
+		font-size: 100%;
+	}
+	.logo1{
+		width: 150px;
+		left: 15px;
+		top: 7px;
+	}
+	.fp-viewing-anchor1 .logo1{
+		top: 15px;
+	}
+	.social{
+		display: block;
+		width: 214px;
+	}
+	.iconos{
+		width: 37px;
+		height: 37px;
+	}
+	.menu1 {
+		display: block;
+	}
+	.panel-copy{
+		top: 50%;
+	}
+	.panel-copy-rosa{
+		font-size: 4.2em;
+		line-height: 1.1em;
+	}
+	.panel-copy-gris{
+		font-size: 1.77em;
+	}
+	.colibri-equipo-1, .colibri-equipo-2, .colibri-equipo-3, .fondo-equipo-1{
+		width: 630px;
+	}
+	.colibri-equipo-1{
+		right: 100px;
+		top: 50px;
+	}
+	.colibri-equipo-2{
+		right: 60px;
+		top: 50px;
+	}
+	.colibri-equipo-3{
+		right: 100px;
+		top: 50px;
+	}
+	.fondo-equipo-1{
+		right: -10px;
+		top: -10px;
+	}
+	.estudiante-volador-1{
+		width: 450px;
+		bottom: 200px;
+		right: 300px;
+	}
+	.estudiante-volador-2{
+		width: 630px;
+		bottom: 390px;
+		right: 140px;
+	}
+	.estudiante-volador-3{
+		display: none;
+	}
+	.cielo-1{
+		width: 910px;
+		bottom: -50px;
+		right: 0;
+	}
+	.cielo-2{
+		width: 770px;
+		bottom: -40px;
+		right: 80px;
+	}
+	.colibri-docs-1, .colibri-docs-2, .colibri-docs-3{
+		width: 450px;
+	}
+	.colibri-docs-1{
+		right: 110px;
+		top: 40px;
+	}
+	.colibri-docs-2{
+		right: 90px;
+		top: 40px;
+	}
+	.colibri-docs-3{
+		right: 30px;
+		top: 40px;
+	}
+	.colibri-multi-1, .colibri-multi-2, .colibri-multi-3, .colibri-multi-4{
+		width: 400px;
+		top: -60px;
+		right: 70px;
+	}
+	.menu-trigger {
+		display: none;
+	}
+	.social{
+		right: 0px;
+	}
+	.test {
+ 		right: -242px;
+		width: 214px;
+	}
+	input:checked + .test {
+	  right: 0;
+	}
+	.elemento-reticula-1{
+		width: 20%;
+		font-size: 1.4em;
+	}
+	.elemento-reticula-2{
+		width: 20%;
+		font-size: 1.4em;
+	}
+	.reticula-estudiantes-home{
+		margin-right: -25px;
+		margin-top: 20px;
+	}
+	.elemento-reticula-estudiantes-home{
+		width: 20%;
+		font-size: 1.4em;
+		padding: 20px;
+	}
+	.titulo-seccion-1, .titulo-seccion-3{
+		font-size: 7em;
+	}
+	.titulo-seccion-2, .titulo-seccion-2a{
+		font-size: 5.1em;
+		width: 60%;
+		line-height: 0.9em;
+	}
+	.titulo-seccion-home, .titulo-metodo-donacion{
+		font-size: 4.2em;
+	}
+	.contenedor-sub-quienes, .contenedor-sub-emergencias{
+		font-size: 1em;
+		width: 35%;
+	}
+	.contenedor-sub-quienes{
+	margin: 80px 0 0px -400px;
+	}
+	.fp-viewing-anchor2 .contenedor-sub-quienes, .fp-viewing-anchor5 .contenedor-sub-quienes{
+		opacity: 1;
+		margin-left: 15%;
+	}
+	.fp-viewing-anchor2 .contenedor-sub-emergencias{
+		opacity: 1;
+		margin-right: 15%;
+	}
+	.contenedor-donar{
+		margin: 24% 15% 19% 15%;
+		width: 70%;
+	}
+	.col-50{
+		width: 50%;
+		height: calc(100% - 86px);
+	}
+	.tx-donacion-1{
+		display: block;
+	}
+	.contenedor-sub-estudiantes{
+		margin: 0 -200px 0px 0px;
+		font-size: 1em;
+		width:66%;
+		top: 54%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.fp-viewing-anchor4 .contenedor-sub-estudiantes{
+		opacity: 1;
+		margin-right: 26%;
+	}
+	.solo-gde{
+		display: block;
+	}
+	.ilustraciones img{
+		top: 120px;
+		width: 130%;
+		left: -15%;
+	}
+	.ilustraciones-historias{
+		width: 40%;
+		right: 20%;
+		top: 40px;
+	}
+	.logo-promotores{
+		width: 13%;
+	}
+	.logo-promotores-2{
+		width: 28.6%;
+	}
+	.col-60{
+		width: 60%;
+		height: 100%;
+	}
+	.col-40{
+		height: 100%;
+		width: 40%;
+	}
+	.col-50-2{
+		width: 47%;
+		margin-right: 3%;
+	}
+	.col-50-3{
+		width: 47%;
+		margin-left: 3%;
+	}
+	.contenedor-sub-promotores{
+		width: 70%;
+		margin: 70px 15% auto 15%;
+	}
+	.elemento-reticula-4{
+		width: 12.5%;
+	}
+	.contenedor-faq{
+		width: 70%;
+		margin: 45px 15% 100px 15%;
+	}
+	.contenedor-seccion-gde{
+		width: 100%;
+		margin: 40px 0 0 0;
+	}
+	.col-historia{
+		width: 70%;
+		margin: 0px 15%;
+		text-align: left;
+		overflow: hidden;
+	}
+	.col-programa{
+		float: left;
+		width: 80%;
+		margin: 0px 10% 100px 10%;
+		text-align: left;
+		overflow: hidden;
+	}
+	.tx-historia{
+		position: relative;
+		float: left;
+		width: 100%;
+	}
+	.img-historia{
+		position: relative;
+		float: right;
+		width: 41%;
+		height: 372px;
+		overflow: hidden;
+	}
+	.img-historia img{
+		position: absolute;
+		left: -50%;
+		top: -20%;
+		overflow: hidden;
+	}
+	.col-mision{
+		width: 32%;
+		text-align: left;
+		float: left;
+		margin: 0 3% 0 15%;
+	}
+	.tx-mision{
+		position: relative;
+		height: 100%;
+		
+		width: 100%;
+	}
+	.img-todos{
+		position: relative;
+		float: right;
+		width: 100%;
+		height: 440px;
+		margin: 80px auto;
+		overflow: hidden;
+	}
+	.img-todos img{
+		position: absolute;
+		top: -50%;
+		height: auto;
+		left: 0;
+		overflow: hidden;
+	}
+	.col-vision{
+		width: 32%;
+		text-align: left;
+		float: right;
+		margin: 0 15% 120px 3%;
+	}
+	.tx-vision{
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+	.img-vision{
+		float: right;
+		width: 51%;
+		height: 264px;
+	}
+	.img-vision img{
+		top: -100%;
+		height: 120%;
+	}
+	.tx-euee{
+		float: left;
+		width: 53%;
+	}
+	.tx-programa-1{
+		width: 53%;
+	}
+	.tx-programa-2{
+		margin: 50px 0 0 0;
+		width: 53%;
+	}
+	.tx-modelo{
+		margin: auto;
+		width: 50%;
+	}
+	.img-euee{
+		float: right;
+		width: 75%;
+		height: 320px;
+		margin: 50px 0 120px 0;
+	}
+	.img-euee img{
+		top: -100%;
+	}
+	.img-programa-1{
+		float: right;
+		width: 40%;
+		margin: 74px 0 0 0;
+		clear: both;
+	}
+	.img-programa-2{
+		float: right;
+		width: 40%;
+		max-width: 300px;
+		margin: 150px 0 0 0;
+		clear: both;
+	}
+	.img-programa-3{
+		float: right;
+		width: 40%;
+		max-width: 200px;
+		margin: 150px 0 0 0;
+		clear: both;
+	}
+	.cita-euee{
+		font-weight: 700;
+	}
+	.subtitulo-euee{
+		font-size: 2.6em;
+		margin: 30px 0 30px 0;
+	}
+	.subtitulo-modelo{
+		font-size: 4em;
+		margin: 0px 0 15px 0;
+	}
+	.menu-modelo{
+		width: 10%;
+		height: 60%;
+		top: 22%;
+		left: -50px;
+		font-size: 2em;
+	}
+	.cita{
+		padding-right: 33%;
+	}
+	.titulo-elemento-reticula-1{
+		font-size: 3.5em;
+	}
+}
+@media screen and (max-width: 1600px) {
+	.estudiante-volador-1{
+		width: 420px;
+		bottom: 190px;
+		right: 300px;
+	}
+	.estudiante-volador-2{
+		width: 600px;
+		bottom: 370px;
+		right: 140px;
+	}
+	.cielo-1{
+		width: 890px;
+		bottom: -50px;
+		right: 0;
+	}
+	.cielo-2{
+		width: 750px;
+		bottom: -40px;
+		right: 80px;
+	}
+	.contenedor-sub-quienes, .contenedor-sub-emergencias{
+		font-size: 1em;
+		width: 40%;
+	}
+	.colibri-equipo-1, .colibri-equipo-2, .colibri-equipo-3, .fondo-equipo-1{
+		width: 600px;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.panel-copy-rosa{
+		font-size: 2.8em;
+		line-height: 1.1em;
+	}
+	.panel-copy-gris{
+		font-size: 1.16em;
+	}
+	.estudiante-volador-1{
+		width: 380px;
+		bottom: 160px;
+		right: 300px;
+	}
+	.estudiante-volador-2{
+		width: 570px;
+		bottom: 310px;
+		right: 140px;
+	}
+	.cielo-1{
+		width: 850px;
+		bottom: -50px;
+		right: 0;
+	}
+	.cielo-2{
+		width: 710px;
+		bottom: -40px;
+		right: 80px;
+	}
+	.elemento-reticula-1{
+		width: 25%;
+	}
+	.elemento-reticula-2{
+	width: 25%;
+	}
+	.colibri-docs-1, .colibri-docs-2, .colibri-docs-3{
+		width: 400px;
+	}
+	.colibri-docs-1{
+		right: 90px;
+		top: 40px;
+	}
+	.colibri-docs-2{
+		right: 60px;
+		top: 20px;
+	}
+	.colibri-docs-3{
+		right: 20px;
+		top: 20px;
+	}
+	.colibri-multi-1, .colibri-multi-2, .colibri-multi-3, .colibri-multi-4{
+		width: 360px;
+		top: -50px;
+		right: 80px;
+	}
+	.solo-gde{
+		display: none;
+	}
+	.elemento-reticula-estudiantes-home{
+		width: 25%;
+		font-size: 1.4em;
+	}
+	.ilustraciones img{
+		top: 85px;
+	}
+	.elemento-reticula-4{
+		width: 14.28%;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.panel-copy-rosa{
+		font-size: 2.2em;
+	}
+	.panel-copy-gris{
+		font-size: 0.94em;
+	}
+	.titulo-seccion-home, .titulo-metodo-donacion{
+	font-size: 3.6em;
+	}
+	.contenedor-sub-quienes, .contenedor-sub-emergencias{
+		font-size: 1em;
+		width: 45%;
+	}
+	.fp-viewing-anchor2 .contenedor-sub-quienes, .fp-viewing-anchor5 .contenedor-sub-quienes{
+		opacity: 1;
+		margin-left: 10%;
+	}
+	.fp-viewing-anchor2 .contenedor-sub-emergencias{
+		opacity: 1;
+		margin-right: 10%;
+	}
+	.colibri-equipo-1, .colibri-equipo-2, .colibri-equipo-3, .fondo-equipo-1{
+		width: 550px;
+	}
+	.contenedor-donar{
+		margin: 20% 10% 15% 10%;
+		width: 80%;
+	}
+	.col-50{
+		width: 100%;
+		height: 50%;
+	}
+	.tx-donacion-1{
+		display: none;
+	}
+	.col-60{
+		width: 80%;
+		height: 50%;
+		margin-left: 10%;
+	}
+	.col-40{
+		height: 50%;
+		width: 100%;
+	}
+	.ilustraciones img{
+		top: 50%;
+		margin-top: -305px;
+		width: 800px;
+		left: 50%;
+		margin-left: -400px;
+	}
+	.ilustraciones-historias{
+		width: 50%;
+		top: 40px;
+	}
+	.contenedor-sub-estudiantes{
+		margin: 0 -200px 0px 0px;
+		font-size: 1em;
+		width:100%;
+	}
+	.fp-viewing-anchor4 .contenedor-sub-estudiantes{
+		opacity: 1;
+		margin-right: 0;
+	}
+	.reticula-estudiantes-home{
+		margin-right: -20px;
+		margin-top: 0px;
+	}
+}
+@media screen and (max-width: 1099px) {
+	.menu1 {
+		display: none;
+	}
+	.menu-trigger {
+		display: block;
+	}
+	.social{
+		right: 60px;
+	}
+	.test {
+ 		right: -345px;
+		width: 275px;
+	}
+	input:checked + .test {
+	  right: -62px;
+	}
+	.estudiante-volador-1{
+		width: 380px;
+		bottom: 160px;
+		right: 200px;
+	}
+	.estudiante-volador-2{
+		width: 570px;
+		bottom: 310px;
+		right: 40px;
+	}
+	.cielo-1{
+		width: 850px;
+		bottom: -50px;
+		right: -100px;
+	}
+	.cielo-2{
+		width: 710px;
+		bottom: -40px;
+		right: -20px;
+	}
+	.elemento-reticula-1{
+		width: 33.3%;
+	}
+	.elemento-reticula-2{
+		width: 33.3%;
+		font-size: 1.2em;
+	}
+	.elemento-reticula-4{
+		width: 16.6%;
+	}
+	.menu-modelo{
+		width: 15%;
+		height: 60%;
+		top: 22%;
+		left: 0px;
+		font-size: 1.8em;
+	}
+	.tx-modelo{
+		width: 66%;
+		margin: 0 0 0 25%;
+	}
+	.tx-programa-1{
+		width: 100%;
+		display: block;
+		margin: 0px 0 90px 0;
+		text-align: center;
+	}
+	.tx-programa-2{
+		margin: 0px 0 90px 0;
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	.img-programa-1{
+		float: none;
+		width: 40%;
+		max-width: 300px;
+		margin: 50px auto 0 auto;
+		display: block;
+	}
+	.img-programa-2{
+		float: none;
+		width: 40%;
+		max-width: 300px;
+		margin: 0 auto 0 auto;
+		display: block;
+	}
+	.img-programa-3{
+		float: none;
+		width: 40%;
+		max-width: 200px;
+		margin: 0 auto 0 auto;
+	}
+	.col-historia{
+		width: 90%;
+		margin: 0px 5%;
+		float: none;
+	}
+	.col-mision{
+		width: 90%;
+		float: none;
+		margin: 0 5% 40px 5%;
+	}
+	.col-vision{
+		width: 90%;
+		float: none;
+		margin: 0 5% 80px 5%;
+	}
+	.img-todos{
+		height: 320px;
+	}
+	.img-todos img{
+		top: -10%;
+		left: -10%;
+		width: 120%;
+	}
+	.tx-euee{
+		width: 100%;
+	}
+	.img-euee{
+		float: right;
+		width: 100%;
+		height: 320px;
+		margin: 50px 0 120px 0;
+	}
+	.img-euee img{
+		top: 0%;
+	}
+	.titulo-seccion-2, .titulo-seccion-2a{
+		font-size: 3.6em;
+		width: 85%;
+	}
+	.cita{
+		padding-right: 0%;
+	}
+	.titulo-elemento-reticula-1{
+		font-size: 2.5em;
+	}
+}
+@media screen and (max-width: 900px) {
+	.titulo-seccion-home, .titulo-metodo-donacion{
+	font-size: 3.2em;
+	}
+	.contenedor-sub-quienes, .contenedor-sub-emergencias{
+		font-size: 1em;
+		width: 50%;
+	}
+	.ilustraciones img{
+		width: 630px;
+		margin-top: -170px;
+		margin-left: -325px;
+	}
+	.ilustraciones-historias{
+		width: 66%;
+		right: 32%;
+		top: 45px;
+	}
+	body{
+		
+	}
+	.panel-copy{
+		top: 35%;
+	}
+	.panel-copy-rosa{
+		font-size: 1.65em;
+		line-height: 1.2em;
+	}
+	.panel-copy-gris{
+		font-size: 0.7em;
+	}
+	.estudiante-volador-1{
+		width: 310px;
+		bottom: 160px;
+		right: 160px;
+	}
+	.estudiante-volador-2{
+		width: 470px;
+		bottom: 310px;
+		right: 0px;
+		display: none;
+	}
+	.estudiante-volador-3{
+		width: 350px;
+		bottom: 410px;
+		right: 0px;
+		display: block;
+	}
+	.cielo-1{
+		width: 690px;
+		bottom: -50px;
+		right: -100px;
+	}
+	.cielo-2{
+		width: 570px;
+		bottom: -40px;
+		right: -20px;
+	}
+	.contenedor-sub-promotores{
+		width: 90%;
+		margin: 70px 5% auto 5%;
+	}
+	.titulo-seccion-1, .titulo-seccion-3{
+		font-size: 5em;
+	}
+	.logo-promotores-2{
+		width: 33%;
+	}
+	.colibri-equipo-1, .colibri-equipo-2, .colibri-equipo-3, .fondo-equipo-1{
+		width: 450px;
+	}
+	.colibri-equipo-1{
+		right: 20px;
+		top: 50px;
+	}
+	.colibri-equipo-2{
+		right: -20px;
+		top: 50px;
+	}
+	.colibri-equipo-3{
+		right: 20px;
+		top: 50px;
+	}
+	.fondo-equipo-1{
+		right: -50px;
+		top: -10px;
+	}
+	.colibri-docs-1, .colibri-docs-2, .colibri-docs-3{
+		width: 300px;
+	}
+	.colibri-docs-1{
+		right: 90px;
+		top: 40px;
+	}
+	.colibri-docs-2{
+		right: 60px;
+		top: 20px;
+	}
+	.colibri-docs-3{
+		right: 20px;
+		top: 20px;
+	}
+}
+@media screen and (max-width: 680px) {
+	.colibri-multi-1, .colibri-multi-2, .colibri-multi-3, .colibri-multi-4{
+		width: 250px;
+		top: -30px;
+		right: 10px;
+	}
+	.estudiante-volador-3{
+		width: 320px;
+		bottom: 520px;
+		right: 0px;
+		display: block;
+	}
+	.cielo-1{
+		width: 540px;
+		bottom: -50px;
+		right: -80px;
+	}
+	.cielo-2{
+		width: 440px;
+		bottom: -40px;
+		right: -20px;
+	}
+	.elemento-reticula-1, .elemento-reticula-2{
+		width: 50%;
+		font-size: 1em;
+	}
+	.titulo-seccion-home, .titulo-metodo-donacion{
+	font-size: 3.2em;
+	}
+	.contenedor-sub-quienes, .contenedor-sub-emergencias{
+		font-size: 0.9em;
+		width: 70%;
+	}
+	.contenedor-sub-quienes{
+	margin: 80px 0 40px -400px;
+	}
+	.logo-promotores{
+		width: 23.8%;
+	}
+	.logo-promotores-2{
+		width: 48.8%;
+	}
+	.ilustraciones img{
+		width: 440px;
+		top: 60%;
+		margin-top: -170px;
+		margin-left: -220px;
+	}
+	.elemento-reticula-estudiantes-home{
+		width: 33%;
+		font-size: 1.4em;
+		padding: 0 20px;
+	}
+	.elemento-reticula-4{
+		width: 25%;
+	}
+}
+@media screen and (max-width: 500px) {
+	
+	
+}

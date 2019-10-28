@@ -1,36 +1,33 @@
 /**
- * Swiper 4.0.2
+ * Swiper 4.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * http://www.idangero.us/swiper/
  *
- * Copyright 2014-2017 Vladimir Kharlampidi
+ * Copyright 2014-2019 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: October 18, 2017
+ * Released on: February 22, 2019
  */
-.swiper-container{
-  margin-left: auto;
-  margin-right: auto;
+.swiper-container {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  list-style: none;
+  padding: 0;
   /* Fix of Webkit flickering */
-  z-index: 999999;
-  color: #fff;
+  z-index: 1;
+  margin: 130px auto;
+  text-align: center;
+  width: 50%;
+  -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+	opacity: 0;
 }
-.swiper-container-2 {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  width: 90%;
-  height: 400px;
-  /* Fix of Webkit flickering */
-  z-index: 3;
-  color: #fff;
+.fp-viewing-anchor2 .swiper-container {
+	opacity: 1;
 }
-
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
 }
@@ -44,7 +41,7 @@
 .swiper-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 170px;
   z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -58,6 +55,7 @@
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
+
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
   -webkit-transform: translate3d(0px, 0, 0);
@@ -75,23 +73,6 @@
   margin: 0 auto;
 }
 .swiper-slide {
-	text-align: center;
-    font-size: 1em;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -103,10 +84,9 @@
   -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-	padding: 0 10px;
-	z-index: 2;
+  font-size: 1em;
 }
-.swiper-invisible-blank-slide {
+.swiper-slide-invisible-blank {
   visibility: hidden;
 }
 /* Auto Height */
@@ -190,36 +170,32 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 100%;
-  width: 28px;
-  height: 28px;
-  margin-top: -28px;
+  bottom: 0px;
+  width: 60px;
+  height: 60px;
+  margin-top: -22px;
   z-index: 10;
   cursor: pointer;
-  border: solid 6px #000000;
+  background-size: 60px 60px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
-  border-radius: 50%;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  opacity: 0.35;
+  opacity: 1;
   cursor: auto;
   pointer-events: none;
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
-  left: 50%;
-  margin-left: -45px;
+  background-image: url("../img/flecha-izq.png");
+  left: calc(50% - 70px);
   right: auto;
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
-  right: 50%;
-  margin-right: -45px;
+  background-image: url("../img/flecha-der.png");
+  right: calc(50% - 70px);
   left: auto;
 }
 .swiper-button-prev.swiper-button-white,
@@ -237,6 +213,9 @@
 .swiper-button-next.swiper-button-black,
 .swiper-container-rtl .swiper-button-prev.swiper-button-black {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+}
+.swiper-button-lock {
+  display: none;
 }
 .swiper-pagination {
   position: absolute;
@@ -271,6 +250,11 @@
   position: relative;
 }
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -362,6 +346,13 @@ button.swiper-pagination-bullet {
   transition: 200ms transform, 200ms left;
   transition: 200ms transform, 200ms left, 200ms -webkit-transform;
 }
+.swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  -webkit-transition: 200ms right, 200ms -webkit-transform;
+  transition: 200ms right, 200ms -webkit-transform;
+  -o-transition: 200ms transform, 200ms right;
+  transition: 200ms transform, 200ms right;
+  transition: 200ms transform, 200ms right, 200ms -webkit-transform;
+}
 /* Progress */
 .swiper-pagination-progressbar {
   background: rgba(0, 0, 0, 0.25);
@@ -386,13 +377,15 @@ button.swiper-pagination-bullet {
   -ms-transform-origin: right top;
   transform-origin: right top;
 }
-.swiper-container-horizontal > .swiper-pagination-progressbar {
+.swiper-container-horizontal > .swiper-pagination-progressbar,
+.swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
   width: 100%;
   height: 4px;
   left: 0;
   top: 0;
 }
-.swiper-container-vertical > .swiper-pagination-progressbar {
+.swiper-container-vertical > .swiper-pagination-progressbar,
+.swiper-container-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
   width: 4px;
   height: 100%;
   left: 0;
@@ -415,6 +408,9 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-progressbar.swiper-pagination-black .swiper-pagination-progressbar-fill {
   background: #000000;
+}
+.swiper-pagination-lock {
+  display: none;
 }
 /* Scrollbar */
 .swiper-scrollbar {
@@ -450,6 +446,9 @@ button.swiper-pagination-bullet {
 }
 .swiper-scrollbar-cursor-drag {
   cursor: move;
+}
+.swiper-scrollbar-lock {
+  display: none;
 }
 .swiper-zoom-container {
   width: 100%;
