@@ -3,6 +3,9 @@ RewriteCond %{HTTP_HOST} ^(www\.)?(.+)
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+RewriteCond %{REQUEST_URI} conekta-recurrente.html
+RewriteRule ^(.*)$ /conekta-recurrente/ [L,R=301]
+
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php71” package as the default “PHP” programming language.
 <IfModule mime_module>
