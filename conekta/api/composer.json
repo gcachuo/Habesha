@@ -1,0 +1,6 @@
+{
+  "require": {
+    "conekta/conekta-php": "^4.0",
+    "ext-json": "*"
+  }
+}

@@ -1,769 +1,609 @@
 <!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=690">
-    <title>PROYECTO HABESHA</title>
-    <meta name="author" content="Oscar Zermeño González" />
-    <meta name="description" content="México por la paz y la reconstrucción en Siria" />
-    <meta name="keywords"  content="mexico, siria, estudiantes, ibero, sirios, sirias, syria, aguascalientes" />
+    <meta id="viewport" name="viewport" content="width=500">
+    <title>Proyecto Habesha</title>
+    <meta name="author" content="Oscar Zermeño Gonzalez" />
+    <meta name="description" content="Proyecto Habesha es una organización humanitaria, neutral, laica y sin fines de lucro de la sociedad civil mexicana que crea oportunidades de educación superior para jóvenes refugiados y desplazados del mundo." />
+    <meta name="keywords"  content="habesha, dima, proyecto, adrian melendez, siria, acnur, mexico, aguascalientes, refugiados, refugees, project, syria, africa, centroamerica" />
     <meta name="Resource-type" content="Document" />
     
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Bitter:400,700|Montserrat:400,500,700,800|Philosopher:400,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,600,700,800|Montserrat:400,500,600,700,800,900|Raleway:300,400,500,600,600i,700,800,800i,900&display=swap" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57459901-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	<link rel="stylesheet" type="text/css" href="css/habesha1.css" />
-   <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	  gtag('config', 'UA-57459901-1');
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="css/habesha3.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive1.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu-mobil.css" />
+    <link rel="stylesheet" type="text/css" href="css/animacion-colibri.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/examples.css" />
-    <link rel="stylesheet" type="text/css" href="css/menus.css" />
-    <link rel="stylesheet" type="text/css" href="css/swiper.css">
-    <link rel="stylesheet" type="text/css" href="css/grid1.css">
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+
+    <script src="modernizr.custom.js"></script>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    
+    <script>
+		if (screen.width > 480) {
+		  $("#viewport").attr("content", "width=550, initial-scale=1");
+		}
+	</script>
+   
+    <script type="text/javascript" src="js/jquery.fullPage-old.min.js"></script>
+<!--<script type="text/javascript" src="js/examples.js"></script>-->
+    
+    <script src="js/swiper.min.js"></script>
+    
+    <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
 
     <!--[if IE]>
         <script type="text/javascript">
              var console = { log: function() {} };
         </script>
     <![endif]-->
-	<script src="js/modernizr.custom.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script>
-	$(document).ready(function() {
-    $('#fullpage').removeClass('invisible').addClass('visible');
-});
-	</script>
-   <script>
-	$(document).ready(function() {
-    $('.encabezado').removeClass('invisible').addClass('visible');
-});
-	</script>
-   <script>
-	$(document).ready(function() {
-    $('.cargando').removeClass('visible').addClass('invisible');
-});
-	</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-    <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
-
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="js/examples.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                verticalCentered: true,
-                anchors: ['inicio', 'quienes_somos', 'anchor3', 'sumate', 'estudiantes', 'anchor6', 'anchor7', 'promotores', 'anchor9', 'contacto'],
-                scrollBar: false,
-                sectionsColor: ['#33B5FF', '#4D004C', '#FFA61A', '#00004C', '#28B4FA', '#A40054', '#00004C', '#340034', '#000000', '#000000'],
-				
-				
-				afterLoad: function(anchorLink, index){
-		var loadedSection = $(this);
-
-		//using index
-		if(index == 1){
-			$('.parallaxpersp1').css({
-				'opacity' : '1',
-				'display' : 'block',
-			}),
-			$('.parallaxpersp2').css({
-				'opacity' : '0',
-				'display' : 'none',
-			});
-		}
-		if(index == 2){
-			$('.parallaxpersp1').css({
-				'display' : 'none',
-			}),
-			$('.parallaxpersp2').css({
-				'opacity' : '1',
-			});
-		}
-					if(index == 3){
-			$('.parallaxpersp2').css({
-				'display' : 'none',
-			});
-		}
-		},
-
 	
-				
-				onLeave: function(index, nextIndex, direction){
-		var leavingSection = $(this);
+    <!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+   
+    <style>
+      
+	.tooltipster-sidetip .tooltipster-box {
+		background: #8eb5dd;
+		border: none;
+	}
+	.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+		border-top-color: #8eb5dd;
+		left: 0;
+		top: -3px;
+	}
+	.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background {
+		border-bottom-color: #8eb5dd;
+		left: 0;
+		top: 3px;
+	}
 
-		//using anchorLink
-		if(index == 1 && direction =='down'){
-			$('.parallaxpersp1').css({
-				'opacity' : '0',
-			}),
-			$('.parallaxpersp2').css({
-				'display' : 'block',
-			});
-		}
-		if(index == 2 && direction =='up'){
-			$('.parallaxpersp1').css({
-				'display' : 'block',
-			}),
-			$('.parallaxpersp2').css({
-				'opacity' : '0',
-			});
-		}
-		if(index == 2 && direction =='down'){
-			$('.parallaxpersp2').css({
-				'opacity' : '0',
-			});
-		}
-		if(index == 3 && direction =='up'){
-			$('.parallaxpersp2').css({
-				'display' : 'block',
-			});
-		}
-		},			
-					
-            });
-        });
-    </script>
-<style>
-	h3{
-		font-size: 1.5em;
-	}	
-</style>
-    
+	.tooltipster-sidetip.tooltipster-left .tooltipster-arrow-background {
+		border-left-color: #8eb5dd;
+		left: -3px;
+		top: 0;
+	}
+
+	.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-background {
+		border-right-color: #8eb5dd;
+		left: 3px;
+		top: 0;
+	}
+	.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
+		border-bottom-color: #8eb5dd;
+	}
+
+	.tooltipster-sidetip.tooltipster-left .tooltipster-arrow-border {
+		border-left-color: #8eb5dd;
+	}
+
+	.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border {
+		border-right-color: #8eb5dd;
+	}
+
+	.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+		border-top-color: #8eb5dd;
+	}
+	.tooltip_templates {
+		display: none;
+	}
+	.idiomas{
+		float: right;
+		width: 37px;
+	}
+	
+    </style>
+	
 </head>
+
 <body>
-<div class="cargando visible">
-	<div class="logo-cargando"><img src="img/logo-blanco.png" width="100%"></div>
-</div>
+<div class="mp-pusher" id="mp-pusher">
 
- <div class="encabezado invisible">
-      	<a class="logo1" href="#inicio"><img src="img/logo1.png" width="100%"></a>
-      	<div class="idiomas">
-      		<div class="icono-idiomas"><img src="img/icono-idiomas.png" width="100%"></div>
-      		<a class="btn-idiomas" href="#">ES</a>
-      		<a class="btn-idiomas" href="english/index.html">EN</a>
-      	</div>
-      	<a id="trigger-overlay" class="trigger-overlay trigger-menu" data-overlay="layer1"><img src="img/btn-menu.png" width="100%"></a>
-      	<a class="cien trigger-overlay" data-overlay="layer2"><img src="img/cien.png" width="100%"></a>
-      	<!--<ul id="menu">
-		  <li data-menuanchor="inicio"><a href="#inicio">Inicio</a></li>
-		  <li data-menuanchor="quienes_somos"><a href="#quienes_somos">Conócenos</a></li>
-		  <li data-menuanchor="anchor3"><a href="#anchor3">Estidiantes</a></li>
-		  <li data-menuanchor="sumate"><a href="#sumate">Multimedia</a></li>
-		  <li data-menuanchor="sumate"><a href="#estudiantes">Súmate</a></li>
-		  <li data-menuanchor="sumate"><a href="#estudiantes">Contacto</a></li>
-		</ul>-->
-     	
-      </div>
+<a class="colibri-sumate" href="#anchor3">
+	<div class="cs-alas-1"><img src="img/colibri-sumate-2.png" width="100%"></div>
+	<div class="cs-alas-2"><img src="img/colibri-sumate-3.png" width="100%"></div>
+	<div class="cs-alas-3"><img src="img/colibri-sumate-4.png" width="100%"></div>
+	<div class="cs-colibri-rosa"><img src="img/colibri-sumate-1.png" width="100%"></div>
+</a>
 
-<div id="fullpage" class="invisible">
-    <div class="section" id="section0">
+<!-----ENCABEZADO---->
+   <a href="#" id="trigger" class="menu-trigger"><img src="img/menu-mobil.png" width="100%"></a>
+   <a class="logo1 animated slideInDown delay-05s slow" href="#anchor1"><img src="img/logo1.png" width="100%"></a>
+        <div class="menu1 animated slideInDown slow">
 
-      		
-      		<ul class="parallaxpersp parallaxpersp1">
-      			<div class="layer layer-top z3" data-depth="0.2">
-					<div class="frase1">
-					México por la paz y la<br>
-					reconstrucción en Siria
+					<a class="elemento-menu-1 tooltip" data-tooltip-content="#submenu-nosotros">Conócenos</a>
+					<div class="tooltip_templates">
+						<span id="submenu-nosotros">
+							<a class="elemento-submenu-1" href="habesha.html">Proyecto Habesha</a>
+							<a class="elemento-submenu-1" href="euee.html">Educación Universitaria en Emergencias</a>
+							<a class="elemento-submenu-1" href="programas.html">Programas</a>
+							<a class="elemento-submenu-1" href="modelo.html">Nuestro Modelo</a>
+							<a class="elemento-submenu-1" href="equipo.html">Equipo</a>
+							<a class="elemento-submenu-1" href="#anchor5">Promotores</a>
+						</span>
 					</div>
-					<a class="call-sumate" href="#sumate">SÚMATE</a>
-				</div>
-				<div class="layer layer-top z1" data-depth="0.25">
-					<div id="bm"></div>
-					<div class="mapita"><img src="img/mapita.png" width="100%"></div>
-				</div>
-				<div class="layer layer-top z2" data-depth="0.1">
-					<div class="pintura"><img src="img/pintura.png" width="100%"></div>
-				</div>
-				
-			</ul>
-				<div id="bm2"></div>
-				<div id="bm3"></div>
-				
+					
+					<a class="elemento-menu-1 tooltip" data-tooltip-content="#submenu-estudiantes">Estudiantes</a>
+					<div class="tooltip_templates est">
+						<span id="submenu-estudiantes">
+							<a class="elemento-submenu-1" href="historias.html">Historias</a>
+						</span>
+					</div>
+					
+					<a class="elemento-menu-1 tooltip" data-tooltip-content="#submenu-multimedia">Multimedia</a>
+					<div class="tooltip_templates">
+						<span id="submenu-multimedia">
+							<a class="elemento-submenu-1" href="galeria.html">Galería</a>
+							<a class="elemento-submenu-1" href="videos.html">Videos</a>
+							<a class="elemento-submenu-1" href="noticias.html">Noticias</a>
+						</span>
+					</div>
 
-  
-		 
-		  
-		  <a class="patron-abajo" href="#quienes_somos"><img src="img/patron-abajo-3.png" width="100%"></a>
-		  
+					<a class="elemento-menu-1 tooltip" data-tooltip-content="#submenu-sumate">Súmate</a>
+					<div class="tooltip_templates">
+						<span id="submenu-sumate">
+							<a class="elemento-submenu-1" href="conekta">Dona</a>
+							<a class="elemento-submenu-1" href="casa-salam.html">Casa Salam</a>
+							<a class="elemento-submenu-1" href="ppp.html">Padrinos por la Paz</a>
+							<a class="elemento-submenu-1" href="practicas.html">Prácticas Profesionales</a>
+							<a class="elemento-submenu-1" href="voluntariado.html">Voluntariado</a>
+						</span>
+					</div>
+					
+					<a class="elemento-menu-1" href="documentos.html">Documentos</a>
+					
+					<a class="elemento-menu-1" href="faq.html">Preguntas Frecuentes</a>
+				
+			</div>
+			<div class="social">
+				<a class="iconos i-youtube" href="https://www.youtube.com/channel/UColnd--uwNIrHxq9CTrqBMg" target="_blank"></a>
+				<a class="iconos i-twitter" href="https://twitter.com/HabeshaP" target="_blank"></a>
+				<a class="iconos i-face" href="https://www.facebook.com/proyectohabesha/" target="_blank"></a>
+				<a class="iconos i-whats" title="+52 1 55 4403 2382"></a>
+				<label for="check"></label>
+				<input id="check" type="checkbox">
+				<div class="test">
+				  <a href="english/index.html">View in English</a><br>
+				</div>
+			</div>
+<div class="fondo-encabezado animated slideInDown delay-2s slow"></div>
+<!------FIN-ENCABEZADO--->
+
+<div id="fullpage">
+   
+    <div class="section" id="section0">
+        
+        <div class="panel-copy">
+        	<div class="panel-copy-rosa animated slideInLeft delay-05s">
+        		Por la Educación de<br>
+				Jóvenes Refugiados<br>
+				y Desplazados del<br>
+				Mundo<br>
+        	</div>
+        	<a class="panel-copy-gris animated slideInLeft delay-1s" data-tooltip-content="#submenu-eupr" href="euee.html">
+        		Educación Universitaria en Emergencias
+        	</a>
+        	<div class="tooltip_templates">
+						<span id="submenu-eupr">
+							<a class="elemento-submenu-1" href="euee.html">¿Qué es?</a>
+						</span>
+					</div>
+        </div>
+        <ul class="parallaxpersp parallaxpersp1">
+        	<div class="layer sm1" data-depth="0.35">
+        		<div class="estudiante-volador-1"><img src="img/estudiante1.png" width="100%"></div>
+			</div>
+       		<div class="layer sm2" data-depth="0.2">
+        		<div class="estudiante-volador-2"><img src="img/estudiante2.png" width="100%"></div>
+			</div>
+     		<!---RESPONSIVO--->
+      		<div class="layer sm2" data-depth="0.2">
+        		<div class="estudiante-volador-3"><img src="img/estudiante3.png" width="100%"></div>
+			</div>
+      		<!---RESPONSIVO--->
+       		<div class="layer sm3" data-depth="0.05">
+        		<div class="cielo-1"><img src="img/cielo1.png" width="100%"></div>
+			</div>
+       		<div class="layer sm4" data-depth="0.1">
+        		<div class="cielo-2"><img src="img/cielo2.png" width="100%"></div>
+			</div>
+        </ul>
     </div>
-    
-    <!----------------------FIN-SECCION-1------------------------>
-    
     
     <div class="section" id="section1">
-         <div class="myContent test-siria">
-         	
-         	
-         		
-<div class="swiper-container">
-   <div class="titulo-seccion-home">¿Quiénes somos?</div>
-    <div class="swiper-wrapper">
-      
-      <div class="swiper-slide">
-		<p>Somos una iniciativa humanitaria internacional sin ánimo de lucro, apolítica, neutral y laica liderada por México, dirigida a enviar un mensaje de solidaridad al pueblo de Siria haciendo posible que un grupo de estudiantes sirios, cuyos estudios universitarios se vieron interrumpidos a causa del conflicto armado, viaje a México para concluir su educación superior y prepararlos para la reconstrucción de su país una vez llegada la paz.</p>
-         	</div>
-      <div class="swiper-slide">
-		<p>En armonía con la tradición histórica de México de dar refugio a aquellos que huyen de la violencia y la intolerancia, proponemos un modelo que concibe la recepción de estudiantes sirios como un activo y una oportunidad para promover el diálogo intercultural que fomente una cultura internacional para la paz, posicionando a nuestro país como un actor global solidario y responsable.</p>
-      </div>
-      <div class="swiper-slide">
-			<a class="i-quienes" href="equipo.html"><div class="img-quienes"><img src="img/i-equipo.png" width="100%"></div>
-			<span>Equipo<br></span><br>
-			</a>
-     
-     		<a class="i-quienes" href="preguntas-frecuentes.html"><div class="img-quienes"><img src="img/i-faq.png" width="100%"></div>
-			<span>Preguntas<br>Frecuentes</span>
-			</a>
-      </div>
-    </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-			 </div>
-         	
-         	<ul class="parallaxpersp parallaxpersp2">
-      			<div class="layer layer-bottom sm1" data-depth="0.05">
-					<div class="siria-morado"><img src="img/campo1-a.jpg" width="100%"></div>
-				</div>
-				<div class="layer sm2" data-depth="0.1">
-					<div class="siria-morado"><img src="img/campo1-b.png" width="100%"></div>
-				</div>
-				<div class="layer sm3" data-depth="0.15">
-					<div class="siria-morado"><img src="img/campo1-c.png" width="100%"></div>
-				</div>
+        
+            <div class="kaleido01">
+            	<video id="video1" data-autoplay loop height="100%" data-keepplaying>
+  		    		<source src="img/kaleido01C.mp4" type="video/mp4">
+		    	</video>
+            </div>
+            <!---<div class="kaleido02">
+            	<video id="video2" data-autoplay loop height="100%" data-keepplaying>
+  		    		<source src="img/kaleido01.mp4" type="video/mp4">
+		    	</video>
+            </div>--->
+         	<div class="contenedor-sub-quienes">
+			   <div class="titulo-seccion-home">¿Quiénes Somos?</div>
+
+				<p>Proyecto Habesha es una organización humanitaria, neutral, laica y sin fines de lucro de la sociedad civil mexicana que crea oportunidades de educación superior para jóvenes refugiados y desplazados del mundo.</p>
 				
-			</ul>
-			 
+				<a class="btn-quienes-1" href="habesha.html"><img src="img/btn-quienes-1.png" width="100%"></a>
+			
+			 </div>
+        
+    
+    
+    
+          <div class="contenedor-sub-emergencias">
+			   <div class="titulo-seccion-home">Educación Universitaria en Emergencias</div>
+
+				<p>En alianza con el Alto Comisionado de las Naciones Unidas para los Refugiados y otros organismos internacionales, enfrentamos el desafío de la educación universitaria en emergencias.</p>
+			
+				<a class="btn-emergencia-1" href="euee.html"><img src="img/btn-emergencia-1.png" width="100%"></a>
+			 </div>
+       		<div class="fondo-sub-emergencias"><img src="img/fondo-pintura-5.png" height="100%"></div>
         </div>
-      
+    
+    
+    <div class="section" id="section2">
+        <div class="contenedor-donar">
+			<a class="col-50 popup-with-zoom-anim" href="#unica-seleccionar">
+				<div class="col-50-btn">
+					<div class="titulo-metodo-donacion">
+						Única
+					</div>
+					<div class="tx-metodo-donacion">
+						Haz una donación usando cualquier tarjeta de crédito, débito ó en efectivo en Oxxo.
+					</div>
+					<div class="logos-metodo-donacion">
+						<img src="img/i-mastercard.png" height="100%">
+						<img src="img/i-visa.png" height="100%">
+						<img src="img/oxxo-1.png" height="100%">
+					</div>
+				</div>
+			</a>
+			<a class="col-50 popup-with-zoom-anim" href="#recurrente-seleccionar">
+				<div class="col-50-btn">
+					<div class="titulo-metodo-donacion">
+						Recurrente
+					</div>
+					<div class="tx-metodo-donacion">
+						Haz una donación mensual recurrente usando cualquier tarjeta de crédito o débito.
+					</div>
+					<div class="logos-metodo-donacion">
+						<img src="img/i-mastercard.png" height="100%">
+						<img src="img/i-visa.png" height="100%">
+					</div>
+				</div>
+			</a>
+        	<div  class="tx-donacion-1">Hoy en día solamente el 3% de los jóvenes refugiados tienen acceso a educación universitaria. Guiados por los Objetivos de Desarrollo Sostenible de Naciones Unidas, para 2030 queremos llegar al 15%. Con tu donación podremos alcanzar nuestra meta.</div>
+        </div>
     </div>
-    
-    <!----------------------FIN-SECCION-2------------------------>
-    
-    
-    <div class="section fp-auto-height" id="section2">
-    	<div class="contenedor-frase-hazem">
-			<div class="hazem-frase"><img src="img/frase-zain.jpg" height="300"></div>
-			<div class="frase-hazem-2">"Como refugiado, tu futuro está congelado. Pero como estudiante aquí en México… todo es posible."<br>
-	<span>-Zain, Al Jazeera-</span></div>
-		</div>
-    </div>
-    
-    <!----------------------FIN-SECCION-3------------------------>
-    
     
     <div class="section" id="section3">
-    	<div class="contenedor-sumate">
-    		<div class="titulo-seccion-rel">Súmate</div>
-    		<a class="elemento-sumate popup-with-zoom-anim" href="#unica-seleccionar">
-    			<div class="icono-sumate"><img src="img/i-unico.png" width="100%"></div>
-    			DONACIÓN ÚNICA<br>
-    			<p>Haz una donación única usando tarjeta de débito o crédito a través de <strong>Paypal</strong> o <strong>Banwire</strong></p>
-    		</a>
-    		<a class="elemento-sumate popup-with-zoom-anim" href="#recurrente-seleccionar">
-    			<div class="icono-sumate"><img src="img/i-recurrente.png" width="100%"></div>
-    			DONACIÓN RECURRENTE<br>
-    			<p>Haz una donación recurrente usando tarjeta de débito o crédito a través de <strong>Paypal</strong> o <strong>Banwire</strong>. Éstas se cargan mensualmente de modo automático a tu tarjeta y pueden cancelarse cuando quieras.</p>
-    		</a>
-    		<a class="elemento-sumate" href="banwire-unica-oxxo.html">
-    			<div class="icono-sumate"><img src="img/i-efectivo.png" width="100%"></div>
-    			DONACIÓN EN EFECTIVO<br>
-    			<p>Haz una donación en efectivo en tu tienda <strong>OXXO</strong> más cercana</p>
-    		</a>
-    	</div>
-        <div id="bm4"></div>
-        <div class="spot"><img src="img/spot.png" width="100%"></div>
-        <div class="sombra-fondo"></div>
-    	<div class="sombra-abajo"></div>
-    </div>
-    
-    <!----------------------FIN-SECCION-4------------------------>
-    
-    <div class="section" id="section4">
-    	
-      <div class="swiper-container-2">
-		   <div class="titulo-seccion-home">Estudiantes</div>
-			<div class="swiper-wrapper">
-     
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/silva.html"><div class="img-e"><img src="img/e-silva.png" width="100%"></div>
-      	<span>Silva</span><br>
-      	<p>Odontología</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/zain.html"><div class="img-e"><img src="img/e-zain.png" width="100%"></div>
-      	<span>Zain</span><br>
-      	<p>Arquitectura</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/hazem.html"><div class="img-e"><img src="img/e-hazem.png" width="100%"></div>
-      	<span>Hazem</span><br>
-      	<p>Administración</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/amer.html"><div class="img-e"><img src="img/e-amer.png" width="100%"></div>
-      	<span>Amer</span><br>
-      	<p>Traducción</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/jackdar.html"><div class="img-e"><img src="img/e-jack.png" width="100%"></div>
-      	<span>Jackdar</span><br>
-      	<p>Administración</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/enjin.html"><div class="img-e"><img src="img/e-enjin.png" width="100%"></div>
-      	<span>Enjin</span><br>
-      	<p>Arquitectura</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/samah.html"><div class="img-e"><img src="img/e-samah.png" width="100%"></div>
-      	<span>Samah</span><br>
-      	<p>Terapia Gestalt</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/ahmad.html"><div class="img-e"><img src="img/e-ahmad.png" width="100%"></div>
-      	<span>Ahmad</span><br>
-      	<p>Tecnologías de la Información</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/rinas.html"><div class="img-e"><img src="img/e-rinas.png" width="100%"></div>
-      	<span>Rinas</span><br>
-      	<p>Relaciones Internacionales</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/tamer.html"><div class="img-e"><img src="img/e-tamer.png" width="100%"></div>
-      	<span>Tamer</span><br>
-      	<p>Comunicación</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/rasha.html"><div class="img-e"><img src="img/e-rasha.png" width="100%"></div>
-      	<span>Rasha</span><br>
-      	<p>Ciencias Socialers</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-      <div class="swiper-slide">
-      	<a class="i-estudiantes" href="estudiantes/essa.html"><div class="img-e"><img src="img/e-essa.png" width="100%"></div>
-      	<span>Essa</span><br>
-      	<p>Comunicación</p>
-      	<div class="ver-bio"></div>
-      	</a>
-      </div>
-      
-    </div>
-    <!-- Add Arrows -->
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-  </div>
+        <div class="contenedor-estudiantes">
+			<div class="col-40">
+					<div class="ilustraciones">
+						<img id="f1" src="img/ilustracion-centro.png" width="100%">
+						<img id="f2" src="img/ilustracion-africa.png" width="100%">
+						<img id="f3" src="img/ilustracion-medio.png" width="100%">
+						<img id="f4" src="img/ilustracion-asia.png" width="100%">
+					</div>
+			</div>
+			<div class="col-60">
+				<div class="contenedor-sub-estudiantes">
+				   <div class="titulo-seccion-home">Estudiantes</div>
 
-		
-			
-		<div id="bm5"></div> 
-    </div>
-    
- 	 <!----------------------FIN-SECCION-5------------------------>
-	
-	
-	<div class="section fp-auto-height" id="section5">
-    	<div class="contenedor-frase-hazem">
-			<div class="silva-frase"><img src="img/frase-silva.png" height="300"></div>
-			<div class="frase-hazem">"Imagina que has muerto y alguien te da una cura milagrosa. Así fue venir a México. Fue como volver a nacer"<br>
-	<span>-Silva, The Guardian-</span></div>
-		</div>
-    </div>
-    
+					<p>Conoce las historias de los beneficiarios de<br>Proyecto Habesha.</p>
 
-	<!----------------------FIN-SECCION-6------------------------>
-    
-    <div class="section" id="section6">
-       <div class="contenedor-eem">
-       <div class="titulo-seccion-rel">Educación en Emergencias</div>
-       <p>Actualmente en el mundo hay más de 65 millones de personas que han sido desplazadas de sus hogares debido a conflictos armados. El 51% de los refugiados en el mundo son menores de 18 años de edad y solo el 1 % de ellos tendrá la oportunidad de acceder a educación superior, la misma que se requiere  para reconstruir las comunidades afectadas por conflictos armados.</p>
+					<a class="btn-historias-1" href="historias.html"><img src="img/btn-historias-1.png" width="100%"></a>
 
-	   <p>Conoce la propuesta de Proyecto Habesha para atender a la Educación Universitaria en Emergencias.</p>
-	   <a class="btn-descargar"><img src="img/btn-descargar-1.png" width="100%"></a>
-		</div>
-       <div class="contenedor-fondo-eem">
-
-        <ul class="parallaxpersp parallaxpersp3">
-      			<div class="layer sm1" data-depth="0.05">
-					<div class="siria-morado"><img src="img/homs3.png" width="100%"></div>
-				</div>
-				<div class="layer sm2" data-depth="0.1">
-					<div class="siria-morado"><img src="img/homs2.png" width="100%"></div>
-				</div>
-				<div class="layer sm3" data-depth="0.15">
-					<div class="siria-morado"><img src="img/homs1.png" width="100%"></div>
-				</div>
 				
-			</ul>
-		
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3211/jquery.parallax.min.js"></script>
-				<script  src="js/parallaxpersp.js"></script>
-		
-		</div>
-    </div>
+					<div class="reticula-estudiantes-home">
+						<!------------AQUÍ EMPIEZA--------------------->
+						<a class="elemento-reticula-estudiantes-home popup-with-zoom-anim" href="#small-dialog-01">
+						<div class="imagen-elemento-reticula-2">
+							<img src="img/omar-1.png" width="100%">
+						</div>
+						<div class="tx-elemento-reticula-2">Omar<br>
+						</div>
+						</a>
 
+						<div id="small-dialog-01" class="zoom-anim-dialog mfp-hide">
+							<h1>Omar Qayson</h1>
+							<br>
+							<p class="cita">“Tal vez he tenido poca suerte al estar en la guerra, pero al mismo tiempo tengo suerte porque así formo parte del Proyecto Habesha.”</p>
+							<p>&nbsp;</p>
+							<p>Omar es un joven originario de Talbisah, Homs, en el noroeste de Siria. Antes del conflicto su plan de vida contemplaba viajar a Damasco para estudiar periodismo, pero apenas logró terminar la preparatoria cuando los bombardeos comenzaron.</p>
 
-	<!----------------------FIN-SECCION-7------------------------>
-    
-    <div class="section" id="section7">
-        
-		<div class="contenedor-sumate">
-    		<div class="titulo-seccion-rel">Promotores</div>
-    		
-    		<a id="trigger-overlay" class="trigger-overlay elemento-promotores" data-overlay="layer3">
-    			<div class="icono-sumate"><img src="img/i-unis.png" width="100%"></div>
-    			UNIVERSIDADES<br><br>
-    			<div class="ver-mas"></div>
-    		</a>
-    		
-    		<a id="trigger-overlay" class="trigger-overlay elemento-promotores" data-overlay="layer4">
-    			<div class="icono-sumate"><img src="img/i-internacional.png" width="100%"></div>
-    			INSTITUCIONES INTERNACIONALES<br>
-    			<div class="ver-mas"></div>
-    		</a>
-    		
-    		<a id="trigger-overlay" class="trigger-overlay elemento-promotores" data-overlay="layer5">
-    			<div class="icono-sumate"><img src="img/i-privadas.png" width="100%"></div>
-    			SECTOR PRIVADO<br><br>
-    			<div class="ver-mas"></div>
-    		</a>
-    		
-    		<a id="trigger-overlay" class="trigger-overlay elemento-promotores" data-overlay="layer6">
-    			<div class="icono-sumate"><img src="img/i-personalidades.png" width="100%"></div>
-    			PERSONALIDADES<br><br>
-    			<div class="ver-mas"></div>
-    		</a>
-			
-    	</div>
-    	<div class="sombra-abajo"></div>
-    </div>
-    
-    <!----------------------FIN-SECCION-8------------------------>
-    
-    <div class="section" id="section8">
-       <div class="contenedor-sumate">
-        <ul class="cbp-rfgrid">
-        	<li><a class="logo-ch"><img src="img/logo-ibero-blanco.png" width="100%"/></a></li>
-        	<li><a class="logo-ch"><img src="img/logo-udem-blanco.png" width="100%"/></a></li>
-        	<li><a><img src="img/logo-anahuac-blanco.png" height="100"/></a></li>
-        	<li><a class="logo-ch"><img src="img/logo-iteso-blanco.png" width="100%"/></a></li>
-        	<li><a class="logo-ch"><img src="img/logo-unla-blanco.png" width="100%"/></a></li>
-			<li><a class="logo-ch"><img src="img/logo-upaep-blanco.png" width="100%"/></a></li>
-			<li><a class="logo-ch"><img src="img/logo-acnur-blanco.png" width="100%"/></a></li>
-			<li><a><img src="img/logo-iie-blanco.png" height="100"/></a></li>
-			<li><a><img src="img/logo-global-blanco.png" height="100"/></a></li>
-			<li><a class="logo-ch"><img src="img/logo-aeromexico-blanco.png" width="100%"/></a></li>
-			<li><a class="logo-ch"><img src="img/logo-manpower-blanco.png" width="100%"/></a></li>
-			<li><a><img src="img/logo-1910-blanco.png" height="100"/></a></li>		
-		</ul>
-	   </div>
-	   
-    </div>
-    
-    <!----------------------FIN-SECCION-9------------------------>
-    
-    <div class="section fp-auto-height" id="section9">
-    <div class="contenedor-contacto">
-	   		<div class="elemento-contacto">
-	   			<div class="subtitulo-contacto">Compártenos</div>
-	   		</div>
-	   		<div class="elemento-contacto">
-	   			<div class="subtitulo-contacto">Visítanos</div>
-	   			<div class="panel-social-2">
-					<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-face.png" height="100%"></a>
-					<a class="i-social" href="https://twitter.com/habeshap" target="_blank"><img src="img/i-twitter.png" height="100%"></a>
-					<a class="i-social" href="https://www.youtube.com/channel/UColnd--uwNIrHxq9CTrqBMg" target="_blank"><img src="img/i-youtube.png" height="100%"></a>
-					<a class="i-social tooltip fade" data-title="Whatsapp: +52 1 55 4403 2382" href="" target="_blank"><img src="img/i-whats.png" height="100%"></a>
+							<p>Fue seleccionado por Proyecto Habesha desde el año 2015, sin embargo, debido a que se encontraba en una zona completamente inaccesible debido a la violencia del conflicto armado, Omar esperó por más de tres años para poder llegar a México.</p>
+
+							<p>Omar fue recibido en México en mayo de 2018. Después de vivir un año en Aguascalientes y aprobar el Curso Intensivo de Aprendizaje del Español y Regularización Académica, comenzó sus estudios de Licenciatura en Arquitectura en la Universidad Iberoamericana.</p>
+						</div>
+						<!------------AQUÍ TERMINA--------------------->
+						<!------------AQUÍ EMPIEZA--------------------->
+						<a class="elemento-reticula-estudiantes-home popup-with-zoom-anim" href="#small-dialog-02">
+						<div class="imagen-elemento-reticula-2">
+							<img src="img/silva-1.png" width="100%">
+						</div>
+						<div class="tx-elemento-reticula-2">Silva<br>
+						</div>
+						</a>
+
+						<div id="small-dialog-02" class="zoom-anim-dialog mfp-hide">
+							<h1>Silva Namo</h1>
+							<br>
+							<p class="cita">“Imagina que has muerto y alguien te da una cura milagrosa. Así fue como se sintió venir a México, como si hubiera vuelto a nacer”</p>
+							<p>&nbsp;</p>
+							<p>Silva es una joven proveniente de  Al-Hasaka, Siria, lugar donde vivió hasta agosto de 2013, cuando debido a las consecuencias del conflicto armado tuvo que huir a la provincia de Duhok en el Kurdistán iraquí,  donde vivió por casi 4 años.</p>
+							<p>Durante su estancia en Irak trabajó como asistente comunitaria en una agencia humanitaria francesa, lo cual le permitió sensibilizarse con las necesidades de los refugiados y apoyar a su familia económicamente. La candidatura de Silva como beneficiaria del Proyecto Habesha fue aceptada desde 2015 y gracias a una intensiva campaña de recaudación logró llegar a México en febrero de 2017.</p>
+							<p>Hoy en día Silva es estudiante de odontología en la Universidad Latina de América.</p>
+						</div>
+						<!------------AQUÍ TERMINA--------------------->
+						<!------------AQUÍ EMPIEZA--------------------->
+						<a class="elemento-reticula-estudiantes-home popup-with-zoom-anim" href="#small-dialog-03">
+						<div class="imagen-elemento-reticula-2">
+							<img src="img/enjin-1.png" width="100%">
+						</div>
+						<div class="tx-elemento-reticula-2">Enjin<br>
+						</div>
+						</a>
+
+						<div id="small-dialog-03" class="zoom-anim-dialog mfp-hide">
+							<h1>Enjin Ali</h1>
+							<br>
+							<p class="cita">“Este proyecto es la prueba de la voluntad de México de ayudar a los países afectados y fortalecer sus relaciones con los pueblos necesitados.”</p>
+							<p>&nbsp;</p>
+							<p>Enjin es una joven originaria de la zona este de Alepo. Logró terminar sus estudios de preparatoria antes de que el recrudecimiento de la violencia en Kobani la forzara a desplazarse a Irak.</p>
+							<p>Durante su estancia en Irak, Enjin trabajó como voluntaria en diferentes campos de refugiados (Darashakran, Baharka y Debaga) para organizaciones como “Un Ponte Per”, “Relief”, y “Terres des Hommes” en colaboración con UNICEF y ACNUR en periodos distintos, sensibilizándose en temas de maternidad, matrimonio prematuro y trabajo infantil.</p>
+							<p>Al enterarse de la existencia del Proyecto Habesha comenzó su postulación a finales de 2016, siendo recibida en México el 27 de septiembre de 2017.</p>
+							<p>Actualmente se encuentra estudiando la Licenciatura en Arquitectura en el Instituto de Estudios Superiores de Occidente (ITESO) en Guadalajara.</p>
+						</div>
+						<!------------AQUÍ TERMINA--------------------->
+						<!------------AQUÍ EMPIEZA--------------------->
+						<a class="elemento-reticula-estudiantes-home popup-with-zoom-anim solo-gde" href="#small-dialog-04">
+						<div class="imagen-elemento-reticula-2">
+							<img src="img/rasha-1.png" width="100%">
+						</div>
+						<div class="tx-elemento-reticula-2">Rasha<br>
+						</div>
+						</a>
+
+						<div id="small-dialog-04" class="zoom-anim-dialog mfp-hide">
+							<h1>Rasha Salah</h1>
+							<br>
+							<p>Rasha es una joven originaria de la provincia de Sweida, Siria. En 2005 resultó acreedora a una beca para estudiar la Licenciatura en Humanidades y Ciencias de la Educación en La Habana, Cuba. Después de terminar sus estudios, Rasha regresó a Siria para continuar con su Licenciatura en Periodismo en la Universidad de Damasco.</p>
+							<p>Rasha trabajó como profesora de español en el Instituto Superior de Idiomas de la Universidad de Damasco, al mismo tiempo que colaboró como voluntaria en la Media Luna Roja, una institución perteneciente a la Cruz Roja Internacional. Como parte de sus responsabilidades, Rasha ayudaba a niños desplazados por la guerra realizando actividades recreativas que tienen como objetivo integrarlos a la sociedad.</p>
+							<p>Debido al recrudecimiento del conflicto armado, Rasha debió abandonar Siria a mediados de 2016 para viajar a Líbano, donde colaboró con una organización humanitaria local “Sawa for Development and Aid”, la cual trabaja con niños y jóvenes de 9 a 16 años refugiados sirios que buscan ser escolarizados a través de talleres y actividades terapéuticas. </p>
+							<p>Después de presentar su candidatura y ser aceptada en Proyecto Habesha, llegó a México a finales de 2017. Hoy en día Rasha se encuentra realizando sus estudios de Maestría en Ciencias Sociales en El Colegio de Sonora.</p>
+						</div>
+						<!------------AQUÍ TERMINA--------------------->
+					</div>
 				</div>
-	   		</div>
-	   		<div class="elemento-contacto">
-	   			<div class="subtitulo-contacto">Contáctanos</div>
-	   			<a class="btn-1" href="mailto:contacto@proyectohabesha.org">contacto@proyectohabesha.org</a>
-	   		</div>
-	   </div>
-	   <div class="contenedor-dima-legal">
-	   		<div class="l-dima"><img src="img/l-dima.png" height="100%"></div>
-	   		<div class="legal">
-	   			&reg; Diálogo Intercultural de México Activo A.C. 2017 | <a class="privacidad popup-with-zoom-anim" href="#popup-privacidad">Política de Privacidad</a>
-	   		</div>
-	   </div>
- </div>
- </div>   
-
-
-
-<!-- menus-mobil -->
-		<div class="overlay overlay-slidedown" id="layer1">
-			<div class="pintura-menu-1"><img src="img/pintura-menu-1.png" height="100%"></div>
-			<button type="button" class="overlay-close">Close</button>
-			<nav>
-				<script type="text/javascript">
-		$(document).ready(function($) {
-			$('#accordion').find('.accordion-toggle').click(function(){
-	
-				//Expand or collapse this panel
-				$(this).next().slideToggle('fast');
-	
-				//Hide the other panels
-				$(".accordion-content").not($(this).next()).slideUp('fast');
-	
-			});
-		});
-	</script>
-
-
-<!-- HTML -->
-<div id="accordion">
-
-	 <a class="btn-menu-mobil" href="#inicio">INICIO</a>
-	  <h4 class="accordion-toggle btn-menu-mobil">CONÓCENOS</h4>
-	  <div class="accordion-content">
-		<a href="#quienes_somos">Proyecto Habesha</a>
-		<a href="equipo.html">El Equipo</a>
-		<a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
-	  </div>
-	  <a class="btn-menu-mobil" href="#estudiantes">LOS ESTUDIANTES</a>
-	  <!--<h4 class="accordion-toggle btn-menu-mobil">MULTIMEDIA</h4>
-	  <div class="accordion-content">
-		<a>Galería</a>
-		<a>Videos</a>
-		<a>Noticias</a>
-	  </div>-->
-	  <h4 class="accordion-toggle btn-menu-mobil">SÚMATE</h4>
-	  <div class="accordion-content">
-		<a href="#sumate">Donación</a>
-		<!--<a>Dona es Especie</a>
-		<a>Sé voluntario</a>
-		<a>Sé promotor</a>
-		<a>Invita a un amigo</a>
-		<a>Eventos</a>-->
-	  </div>
-	  <!--<a class="btn-menu-mobil" href="estudiantes.html">TIENDA</a>-->
-	  <a class="btn-menu-mobil" href="#anchor7">EDUCACIÓN EN<br>EMERGENCIAS</a>
-	  <a class="btn-menu-mobil" href="#promotores">PROMOTORES</a>
-	  <a class="btn-menu-mobil" href="#contacto">CONTÁCTANOS</a>
-  
-</div>
-			</nav>
-			<div class="panel-social">
-				<a class="i-social" href="https://www.facebook.com/proyectohabesha/" target="_blank"><img src="img/i-face.png" height="100%"></a>
-				<a class="i-social" href="https://twitter.com/habeshap" target="_blank"><img src="img/i-twitter.png" height="100%"></a>
-				<a class="i-social" href="https://www.youtube.com/channel/UColnd--uwNIrHxq9CTrqBMg" target="_blank"><img src="img/i-youtube.png" height="100%"></a>
-				<a class="i-social tooltip fade" data-title="Whatsapp: +52 1 55 4403 2382" href="" target="_blank"><img src="img/i-whats.png" height="100%"></a>
 			</div>
 		</div>
+    </div>
+    
+    <div class="section" id="section4">
+    	<div class="contenedor-sub-promotores">
+			<div class="titulo-seccion-home">Promotores</div>
+			
+			<div class="subtitulo-img"><img src="img/subtitulo-universidades.png" height="100%"></div>
+			<div class="linea-promotores-1">
+				<a class="logo-promotores" href="https://ibero.mx/" target="_blank"><img class="logo-hover" src="img/logo-ibero-1.png" width="100%"><img src="img/logo-ibero-2.png" width="100%"></a>
+				<a class="logo-promotores" href="https://www.unla.mx/" target="_blank"><img class="logo-hover" src="img/logo-unla-1.png" width="100%"><img src="img/logo-unla-2.png" width="100%"></a>
+				<a class="logo-promotores" href="https://www.upaep.mx/" target="_blank"><img class="logo-hover" src="img/logo-upaep-1.png" width="100%"><img src="img/logo-upaep-2.png" width="100%"></a>
+				<a class="logo-promotores" href="https://www.iteso.mx/" target="_blank"><img class="logo-hover" src="img/logo-iteso-1.png" width="100%"><img src="img/logo-iteso-2.png" width="100%"></a>
+				<a class="logo-promotores" href="http://www.udem.edu.mx/Esp/Paginas/default.aspx" target="_blank"><img class="logo-hover" src="img/logo-udem-1.png" width="100%"><img src="img/logo-udem-2.png" width="100%"></a>
+				<a class="logo-promotores" href="https://www.anahuac.mx/" target="_blank"><img class="logo-hover" src="img/logo-anahuac-1.png" width="100%"><img src="img/logo-anahuac-2.png" width="100%"></a>
+				<a class="logo-promotores" href="http://www.ucsj.edu.mx/" target="_blank"><img class="logo-hover" src="img/logo-ucsj-1.png" width="100%"><img src="img/logo-ucsj-2.png" width="100%"></a>
+			</div>
+			
+			<div class="subtitulo-img"><img src="img/subtitulo-agencias.png" height="100%"></div>
+			<div class="linea-promotores-1">
+				<a class="logo-promotores" href="https://www.acnur.org/mexico.html" target="_blank"><img class="logo-hover" src="img/logo-acnur-1.png" width="100%"><img src="img/logo-acnur-2.png" width="100%"></a>
+				<a class="logo-promotores" href="https://wusc.ca/" target="_blank"><img class="logo-hover" src="img/logo-wusc-1.png" width="100%"><img src="img/logo-wusc-2.png" width="100%"></a>
+				<a class="logo-promotores" href="http://www.globalplatformforsyrianstudents.org/" target="_blank"><img class="logo-hover" src="img/logo-gpfss-1.png" width="100%"><img src="img/logo-gpfss-2.png" width="100%"></a>
+				<a class="logo-promotores" href="https://www.iie.org/" target="_blank"><img class="logo-hover" src="img/logo-iie-1.png" width="100%"><img src="img/logo-iie-2.png" width="100%"></a>
+				<a class="logo-promotores" href="https://www.canadainternational.gc.ca/dominican_republic-republique_dominicaine/offices-bureaux/CFLI_FCIL.aspx?lang=spa" target="_blank"><img class="logo-hover" src="img/logo-canada-1.png" width="100%"><img src="img/logo-canada-2.png" width="100%"></a>
+				<a class="logo-promotores" href="http://www.catalystfdn.org/" target="_blank"><img class="logo-hover" src="img/logo-catalyst-1.png" width="100%"><img src="img/logo-catalyst-2.png" width="100%"></a>
+				<a class="logo-promotores" href="https://www.tika.gov.tr/tr" target="_blank"><img class="logo-hover" src="img/logo-tika-1.png" width="100%"><img src="img/logo-tika-2.png" width="100%"></a>
+			</div>
+			
+			<div class="col-50-2">
+				<div class="subtitulo-img-2"><img src="img/subtitulo-privado.png" height="100%"></div>
+				<a class="logo-promotores-2" href="https://www.aeromexico.com/" target="_blank"><img class="logo-hover" src="img/logo-aeromexico-1.png" width="100%"><img src="img/logo-aeromexico-2.png" width="100%"></a>
+				<a class="logo-promotores-2" href="https://www.manpowergroup.com/" target="_blank"><img class="logo-hover" src="img/logo-manpower-1.png" width="100%"><img src="img/logo-manpower-2.png" width="100%"></a>
+			</div>
+			
+			<div class="col-50-3">
+			<div class="subtitulo-img-2"><img src="img/subtitulo-personalidades.png" height="100%"></div>
+				<a class="logo-promotores-2" href="https://www.youtube.com/watch?v=g_Z2YbxQf-8" target="_blank"><img class="logo-hover" src="img/lgm-1.png" width="100%"><img src="img/lgm-2.png" width="100%"></a>
+				</div>
+			
+		</div>
+    </div>
+    
+    <div class="section fp-auto-height" id="section5">
+        <div class="myContent">
+          <div class="tx-legal">
+          	<div class="logo-dima"><img src="img/logo-dima.png" width="100%"></div>
+          	<p>contacto@proyectohabesha.org</p>
+          	<p>+52 1 55 4403 2382</p>
+          	<p>Gral. Ignacio Allende 304, Zona Centro<br>20000 Aguascalientes, Ags.</p>
+          	<div class="separador-legal"></div>
+          	<p>Diálogo intercultural de México Activo &reg; 2019</p>
+          	<a class="privacidad popup-with-zoom-anim" href="#popup-privacidad">Política de Privacidad</a>
+          </div>
+        </div>
+    </div>
+    
+</div>
 
-		<div class="overlay-2 overlay-slidedown-2" id="layer2">
-			<div class="pintura-menu-2"><img src="img/pintura-menu-2.png" height="100%"></div>
-			<button type="button" class="overlay-close">Close</button>
-				
-				<div class="contenedor-cien">
-					<div class="logo-cien-2"><img src="img/cien2.png" width="100%"></div>
-					<div class="texto-cien">
-					<p>100 por Siria es la campaña de Proyecto Habesha que ofrece la oportunidad de hacer algo por la juventud siria cuyo futuro académico se encuentra en colapso.</p>
 
-					<p>Con tu contribución mensual de 100 pesos o más, podremos ofrecerles a nuestros beneficiarios un estipendio mensual que les permitirá contar con lo esencial para vivir durante sus estudios.</p>
-					<a class="btn-donar-1" href="#sumate"><img src="img/btn-sumate.png" width="100%"></a>
+<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+					<h2 class="icon icon-news">MENÚ</h2>
+						<ul>
+							<li class="icon icon-arrow-left">
+								<a class="primero" href="#">Conócenos</a>
+								<div class="mp-level">
+									<h2 class="icon icon-display"><span>Conócenos</span></h2>
+									<ul>
+										<li class="primero"><a href="habesha.html">Proyecto Habesha</a></li>
+										<li><a href="euee.html">Educación Universitaria en Emergencias</a></li>
+										<li><a href="programas.html">Programas</a></li>
+										<li><a href="modelo.html">Nuestro Modelo</a></li>
+										<li><a href="equipo.html">Equipo</a></li>
+										<li class="ultimo"><a href="#anchor6">Promotores</a></li>
+										<a class="mp-back" href="#">Atrás</a>
+									</ul>
+								</div>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#">Estudiantes</a>
+								<div class="mp-level">
+									<h2>Estudiantes</h2>
+									<ul>
+										<li class="primero ultimo"><a href="historias.html">Historias</a></li>
+										<a class="mp-back" href="#">Atrás</a>
+									</ul>
+								</div>
+							</li>
+							
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#">Multimedia</a>
+								<div class="mp-level">
+									<h2>Multimedia</h2>
+									<ul>
+									<li class="primero"><a href="galeria.html">Galería</a></li>
+									<li><a href="videos.html">Videos</a></li>
+									<li class="ultimo"><a href="noticias.html">Noticias</a></li>
+									<a class="mp-back" href="#">Atrás</a>
+									</ul>
+								</div>
+							</li>
+							
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#">Súmate</a>
+								<div class="mp-level">
+									<h2>Súmate</h2>
+									<ul>
+									<li class="primero"><a href="conekta">Dona</a></li>
+									<li><a href="casa-salam.html">Casa Salam</a></li>
+									<li><a href="ppp.html">Padrinos por la Paz</a></li>
+									<li><a href="practicas.html">Prácticas Profesionales</a></li>
+									<li><a href="voluntariado.html">Voluntariado</a></li>
+									<a class="mp-back" href="#">Atrás</a>
+									</ul>
+								</div>
+							</li>
+							
+							<li><a href="documentos.html">Documentos</a></li>
+							
+							<li><a class="ultimo" href="faq.html">Preguntas Frecuentes</a></li>
+							
+							<a class="mp-close" href="#"></a>
+							
+						</ul>
+
 					</div>
-				</div>	
-		</div>
-		
-		
-		<div class="overlay-3 overlay-slidedown-3" id="layer3">
-			<button type="button" class="overlay-close">Close</button>
-				
-				<div class="titulo-seccion-prom">Universidades</div>
-				
-				<div class="contenedor-promotores">
-					<a href="http://ibero.mx/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-ibero.png" width="100%"></a>
-					<a href="http://www.unla.mx/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-unla.png" width="100%"></a>
-					<a href="https://upaep.mx/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-upaep.png" width="100%"></a>
-					<a href="http://www.udem.edu.mx" target="_blank" class="logo-promotores"><img src="img/promotores/logo-udem.png" width="100%"></a>
-					<a href="https://www.iteso.mx/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-iteso.png" width="100%"></a>
-					<a href="https://www.anahuac.mx/queretaro/" target="_blank" class="logo-promotores"><img src="img/promotores/logo-anahuac.png" width="100%"></a>
-					<a class="logo-promotores parche-promotores"><img src="img/promotores/parche-promotores.png" width="100%"></a>
-					<a href="http://www.integrobajio.com" target="_blank" class="logo-promotores"><img src="img/promotores/logo-integro.png" width="100%"></a>
-				</div>	
-		</div>
-		
-		<div class="overlay-4 overlay-slidedown-3" id="layer4">
-			<button type="button" class="overlay-close">Close</button>
-				
-				<div class="titulo-seccion-prom">Instituciones Internacionales</div>
-				
-				<div class="contenedor-promotores">
-					<a href="https://www.iie.org/" target="_blank" class="logo-promotores-2"><img src="img/promotores/logo-iie.png" width="100%"></a>
-					<a href="http://www.globalplatformforsyrianstudents.org/" target="_blank" class="logo-promotores-2"><img src="img/promotores/logo-global.png" width="100%"></a>
-					<a href="http://www.acnur.org/" target="_blank" class="logo-promotores-2"><img src="img/promotores/logo-acnur.png" width="100%"></a>
-				</div>	
-		</div>
-		
-		<div class="overlay-4 overlay-slidedown-3" id="layer5">
-			<button type="button" class="overlay-close">Close</button>
-				
-				<div class="titulo-seccion-prom">Sector Privado</div>
-				
-				<div class="contenedor-promotores">
-					<a href="https://aeromexico.com/es-mx" target="_blank" class="logo-promotores-3"><img src="img/promotores/logo-aero.png" width="100%"></a>
-					<a href="http://www.manpowergroup.com.mx/" target="_blank" class="logo-promotores-3"><img src="img/promotores/logo-manpower.png" width="100%"></a>
-				</div>	
-		</div>
-		
-		<div class="overlay-5 overlay-slidedown-3" id="layer6">
-			<button type="button" class="overlay-close">Close</button>
-				
-				<div class="titulo-seccion-prom">Personalidades</div>
-				
-				<div class="contenedor-promotores">
-					<a class="logo-promotores-persona tooltip2 fade" data-title="Emb. Diego Gómez Pickering" href="http://diegogomezpickering.com/" target="_blank"><img src="img/promotores/promotor-pickering.png" width="100%"></a>
-					<a class="logo-promotores-persona tooltip2 fade" data-title="Emb. Luis Ortíz Monasterio"><img src="img/promotores/promotor-ortiz.png" width="100%"></a>
-					<a class="logo-promotores-persona tooltip2 fade" data-title="Killian Kleinschmidt" href="https://en.wikipedia.org/wiki/Kilian_Kleinschmidt" target="_blank"><img src="img/promotores/promotor-killian.png" width="100%"></a>
-					<a class="logo-promotores-persona tooltip2 fade" data-title="Fernando Savater" href="https://es.wikipedia.org/wiki/Fernando_Savater" target="_blank"><img src="img/promotores/promotor-savater.png" width="100%"></a>
-					<a class="logo-promotores-persona tooltip2 fade" data-title="Luis Gerardo Méndez" href="https://www.imdb.com/name/nm1645334/" target="_blank"><img src="img/promotores/promotor-lgm.png" width="100%"></a>
-					<a class="logo-promotores-persona tooltip2 fade" data-title="Alejandro Ramírez" href="https://en.wikipedia.org/wiki/Cin%C3%A9polis" target="_blank"><img src="img/promotores/promotor-alejandro.png" width="100%"></a>
-					<a class="logo-promotores-persona tooltip2 fade" data-title="Genaro Lozano" href="https://twitter.com/genarolozano?lang=en" target="_blank"><img src="img/promotores/promotor-genaro.png" width="100%"></a>
-				</div>	
-		</div>
-		
-	
-		
-		<script src="js/classie.js"></script>
-		<script src="js/multiverse.js"></script>
-		<!-- Swiper JS -->
-  <script src="js/swiper.min.js"></script>
+				</nav>
+				<!-- /mp-menu -->
+
+
+
+
+</div><!---PUSHER--->
+
+<script src="js/jquery.parallax.min.js"></script>
+<script  src="js/parallaxpersp.js"></script>
+
+
+
+<script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+      verticalCentered: true,
+      anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6', 'anchor7'],
+      menu: '#menu',
+	  keyboardScrolling: true,
+      sectionsColor: ['#e8e5e2', '#8eb5dd', '#a081b2', '#e7c280', '#d89bbe', '#09090C'],
+	 
+  }
+									)})
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+				delay: 100,
+				animation: 'fade',
+				animationDuration: 300,
+				interactive: true,
+        	});
+		});
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('.panel-copy-gris').tooltipster({
+				delay: 100,
+				side: ['right', 'bottom', 'top'],
+				animation: 'fade',
+				animationDuration: 300,
+				interactive: true,
+        	});
+		});
+</script>
+
+<script>
+   $("label").click(function() {
+    $(this).toggleClass('idiomas-active');
+});
+</script>
+
+<script src="js/classie.js"></script>
+<script src="js/mlpushmenu.js"></script>
+<script>
+	new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+</script>
 
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      spaceBetween: 30,
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
     });
   </script>
-  <script>
-    var swiper = new Swiper('.swiper-container-2', {
-      slidesPerView: 5,
-      spaceBetween: 10,
-      // init: false,
-		navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        }
-      }
-    });
-  </script>
-  
-   <!-- Scripts -->
-		  <script src="js/bodymovin.js"></script>
-		  <script src="js/index.js"></script>
-	
-		  
-	<!-----------------------POPUPS-SUMATE-UNICA------------------------>	  
-	<div id="unica-seleccionar" class="zoom-anim-dialog mfp-hide">
-        <div>Selecciona el método de tu preferencia.</div>
-        <p>Elige el proveedor de tu preferencia para hacer tu donación única en línea.</p>
-        <a class="logo-proveedor-donaciones" href="banwire-unica.html"><img src="img/logo-banwire.png" width="100%"></a>
-        <a class="logo-proveedor-donaciones" href="paypal-unica.html"><img src="img/logo-paypal.png" width="100%"></a>
-      </div>
-      
-    <!-----------------------POPUPS-SUMATE-RECURRENTE------------------------>	  
-	<div id="recurrente-seleccionar" class="zoom-anim-dialog mfp-hide">
-        <div>Selecciona el método de tu preferencia.</div>
-        <p>Elige el proveedor de tu preferencia para hacer tu donación recurrente en línea.</p>
-        <a class="logo-proveedor-donaciones" href="banwire-recurrente.html"><img src="img/logo-banwire.png" width="100%"></a>
-        <a class="logo-proveedor-donaciones" href="paypal-recurrente.html"><img src="img/logo-paypal.png" width="100%"></a>
-      </div>
-      
-      <!-----------------------POPUPS-POLITICA DE PRIVACIDAD------------------------>	  
-	<div id="popup-privacidad" class="zoom-anim-dialog mfp-hide">
-      
-        <div>AVISO DE PRIVACIDAD PARA DONANTES  DE DIÁLOGO INTECULTURAL DE MÉXICO ACTIVO A.C.</div>
-        <p>Según lo establecido en la Ley de Protección de Datos Personales en Posesión de Particulares (en lo sucesivo “La Ley”) así como lo establecido en el Reglamento de dicha Ley, la Asociación “Diálogo Intercultural del México Activo” (en lo sucesivo denominada “Proyecto Habesha” con domicilio en la calle Gral. Ignacio Allende, Número  304, , Aguascalientes, Aguascalientes. Reconoce la especial necesidad de proteger los datos referentes a la información personal y bancaria de los donantes al momento en que están interesados en realizar una donación, tomando esto en cuenta se emite el presente Aviso de Privacidad con los siguientes:</p>
-<h3>Términos y Condiciones:</h3>
-<p>1. Se entiende por “Datos Personales”, “Datos Personales Sensibles”, “Base de Datos” y “Aviso de Privacidad” lo establecido en el artículo 2 de La Ley.</p>
-<p>2. Se entiende por “Datos Bancarios” cualquier información referente a una cuenta bancaria.
-<p>3. Se entiende por Donación lo establecido en el Art. 2332 del Código Civil para el Distrito Federal (Ahora Ciudad de México).</p>
-<p>4. Se entiende por Donante a todo aquel que transfiera a título gratuito parte de sus bienes presentes a Proyecto Habesha condicionando dicho acto a que lo donado sea usado para el cumplimiento del objeto de Proyecto Habesha, el cual está contenido en su acta constitutiva, así como en la modificación de sus estatutos.</p>
-<p>5. El presente Aviso de Privacidad tiene por objeto la protección de los datos personales y bancarios de los donantes, en lo sucesivo “Titulares”, los cuales son comunicados a Proyecto Habesha con el fin de realizar una donación a éste y así apoyar en el cumplimiento su objeto.</p>
-<p>6. Los datos personales y bancarios serán recopilados a través de un proceso completamente libre y voluntario. En el cual los Titulares comunicarán su información al Proyecto Habesha por su interés en apoyar al mismo y al momento de comunicar dicha información se presupone su consentimiento.</p>
-<p>7. Los datos recopilados no podrán bajo ningún motivo, fin o circunstancia ser utilizados para otro objetivo que el de cumplir con el objeto del Proyecto Habesha, establecidos en su acta constitutiva y en sus posteriores modificaciones, Según lo establecido en el artículo 12 de la ley. Salvo las excepciones previstas en La Ley.</p>
-<p>8. Los datos personales de los Titulares, se mantendrán en estricta confidencialidad, de acuerdo con las medidas de seguridad, administrativas, técnicas y físicas que al efecto Proyecto Habesha implemente en sus políticas y procedimientos de seguridad, razón por la cual, queda prohibida su divulgación ilícita y se limita su uso a terceros, de conformidad a lo previsto en este Aviso de Privacidad. Los Titulares en cualquier momento podrán optar por limitar el uso o divulgación de sus datos personales y bancarios o revocar su consentimiento para dar tratamiento a sus datos personales y bancarios.</p>
-<p>9. La base de datos que Proyecto Habesha mantenga de los Titulares consiste de manera enunciativa más no limitativa en: Todos sus documentos de identificación personal y bancarios (Nombre completo, Dirección, Teléfono, Mail, Número de Cuenta Bancaria, Número de Tarjeta, Nombre del banco emisor de la cuenta, etc.)
-<p>10. Al proporcionar Los Titulares sus datos personales y bancarios por escrito, a través de una solicitud, formato en papel, formato digital, correo electrónico, o cualquier otro documento, acepta y autoriza al Proyecto Habesha a utilizar, transferir, publicar y tratar de forma automatizada sus datos personales y bancarios e información suministrados, los cuales formarán parte de la base de datos con la finalidad de usarlos, en forma enunciativa, más no limitativa, para: identificar, ubicar, comunicar, contactar, enviar y recibir información y/o bienes, así como para enviarlos y/o transferirlos a terceros, dentro y fuera del territorio nacional, por cualquier medio que permita la ley para cumplir con los fines del Proyecto Habesha.</p>
-<p>11. Para el debido cumplimiento de las finalidades previstas en este Aviso de Privacidad, así como con los fines distintos que resulten compatibles o análogos, le informamos que los datos personales y bancarios de los Titulares pueden ser transferidos y tratados dentro y fuera del país a terceros nacionales o extranjeros En ese sentido, su información puede ser compartida con la finalidad de registrar los productos que los Titulares hubiesen contratado, para identificación, comercialización y otros fines análogos, pudiéndose transferir y/o recibir información. Si no manifiestan su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento tácito para ello.</p>
-<p>12. Se necesita manifestación expresa y por escrito de los Titulares en lo concerniente al tratamiento de los datos sensibles que se proporcionen, entiéndase aquellos como: Aquellos datos personales que afecten a la esfera más íntima de su titular, o cuya utilización indebida pueda dar origen a discriminación o conlleve un riesgo grave para éste. En particular se consideran sensibles aquellos aspectos que puedan revelar aspectos como origen racial o étnico, estado de salud presente y futuro, información genética, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones políticas o preferencia sexual.</p>
-<p>13. Cualquier cambio en el presente aviso de privacidad será comunicado a los Titulares de manera expresa por cualquier medio fehaciente de comunicación, ya sea de manera oral o escrita a más tardar a los cinco días naturales de la modificación del mismo.</p>
-<p>14. Los datos de los Titulares no serán revelados a terceros salvo para cumplir con el objetivo del Proyecto Habesha, por indicación de las leyes del gobierno Mexicano o en virtud de una sentencia judicial.
-<p>15. Los Titulares pueden acceder a su base de datos personales en cualquier momento, ya sea que estos estén almacenados en formato electrónico o físico en el domicilio del proyecto o en alguna sucursal del mismo. Estos se podrán rectificar, en caso de que sean inexactos o incompletos. Cancelar, siguiendo siempre lo dispuesto por la ley y a oponerse al tratamiento de sus datos, siempre que la oposición sea fundada en una causa legítima. La Intención de realizar estos actos se tendrán que notificar por escrito a algún miembro del “Consejo Técnico” del Proyecto Habesha, una vez hecha la notificación se realizarán todos los actos pertinentes para asegurar el acceso del Titular a sus derechos de acceso, rectificación, cancelación y oposición.</p>
-Política de Devoluciones y Cancelaciones</p>
-
-<h3>Cancelación</h3>
-<p>1.	En cualquier momento, Los Titulares podrán optar por cancelar su donación mediante los mecanismos establecidos por las plataformas que Proyecto Habesha utiliza. Asimismo, los usuarios pueden optar por cancelar su donación enviando un correo a contacto@proyectohabesha.org.</p>
-<p>2.	Todos los usuarios tienen derecho a resolver dudas respecto a su donación y al proceso de cancelación enviando un correo a la dirección electrónica mencionada en el punto anterior.
-<p>3.	En caso de que los usuarios soliciten la cancelación de su donación deberán proporcionar a Proyecto Habesha su información de contacto, información sobre el pago y cualquier información adicional necesaria para la efectuación de su cancelación. Ninguno de los datos anteriores serán utilizados por el Proyecto Habesha para otro fin que no sea la constatación de los datos y la cancelación de la donación.</p>
-
-<h3>Reembolso</h3>
-<p>1.	En caso de que Los Titulares hayan tenido problemas para la cancelación de la donación, o se haya incumplido algún punto por parte de Proyecto Habesha establecido en esta política de privacidad, los interesados deberán enviar a contacto@proyectohabesha.org la siguiente información:</p>
-<p>a.	Datos personales del Titular</p>
-<p>b.	Datos de la cuenta bancaria que se utilizará para verificar la información en la base de datos de Proyecto Habesha.</p>
-<p>c.	Comprobante (prueba digital, imagen) que muestre el problema de cancelación</p>
-<p>2.	Todos los pagos reembolsados tardarán hasta 20 días hábiles después de la cancelación de la donación y solicitud de reembolso.</p>
 
 
-			</div>
-    
-
-    <script type="text/javascript">
+<script type="text/javascript">
       $(document).ready(function() {
         $('.popup-with-zoom-anim').magnificPopup({
           type: 'inline',
@@ -781,6 +621,125 @@ Política de Devoluciones y Cancelaciones</p>
           mainClass: 'my-mfp-zoom-in'
         });
 	});
-	</script>
+</script>
+
+<!-----------------------POPUP-POLITICA DE PRIVACIDAD------------------------>	  
+	<div id="popup-privacidad" class="zoom-anim-dialog mfp-hide">
+      
+        <div>AVISO DE PRIVACIDAD PARA DONANTES DE LA ASOCIACIÓN CIVIL DIÁLOGO INTERCULTURAL DE MÉXICO ACTIVO, A.C.</div>
+        <p>Este Aviso de Privacidad (en lo sucesivo el “Aviso”) describe la manera en que Diálogo Intercultural de México Activo, A.C. (en lo sucesivo “Proyecto Habesha”), que señala como domicilio para oír y recibir notificaciones el ubicado en Gral. Ignacio Allende 304, Zona Centro, Dto. Centro, Aguascalientes, Aguascalientes, C.P. 20000 y como dirección de correo electrónico contacto@proyectohabesha.org, en su carácter de Responsable, dará Tratamiento a los Datos Personales y a los Datos Bancarios de los Donantes y los Posibles Donantes, conforme dichos términos se definen a continuación.</p>
+		<h3>Definiciones</h3>
+		<p>Para los efectos de este Aviso se entiende por:</p>
+		<p>1. Ley: Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+		<p>2. Reglamento: Reglamento de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+		<p>3. Datos Personales, Datos Personales Sensibles, Base de Datos, Aviso de Privacidad, Responsable y Tratamiento: Lo establecido en el artículo 3 de la Ley.</p>
+		<p>4. Datos Bancarios: Cualquier información de cualquier Donante o Posible Donante, referente a cualquier cuenta de la que sea titular en una Institución de Crédito, Institución de Tecnología Financiera, Sociedad Financiera Popular o en cualquier institución financiera, en la cual el Donante o Posible Donante tenga almacenado dinero, divisas o cualquier otra forma de valor.</p>
+		<p>5. Donante: Toda persona física que realice una Donación a favor de Proyecto Habesha.</p>
+		<p>6. Donación: Lo establecido en el artículo 2202 del Código Civil del Estado de Aguascalientes.</p>
+		<p>7. Posibles Donantes: Toda persona física que comunique cualquier Dato Personal o Dato Bancario a Proyecto Habesha con la finalidad e intención de realizar una Donación a Proyecto Habesha.</p>
+		<h3>Datos que se recaban y con qué finalidad</h3>
+		<p>Proyecto Habesha podrá recolectar Datos Personales y Datos Bancarios de los Donantes y/o Posibles Donantes por absolutamente cualquier medio de contacto, ya sea digital o físico. Incluyendo sin limitar, cualquier programa electrónico o físico, automatizado o no, que tenga como finalidad la recepción de Donaciones que haga un Donante. Los Datos Personales y Datos Bancarios que Proyecto Habesha podrá recolectar son, de manera enunciativa más no limitativa, el nombre, fecha de nacimiento, nacionalidad, domicilio y comprobante de domicilio, identificación con fotografía, dirección de correo electrónico, número de teléfono, número de cuenta abierta en una institución financiera, número de tarjeta de débito o crédito, denominación de institución financiera emisora de la cuenta, CLABE interbancaria y/o cualquier otros datos de los Donantes y/o Posibles Donantes, necesarios para la recepción de las Donaciones, según Proyecto Habesha determine qué datos serán necesarios.</p>
+
+<p>Las finalidades principales con las que recibimos los Datos Personales y Datos Bancarios de los Donantes y Posibles Donantes son las siguientes:</p>
+
+		<p>1. Verificar su identidad.</p>
+		<p>2. Recibir cualquier Donación.</p>
+		<p>3. Procesar pagos.</p>
+		<p>4. Cumplir con las normas que le sean aplicables a Proyecto Habesha, en materia de Prevención de Operaciones con Recursos de Procedencia Ilícita.</p>
+		<p>5. Cumplir con las normas que le sean aplicables a Proyecto Habesha, según las leyes fiscales de los Estados Unidos Mexicanos y del Extranjero, así como de cualquier Tratado Internacional del que los Estados Unidos Mexicanos sea parte.</p>
+		<p>6. Cumplir con cualquier ley local o federal.</p>
+		<p>7. Realizar el objeto de Proyecto Habesha.</p>
+
+		<p>Las finalidades adicionales con las que recibimos los Datos Personales y/o Datos Bancarios de los Donantes y Posibles Donantes son las siguientes:</p>
+
+		<p>1. Enviar información por medios electrónicos o no electrónicos sobre posibles eventos, reuniones, foros o pláticas relacionadas a las actividades de Proyecto Habesha.</p>
+		<p>2. Enviar agradecimientos por parte de Proyecto Habesha por cualquier Donación recibida.</p>
+		<p>3. Enviar información, por medios electrónicos o no electrónicos de las actuaciones de Proyecto Habesha, así como del destino que se le da a los bienes donados.</p>
+
+		<h3>Medios para limitar el uso de los Datos Personales y Datos Bancarios</h3>
+		<p>En caso de que cualquier Donante o Posible Donante no desee que sus datos personales sean tratados para las finalidades adicionales, el Donante y/o Posible Donante podrá enviar desde este momento y en cualquier momento una solicitud por escrito que contenga su nombre completo, domicilio y comprobante de domicilio, dirección de correo electrónico e identificación con fotografía. Donde señale que no desea que sus Datos Personales y Datos Bancarios sean utilizados para las finalidades adicionales, señalando para qué finalidades adicionales en específico no desea que sean utilizados sus Datos Personales y Datos Bancarios.</p>
+		<p>Dicha solicitud deberá ser enviada al correo electrónico señalado por Proyecto Habesha o mediante correo con acuse de recibo a la dirección señalada por Proyecto Habesha para oír y recibir notificaciones.</p>
+		<p>Proyecto Habesha respetará en todo momento dicha solicitud y se abstendrá de utilizar los Datos Personales y Datos Bancarios para las finalidades adicionales establecidas en la solicitud.</p>
+		
+		<h3>Medios para ejercer los derechos de acceso, rectificación, cancelación u oposición</h3>
+		<p>Según lo establecido en el artículo 28 de la Ley, el Titular o su representante legal podrán solicitar al Responsable en cualquier momento el Acceso, Rectificación, Cancelación u Oposición (en lo sucesivo derechos “ARCO”), respecto de los Datos Personales y Datos Bancarios comunicados a Proyecto Habesha.</p>
+
+		<p>Considerando que dichos derechos se entienden, bajo el contexto de este Aviso, de la siguiente forma:</p>
+
+		<p>Acceso: Conocer qué datos personales tiene Proyecto Habesha, para qué se utilizan y las condiciones que se les da a su Tratamiento.</p>
+		<p>Rectificación: Corrección de los Datos Personales y los Datos Bancarios, así como cualquier otra información que sea incorrecta, desactualizada o inexacta.</p>
+		<p>Cancelación: Solicitar que se elimine la información de las bases o registros de Proyecto Habesha cuando se considere que no está siendo utilizada conforme a los fines, principios, deberes y obligaciones previstas en la normatividad y en este Aviso.</p>
+		<p>Oposición: Oponerse al uso de los Datos Personales y/o Datos Bancarios para fines específicos.</p>
+
+		<p>Para ejercer los derechos ARCO, el Titular deberá enviar una solicitud al correo señalado por Proyecto Habesha o a la dirección señalada por Proyecto Habesha para oír y recibir notificaciones, la cual debe cumplir con los requisitos del artículo 29 de la Ley.</p>
+
+		<p>Es importante que el Titular tome en cuenta que, en caso de solicitud de rectificación de Datos Personales y Datos Bancarios, deberá también indicar las modificaciones a realizarse y aportar la documentación que sustente su petición.</p>
+
+		<p>Proyecto Habesha notificará dentro de los siguientes 20 días, contados a partir de que se recibió la solitud a la que se hace referencia, si resulta o no procedente su solicitud. Si sí resulta procedente, se hará efectiva dentro de los 15 días siguientes a que se comunica que sí resulta procedente.</p>
+
+		<p>En todo lo relativo al ejercicio de los derechos ARCO que no sea contemplado en este Aviso, será aplicable lo establecido en los artículos 28 a 35 de la Ley, así como cualquier otro artículo que sea aplicable en la Ley o en el Reglamento. Si llegaré a existir alguna contradicción ente este Aviso y la Ley y/o el Reglamento, aplicará lo dispuesto en la Ley y/o en el Reglamento.</p>
+		
+		<h3>Protección y Transferencias de Datos</h3>
+		<p>Proyecto Habesha cuenta con medidas técnicas, físicas, informáticas y metodologías adecuadas y eficientes para garantizar la protección y la confidencialidad de los Datos Personales y los Datos Bancarios de los Donantes y los Posibles Donantes.</p>
+
+		<p>De conformidad con el artículo 36 y 37 de la Ley y 17, 68 y 74 del Reglamento, el Titular consiente y acepta que sus Datos Personales y/o Datos Bancarios podrán ser transferidos a personas dentro y fuera de los Estados Unidos Mexicanos. Esto con la finalidad de mantener y cumplir la relación jurídica que existe entre Proyecto Habesha y el Titular. De igual forma Proyecto Habesha podrá transferir los Datos Personales y/o Datos Bancarios sin el consentimiento del Titular, en cualquiera de los supuestos señalados en el artículo 37 de la Ley.
+
+		<p>Los receptores a los que Proyecto Habesha envíe cualquier información deberán mantener la confidencialidad de dicha información de la misma forma y bajo los mismos estándares en que Proyecto Habesha la mantiene. De igual forma se obliga dicho receptor a cumplir con la legislación y regulación aplicable a protección de datos personales en el país en el que se encuentre.</p>
+		Procedimiento y medio para comunicar cualquier cambio a este Aviso</p>
+	
+		<h3>Procedimiento y medio para comunicar cualquier cambio a este Aviso</h3>
+		<p>Este Aviso podrá ser modificado, por Proyecto Habesha, en cualquier momento.</p>
+
+		<p>Dicha modificación se notificará mediante la publicación de un simple aviso en la página oficial de internet de Proyecto Habesha. Dicho aviso no deberá señalar absolutamente nada más que el hecho de que este Aviso ha sido modificado y la fecha de su modificación.</p>
+		
+		<h3>Política de devoluciones y cancelaciones</h3>
+		<p>Cualquier Donante podrá, en cualquier momento, cancelar su suscripción a la plataforma de donaciones periódicas que Proyecto Habesha establezca. De igual forma podrá cancelar una Donación que aun no haya sido reportada, por la institución financiera conducente, como abonada en las cuentas de Proyecto Habesha. Si dicha Donación se reporta como abonada en las cuentas de Proyecto Habesha, se seguirá lo establecido en este Aviso para reembolsos.</p>
+		<p>El Donante podrá cancelar la Donación, ya sea mediante los procesos establecidos particularmente en dicha plataforma o enviando una solicitud por escrito al correo electrónico señalado por Proyecto Habesha o mediante envío de un correo con acuse de recibo a la dirección señalada por Proyecto Habesha para oír y recibir notificaciones. Lo cual no significa que este Aviso deje de surtir efectos sobre los Datos Personales y/o Datos Bancarios comunicados por el Titular a Proyecto Habesha.</p>
+
+		<p>En caso de que cualquier Titular solicite la cancelación de su Donación, deberá proporcionar su nombre, domicilio y comprobante de domicilio, identificación con fotografía, bienes y montos que comprenden la Donación que se desea cancelar, Datos Bancarios y cualquier otra información que a juicio de Proyecto Habesha sea necesaria para efectuar la cancelación. El tratamiento de los datos comunicados para efectos de la cancelación será el establecido en este Aviso.</p>
+
+		<p>De igual forma el Donante podrá solicitar el reembolso de su Donación a Proyecto Habesha y Proyecto Habesha podrá reembolsar dicha Donación, siempre y cuando la solicitud de reembolso se haga dentro de los 5 días naturales siguientes a que haya sido efectuado el abono de dicha Donación en las cuentas de Proyecto Habesha.</p>
+
+		<p>Los bienes adquiridos por Proyecto Habesha con la Donación efectuada no se consideran parte de la Donación misma y el Donante no tiene ningún derecho sobre dichos bienes.</p>
+
+		<p>La solicitud de reembolso de la Donación deberá incluir los mismos datos señalados como necesarios para la solicitud de cancelación de la Donación y debe ser comunicada a Proyecto Habesha de la misma forma.</p>
+
+		<p>Todos los pagos reembolsados podrán tardar hasta 20 días hábiles siguientes a la recepción de la solicitud de reembolso, sin embargo, dicho plazo podrá extenderse por causas de fuerza mayor, como podrían ser de manera enunciativa más no limitativa, fallas en los sistemas de pago manejados por el Banco de México, fallas en los sistemas de instituciones financieras, fallas en los sistemas de Proyecto Habesha, desastres naturales, errores humanos no previsibles y/o cualquier otra circunstancia o acto, de la naturaleza o del hombre, más allá del control de Proyecto Habesha.</p>
+
+		<p>Todo Titular tiene el derecho de resolver cualquier duda que tenga respecto a su Donación y al proceso de cancelación y de reembolso enviando un correo a la dirección electrónica señalada por Proyecto Habesha o mediante envío de un correo con acuse de recibo a la dirección señalada por Proyecto Habesha para oír y recibir notificaciones.</p>
+</div>
+<!-----------------------FIN-POPUP-POLITICA DE PRIVACIDAD------------------------>
+
+<script>
+	$(document).ready(() => {
+    setTimeout(() => {
+        $.magnificPopup.open({
+				items: {
+					src: "https://www.youtube.com/watch?v=g_Z2YbxQf-8"
+				},
+				type: "iframe",
+
+			  // You may add options here, they're exactly the same as for $.fn.magnificPopup call
+			  // Note that some settings that rely on click event (like disableOn or midClick) will not work here
+			});
+    }, 2000);
+});
+</script>
+
+<!-----------------------POPUPS-SUMATE-UNICA------------------------>	  
+	<div id="unica-seleccionar" class="zoom-anim-dialog mfp-hide">
+        <div>Selecciona el método de tu preferencia.</div>
+        <p>Elige el proveedor de tu preferencia para hacer tu donación única en línea.</p>
+        <a class="logo-proveedor-donaciones" href="https://proyectohabesha.org/conekta/unica"><img src="img/i-credito.png" width="100%"></a>
+        <a class="logo-proveedor-donaciones" href="paypal-unica.html"><img src="img/logo-paypal.png" width="100%"></a>
+      </div>
+      
+    <!-----------------------POPUPS-SUMATE-RECURRENTE------------------------>	  
+	<div id="recurrente-seleccionar" class="zoom-anim-dialog mfp-hide">
+        <div>Selecciona el método de tu preferencia.</div>
+        <p>Elige el proveedor de tu preferencia para hacer tu donación recurrente en línea.</p>
+        <a class="logo-proveedor-donaciones" href="https://proyectohabesha.org/conekta/recurrente"><img src="img/i-credito-2.png" width="100%"></a>
+        <a class="logo-proveedor-donaciones" href="paypal-recurrente.html"><img src="img/logo-paypal.png" width="100%"></a>
+      </div>
 </body>
 </html>
